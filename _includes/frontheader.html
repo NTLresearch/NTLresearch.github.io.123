@@ -1,18 +1,18 @@
 <header>
-    <div class="container-fluid">
+    <div class="container-fluid bg-light">
         <nav class="navbar navbar-inverse navbar-light bg-light">
             <div>
                 <a class="navbar-brand" href="{{ site.baseurl }}{{ site.url }}">
-                    <h1 class="display-4">NTL RESEARCH</h1>
+                    <h2 class="display-5">NTL RESEARCH</h2>
                 </a>
             </div>
-            
+
             <div>
-                <ul class="nav bg-ligh" style="color:black">
+                <ul class="nav bg-light" style="color:black">
                     {% for link in site.links %}
                     <li class="nav-item">
-                        <a class="nav-link text-dark font-weight-bold" href="{{ site.baseurl }}{{ link.url }}">
-                        <h5>{{ link.title }}</h3>
+                        <a class="nav-link text-dark" href="{{ site.baseurl }}{{ link.url }}">
+                            <h5 class="line">{{ link.title }}</h5>
                         </a>
                     </li>
                     {% endfor %}

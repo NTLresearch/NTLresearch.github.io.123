@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: Về chúng tôi
 permalink: /about/
 ---
 

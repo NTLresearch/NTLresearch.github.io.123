@@ -1,6 +1,7 @@
 /**
  * Reset some basic elements
  */
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
 body, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
@@ -11,7 +12,7 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-  font-family: "Avenir Next", Helvetica, Arial, sans-serif;
+  font-family: "Avenir Next", "Ubuntu" Helvetica, Arial, sans-serif;
   font-size: 18px;
   line-height: 1.6;
   font-weight: 300;
@@ -64,10 +65,10 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  color: #2a7ae2;
+  color: black;
   text-decoration: none; }
   a:visited {
-    color: #1756a9; }
+    color: black; }
   a:hover {
     color: black;
     text-decoration: underline; }

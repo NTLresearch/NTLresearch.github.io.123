@@ -1,0 +1,21 @@
+<div class="col-md-6">
+    <div class="card mb-4 box-shadow">
+        <img class="card-img-top" src="{{site.baseurl}}{{post.featured_image}}" alt="Thumbnail">
+        <div class="card-body">
+            <h5 class="card-title">
+                <a href="{{post.url | prepend:site.baseurl }}">
+                    {{ post.title |truncate: 50 }}
+                </a>
+
+            </h5>
+            <h6>{{post.date}}</h6>
+            <p class="card-text">
+                {{post.content | strip-html | strip-newlines | truncate: 200 }}
+            </p>
+            <div class="d-flex justify-content-between align-items-center">
+                <button class="btn btn-md btn-outline-secondary" type="button" name="button">Read More</button>
+
+            </div>
+        </div>
+    </div>
+</div>

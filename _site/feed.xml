@@ -4,10 +4,10 @@
     <title>Your awesome title</title>
     <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 </description>
-    <link>/</link>
-    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 19 Jun 2018 15:06:58 +0300</pubDate>
-    <lastBuildDate>Tue, 19 Jun 2018 15:06:58 +0300</lastBuildDate>
+    <link>NTLresearch.github.io/</link>
+    <atom:link href="NTLresearch.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 19 Jun 2018 16:45:43 +0300</pubDate>
+    <lastBuildDate>Tue, 19 Jun 2018 16:45:43 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -28,8 +28,8 @@
 
 </description>
         <pubDate>Tue, 19 Jun 2018 08:55:59 +0000</pubDate>
-        <link>/jekyll/update/welcome-to-jekyll10</link>
-        <guid isPermaLink="true">/jekyll/update/welcome-to-jekyll10</guid>
+        <link>NTLresearch.github.io/jekyll/update/welcome-to-jekyll10</link>
+        <guid isPermaLink="true">NTLresearch.github.io/jekyll/update/welcome-to-jekyll10</guid>
         
         
         <category>jekyll</category>
@@ -56,8 +56,8 @@
 
 </description>
         <pubDate>Tue, 19 Jun 2018 08:55:59 +0000</pubDate>
-        <link>/jekyll/update/welcome-to-jekyll1</link>
-        <guid isPermaLink="true">/jekyll/update/welcome-to-jekyll1</guid>
+        <link>NTLresearch.github.io/jekyll/update/welcome-to-jekyll1</link>
+        <guid isPermaLink="true">NTLresearch.github.io/jekyll/update/welcome-to-jekyll1</guid>
         
         
         <category>jekyll</category>
@@ -84,8 +84,8 @@
 
 </description>
         <pubDate>Tue, 19 Jun 2018 08:55:59 +0000</pubDate>
-        <link>/jekyll/update/welcome-to-jekyll0</link>
-        <guid isPermaLink="true">/jekyll/update/welcome-to-jekyll0</guid>
+        <link>NTLresearch.github.io/jekyll/update/welcome-to-jekyll0</link>
+        <guid isPermaLink="true">NTLresearch.github.io/jekyll/update/welcome-to-jekyll0</guid>
         
         
         <category>jekyll</category>
@@ -112,8 +112,8 @@
 
 </description>
         <pubDate>Tue, 19 Jun 2018 08:55:59 +0000</pubDate>
-        <link>/jekyll/update/welcome-to-jekyll</link>
-        <guid isPermaLink="true">/jekyll/update/welcome-to-jekyll</guid>
+        <link>NTLresearch.github.io/jekyll/update/welcome-to-jekyll</link>
+        <guid isPermaLink="true">NTLresearch.github.io/jekyll/update/welcome-to-jekyll</guid>
         
         
         <category>jekyll</category>
@@ -140,8 +140,8 @@
 
 </description>
         <pubDate>Thu, 07 Jun 2018 18:08:54 +0000</pubDate>
-        <link>/blog/welcome-to-jekyll</link>
-        <guid isPermaLink="true">/blog/welcome-to-jekyll</guid>
+        <link>NTLresearch.github.io/blog/welcome-to-jekyll</link>
+        <guid isPermaLink="true">NTLresearch.github.io/blog/welcome-to-jekyll</guid>
         
         <category>layout</category>
         
@@ -172,8 +172,8 @@ plot(pressure)
 &lt;p&gt;Note that the &lt;code&gt;echo = FALSE&lt;/code&gt; parameter was added to the code chunk to prevent printing of the R code that generated the plot.&lt;/p&gt;
 </description>
         <pubDate>Thu, 07 Jun 2018 12:08:58 +0000</pubDate>
-        <link>/mf/thanh</link>
-        <guid isPermaLink="true">/mf/thanh</guid>
+        <link>NTLresearch.github.io/mf/thanh</link>
+        <guid isPermaLink="true">NTLresearch.github.io/mf/thanh</guid>
         
         <category>MF</category>
         
@@ -213,8 +213,8 @@ print(x)&lt;/p&gt;
 &lt;/code&gt;&lt;/pre&gt;
 </description>
         <pubDate>Wed, 06 Jun 2018 18:08:54 +0000</pubDate>
-        <link>/blog/markdown</link>
-        <guid isPermaLink="true">/blog/markdown</guid>
+        <link>NTLresearch.github.io/blog/markdown</link>
+        <guid isPermaLink="true">NTLresearch.github.io/blog/markdown</guid>
         
         <category>code</category>
         

@@ -6,20 +6,20 @@ description: > # this means to ignore newlines until "baseurl:"
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "" # the base hostname & protocol for your site
+url: "NTLresearch.github.io" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
 
 permalink: /:categories/:title
 
 links:
-- title: About
+- title: Về chúng tôi
   url: /about
-- title: Value Investing
+- title: Đầu tư giá trị
   url: /VI
-- title: Mathematical Finance
+- title: Toán tài chính
   url: /MF
-- title: Portfolio Management
+- title: Lý thuyết portfolio
   url: /PM
 - title: Programming
   url: /Programming

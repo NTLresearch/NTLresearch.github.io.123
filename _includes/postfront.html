@@ -4,17 +4,16 @@
         <div class="card-body">
             <h5 class="card-title">
                 <a href="{{post.url | prepend:site.baseurl }}">
-                    {{ post.title |truncate: 50 }}
+                    {{ post.title |truncate: 100}}
                 </a>
 
             </h5>
             <h6>{{post.date}}</h6>
             <p class="card-text">
-                {{post.content | strip-html | strip-newlines | truncate: 200 }}
+                {{post.content | strip-html | strip-newlines | truncate: 300 }}
             </p>
             <div class="d-flex justify-content-between align-items-center">
-                <button class="btn btn-md btn-outline-secondary" type="button" name="button">Read More</button>
-
+                <a href="{{post.url | prepend: site.baseurl}}">Đọc tiếp</a>
             </div>
         </div>
     </div>

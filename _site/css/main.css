@@ -12,10 +12,10 @@ dl, dd, ol, ul, figure {
  */
 body {
   font-family: "Avenir Next", Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+  font-size: 18px;
+  line-height: 1.6;
   font-weight: 300;
-  color: #111;
+  color: black;
   background-color: #fdfdfd;
   -webkit-text-size-adjust: 100%; }
 
@@ -42,7 +42,7 @@ figure > img {
   display: block; }
 
 figcaption {
-  font-size: 14px; }
+  font-size: 15.75px; }
 
 /**
  * Lists
@@ -69,7 +69,7 @@ a {
   a:visited {
     color: #1756a9; }
   a:hover {
-    color: #111;
+    color: black;
     text-decoration: underline; }
 
 /**
@@ -110,16 +110,16 @@ pre {
  * Wrapper
  */
 .wrapper {
-  max-width: -webkit-calc(800px - (30px * 2));
-  max-width: calc(800px - (30px * 2));
+  max-width: -webkit-calc(1400px - (30px * 2));
+  max-width: calc(1400px - (30px * 2));
   margin-right: auto;
   margin-left: auto;
   padding-right: 30px;
   padding-left: 30px; }
   @media screen and (max-width: 800px) {
     .wrapper {
-      max-width: -webkit-calc(800px - (30px));
-      max-width: calc(800px - (30px));
+      max-width: -webkit-calc(1400px - (30px));
+      max-width: calc(1400px - (30px));
       padding-right: 15px;
       padding-left: 15px; } }
 
@@ -166,8 +166,8 @@ pre {
   .site-nav .menu-icon {
     display: none; }
   .site-nav .page-link {
-    color: #111;
-    line-height: 1.5; }
+    color: black;
+    line-height: 1.6; }
     .site-nav .page-link:not(:first-child) {
       margin-left: 20px; }
   @media screen and (max-width: 600px) {
@@ -270,7 +270,7 @@ pre {
     margin-bottom: 30px; }
 
 .post-meta {
-  font-size: 14px;
+  font-size: 15.75px;
   color: #828282; }
 
 .post-link {

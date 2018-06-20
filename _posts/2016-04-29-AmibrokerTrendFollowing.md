@@ -20,7 +20,7 @@ Tôi sẽ không đề cập cụ thể chức năng và cách sử dụng của
 
 Bước đầu tiên, bạn vào Analysis -> Formula Editor rồi gõ đoạn code sau:
 
-{% highlight C linenos %}
+{% highlight C %}
 Length1 = Param("Length1", 6, 1, 81, 2);
 Length2 = Param("Length2", 35, 2, 200, 2);
 MA1 = MA(C, Length1);
@@ -65,7 +65,8 @@ Rõ ràng khi điều chỉnh độ lớn của MA chậm bằng 12, tín hiệu
 
 Để máy tính tự tối ưu hóa độ nhanh chậm của đường MA, ta có thể thay hàm Param thành hàm Optimize trong đoạn code viết ở trên.
 
-{% highlight C linenos%}
+
+{% highlight C %}
 Length1 = Optimize("Length1", 6, 1, 81, 2);
 Length2 = Optimize("Length2", 35, 2, 200, 2);
 {% endhighlight %}

@@ -314,6 +314,10 @@ pre {
 .font-header {
   font-family: "Avenir Next", Helvetica, Arial, sans-serif; }
 
+.center-image {
+  margin: 0 auto;
+  display: block; }
+
 .highlight code, .highlight pre {
   color: #fdce93;
   background-color: #3f3f3f; }

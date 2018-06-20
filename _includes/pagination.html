@@ -17,8 +17,8 @@
     <br>
     <div class="row">
         {% for post in paginator.posts reversed %}
-        <div class="col-md-6">
-            <div class="card mb-4 box-shadow">
+        <div class="col-md-4">
+            <div class="card mb-4 box-shadow border-info" style="max-width:25rem;">
                 <!-- <img class="card-img-top" src="{{site.baseurl}}{{post.featured_image}}" alt="Thumbnail"> -->
                 <div class="card-body">
                     <h5 class="card-title">
@@ -31,7 +31,7 @@
                         {{ post.content  | strip-html | strip-newlines | truncate: 300}}
                     </p>
                     <div class="d-flex justify-content-between align-items-center">
-                        <a class="btn btn-light btn-md" href="{{post.url | prepend: site.baseurl}}">Đọc tiếp</a>
+                        <a class="btn btn-light btn-md border-secondary" href="{{post.url | prepend: site.baseurl}}">Đọc tiếp</a>
                     </div>
                 </div>
             </div>

@@ -474,7 +474,54 @@ plot(pressure)
 </div>
 
 <h1>
-<a href="/misc/AmibrokerTrendFollowing">Amibroker: Trend Following System trong Amibroker (1)</a>
+<a href="/misc/RiskContributionAndPortfolio">Risk contribution và danh mục đầu tư</a>
+</h1>
+<p class="author">
+<span class="date">2016-10-14 12:00:00 +0000</span>
+</p>
+<div class="content">
+<p><em>Bài viết dựa trên lý thuyết Risk Parity.</em></p>
+
+<p>Giả sử 1 danh mục đầu tư có 2 tài sản, 1 là cổ phiếu và 2 là trái phiếu. Thường thấy chúng ta sẽ đầu tư theo tỉ lệ vàng, phân bổ 60% nguồn vồn vào cổ phiếu và 40% nguồn vốn vào trái phiếu.</p>
+
+<p>Dữ liệu phân tích chỉ ra rằng, volatility của stock (cổ phiếu) tính bằng standard deviation (độ lệch chuẩn) là 15% và của bond (trái phiếu) là 5%. Correlation hay còn gọi là hệ số tương quan của cổ phiếu và trái phiếu là 0.2.</p>
+
+<p>Theo công thức tính volatility của cả portfolio, chúng ta có:</p>
+
+<script type="math/tex; mode=display">\sigma_p = \displaystyle\sqrt{(\sigma_s^2 w_s^2 + \sigma_b^2 w_b^2 + 2 w_b w_s \sigma_s \sigma_b \rho_{sb}})</script>
+
+<p>Áp dụng công thức trên vào số liệu chúng ta ước lượng, volatility của portfolio tương đương 9.6% dựa vào standard deviation. Cần nhớ chúng ta có công thức liên hệ giữa standard deviation và variance (độ lệch chuẩn và phương sai) như sau:</p>
+
+<script type="math/tex; mode=display">var(p) = \sigma_p^2</script>
+
+<p>Thay vì dùng volatility dựa trên standard deviation thuần túy, chúng ta có thể xác định mức độ đóng góp rủi ro của mỗi tài sản vào danh mục chung bằng variance. Cụ thể ở đây, có thể xác định được variance của stock tương đương:</p>
+
+<script type="math/tex; mode=display">\sigma_s^2 w_s^2 + \rho_{sb} w_s w_b \sigma_s \sigma_b</script>
+
+<script type="math/tex; mode=display">0.6^2\times0.15^2 + 0.2 \times0.6\times0.4\times0.15\times0.05 = 0.00846</script>
+
+<p>và variance của bond tương đương:</p>
+
+<script type="math/tex; mode=display">\sigma_b^2 w_b^2 + \rho_{sb} w_s w_b \sigma_s \sigma_b</script>
+
+<script type="math/tex; mode=display">0.4^2\times0.05^2 + 0.2\times0.6\times0.4\times0.15\times0.05 = 0.00076</script>
+
+<p>Chúng ta có variance của portfolio tương đương 0.009216. Vậy mức độ rủi ro đóng góp vào danh mục chung của stock và bond lần lượt là :</p>
+
+<script type="math/tex; mode=display">\frac{0.00846}{0.009216} = 0.92 = 92 \%</script>
+
+<script type="math/tex; mode=display">\frac{0.00076}{0.009216} = 0.08 = 8 \%</script>
+
+<p>Vậy với 1 danh mục đầu tư thuần túy với 60% cổ phiếu và 40% trái phiếu, rủi ro của danh mục chủ yếu đến từ rủi ro của cổ phiếu hơn là trái phiếu.</p>
+
+<p>Việc sử dụng thuật ngữ “balanced-portfolio” với 60% cổ phiếu và 40% trái phiếu không thực sự phản ánh thực tế rằng, 60% phân bổ cổ phiếu đóng góp tới 92% rủi ro.</p>
+
+<p>Điều nhiều nhà đầu tư vẫn tin đó là 1 danh mục 60% cổ phiếu và 40% trái  sẽ có 60% rủi ro đóng góp bởi cổ phiếu và 40% đóng góp bởi trái phiếu. Vậy hiệu quả và rủi ro của danh mục đầu tư cần được đánh giá kĩ càng hơn.</p>
+
+</div>
+
+<h1>
+<a href="/misc/AmibrokerTrendFollowing0">Amibroker: Trend Following System trong Amibroker (1)</a>
 </h1>
 <p class="author">
 <span class="date">2016-04-29 12:00:00 +0000</span>
@@ -487,7 +534,7 @@ plot(pressure)
 
 <p>Dưới đây là ví dụ cổ điển được trình bày trong cuốn “Quantitative Trading Systems” của tác giả Howard B.Bandy. Đoạn code được viết bằng ngôn ngữ AFL của Amibroker và được backtest, optimize bằng bộ công cụ automatic analysis.</p>
 
-<p>Tôi sẽ không đề cập cụ thể chức năng và cách sử dụng của các hàm (function) trong thư viện AFL vì lý do bản quyền từ Amibroker.</p>
+<p>Tôi sẽ không đề cập cụ thể chức năng và cách sử dụng của các hàm (function) trong thư viện AFL vì lý do bản quyền.</p>
 
 <p>Bước đầu tiên, bạn vào Analysis -&gt; Formula Editor rồi gõ đoạn code sau:</p>
 
@@ -577,6 +624,182 @@ Các đoạn code tiếp theo dùng để hiển thị tín hiệu mua bán trê
 
 </div>
 
+<h1>
+<a href="/misc/AmibrokerTrendFollowing">Amibroker: Trend Following System trong Amibroker (1)</a>
+</h1>
+<p class="author">
+<span class="date">2016-04-29 12:00:00 +0000</span>
+</p>
+<div class="content">
+<p><em>HỆ THỐNG GIAO DỊCH DỰA THEO XU HƯỚNG (TREND FOLLOWING SYSTEM) ĐƯỢC DỰA TRÊN GIẢ THIẾT RẰNG GIÁ THƯỜNG VẬN ĐỘNG THEO 1 XU HƯỚNG NHẤT ĐỊNH ĐỦ LÂU ĐỂ TRADER CÓ THỂ NHẬN RA KHI NÀO XU HƯỚNG BẮT ĐẦU, ĐẶT LỆNH VÀ KIẾM LỢI NHUẬN TỪ VIỆC ĐI THEO XU HƯỚNG. 2 CHIẾN LƯỢC CỔ ĐIỂN NỔI BẬT NHẤT TRONG HỆ THỐNG GIAO DỊCH THEO XU HƯỚNG LÀ MOVING AVERAGE CROSSOVER VÀ BREAKOUT.</em></p>
+
+<h1 id="moving-average-crossover-systems-macs">1. MOVING AVERAGE CROSSOVER SYSTEMS (MACS).</h1>
+<p>Hệ thống MACS đặt lệnh mua khi đường MA nhanh cắt đường MA chậm từ dưới lên trên. Giả sử khi đường MA(15) cắt lên trên đường MA(30), chúng ta có tín hiệu mua.</p>
+
+<p>Dưới đây là ví dụ cổ điển được trình bày trong cuốn “Quantitative Trading Systems” của tác giả Howard B.Bandy. Đoạn code được viết bằng ngôn ngữ AFL của Amibroker và được backtest, optimize bằng bộ công cụ automatic analysis.</p>
+
+<p>Tôi sẽ không đề cập cụ thể chức năng và cách sử dụng của các hàm (function) trong thư viện AFL vì lý do bản quyền.</p>
+
+<p>Bước đầu tiên, bạn vào Analysis -&gt; Formula Editor rồi gõ đoạn code sau:</p>
+
+<div class="highlight"><pre><code class="language-c" data-lang="c"><span class="n">Length1</span> <span class="o">=</span> <span class="n">Param</span><span class="p">(</span><span class="s">"Length1"</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">81</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
+<span class="n">Length2</span> <span class="o">=</span> <span class="n">Param</span><span class="p">(</span><span class="s">"Length2"</span><span class="p">,</span> <span class="mi">35</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
+<span class="n">MA1</span> <span class="o">=</span> <span class="n">MA</span><span class="p">(</span><span class="n">C</span><span class="p">,</span> <span class="n">Length1</span><span class="p">);</span>
+<span class="n">MA2</span> <span class="o">=</span> <span class="n">MA</span><span class="p">(</span><span class="n">C</span><span class="p">,</span> <span class="n">Length2</span><span class="p">);</span>
+<span class="n">Buy</span> <span class="o">=</span> <span class="n">Cross</span><span class="p">(</span><span class="n">MA1</span><span class="p">,</span> <span class="n">MA2</span><span class="p">);</span>
+<span class="n">Sell</span> <span class="o">=</span> <span class="n">Cross</span><span class="p">(</span><span class="n">MA2</span><span class="p">,</span> <span class="n">MA1</span><span class="p">);</span>
+
+<span class="n">e</span> <span class="o">=</span> <span class="n">Equity</span><span class="p">();</span>
+<span class="n">Maxe</span> <span class="o">=</span> <span class="n">LastValue</span><span class="p">(</span><span class="n">Highest</span><span class="p">(</span><span class="n">e</span><span class="p">));</span>
+<span class="n">Plot</span><span class="p">(</span><span class="n">Close</span><span class="p">,</span> <span class="s">"Price"</span><span class="p">,</span> <span class="n">colorBlack</span><span class="p">,</span> <span class="n">styleCandle</span><span class="p">);</span>
+
+<span class="n">Plot</span><span class="p">(</span><span class="n">MA1</span><span class="p">,</span> <span class="s">"MA1"</span><span class="p">,</span> <span class="n">colorGreen</span><span class="p">,</span> <span class="n">styleLine</span><span class="p">);</span>
+<span class="n">Plot</span><span class="p">(</span><span class="n">MA2</span><span class="p">,</span> <span class="s">"MA2"</span><span class="p">,</span> <span class="n">colorBlue</span><span class="p">,</span> <span class="n">styleLine</span><span class="p">);</span>
+
+<span class="n">shape</span> <span class="o">=</span> <span class="n">Buy</span><span class="o">*</span><span class="n">shapeUpArrow</span> <span class="o">+</span> <span class="n">Sell</span><span class="o">*</span><span class="n">shapeDownArrow</span><span class="p">;</span>
+<span class="n">PlotShapes</span><span class="p">(</span><span class="n">shape</span><span class="p">(</span><span class="n">IIf</span><span class="p">(</span><span class="n">Buy</span><span class="p">,</span> <span class="n">colorGreen</span><span class="p">,</span> <span class="n">colorRed</span><span class="p">),</span> <span class="mi">0</span> <span class="p">,</span> <span class="n">Iff</span><span class="p">(</span><span class="n">Buy</span><span class="p">,</span> <span class="n">Low</span><span class="p">,</span> <span class="n">High</span><span class="p">)));</span></code></pre></div>
+
+<p>Save đoạn code phía trên lại thành file MACrossSystem.afl vào trong 1 folder nào để sau đó có thể mở lại trong phần Automatic Analysis.</p>
+
+<p>Ở 2 dòng đầu tiên, tác giả dùng hàm Param để tạo ra tham số cho 2 đường MA, cụ thể là độ nhanh hay chậm. Length1 dùng làm tham số cho đường MA nhanh, với minimum =6, maximum = 81 với bước nhảy (step) = 1 và Length2 dùng làm tham số cho đường MA chậm với minimum = 35, bước nhảy (step) = 2 và maxium =200.
+2 dòng tiếp theo tạo ra 2 đường MA1 (Nhanh) và MA2 (chậm) dựa trên tham số của 2 dòng trước đó.
+Ở dòng 5 và 6, tác giả tạo ra tín hiệu mua hay bán bằng hàm cross.
+Các đoạn code tiếp theo dùng để hiển thị tín hiệu mua bán trên đồ thị giá khi thực hiện backtest.</p>
+
+<p>Sau khi thực hiện xong đoạn code, tác giả tạo ra một indicator trong menu chart ở bên tay trái. Cụ thể trong hình bên dưới, tôi đặt tên chỉ báo là MACrossSystem.</p>
+
+<p><img src="/images/Amibroker/ami1.png" alt="folder" class="center-image" /></p>
+
+<p>Sau đó tôi load dữ liệu 1 mã cổ phiếu bất kì trong hệ thống để Backtest P&amp;L. Mã ở đây tôi chọn là VIC (Vingroup). Tôi có đồ thị như phía dưới:</p>
+
+<p><img src="/images/Amibroker/ami2.png" alt="chart1" class="center-image" /></p>
+
+<p>Mũi tên xanh lá cây thể hiện tín hiệu mua và mũi tên đỏ thể hiện tín hiệu bán. bằng trực quan, có thể thấy nếu xu hướng giá rõ ràng, tín hiệu mua cho ra kết quả tốt, tuy nhiên tín hiệu bán với đường MA(35)  không hề tốt, luôn cho ra tín hiệu bán khi giá đã điều chỉnh tương đối sâu. Khi viết đoạn code trên, tác giả đã sử dụng hàm Param để điều chỉnh độ nhanh chậm của đường MA trực tiếp trên chart. Vì vậy, bạn chỉ cần right-click vào chart, chọn parameters, rồi điều chỉnh lại đường MA theo ý muốn. Giả sử tôi chọn MA nhanh là 6 và MA chậm là 12, tôi có kết quả như sau:</p>
+
+<p><img src="/images/Amibroker/ami3.png" alt="chart2" class="center-image" /></p>
+
+<p>Rõ ràng khi điều chỉnh độ lớn của MA chậm bằng 12, tín hiệu bán trở nên rõ nét hơn, bắt kịp với xu hướng điều chỉnh của đường cong giá. Tuy nhiên khi để MA12, tín hiệu nhiễu trở nên nhiều hơn, đặc biệt khi giá giao động trong biên độ nhỏ, xu hướng không rõ ràng, tín hiệu mua bán cho ra liên tục tăng phí giao dịch và turnover của tài khoản. Hơn thế nữa, lệnh mua và bán thường rơi vào cùng 1 vùng giá, không hề tạo ra lợi nhuận, đặc biệt là các tín hiệu mua bán đưa ra với chu kì nắm giữ ngắn hạn, thường khoảng 5-7 ngày</p>
+
+<p>Để máy tính tự tối ưu hóa độ nhanh chậm của đường MA, ta có thể thay hàm Param thành hàm Optimize trong đoạn code viết ở trên.</p>
+
+<div class="highlight"><pre><code class="language-c" data-lang="c"><span class="n">Length1</span> <span class="o">=</span> <span class="n">Optimize</span><span class="p">(</span><span class="s">"Length1"</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">81</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
+<span class="n">Length2</span> <span class="o">=</span> <span class="n">Optimize</span><span class="p">(</span><span class="s">"Length2"</span><span class="p">,</span> <span class="mi">35</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span></code></pre></div>
+
+<p>Save vào 1 file riêng trong folder, đặt tên là MACrossSystem2.afl. Sau đó mở Analysis trên Menu, chọn Automatic Analysis, bấm pick rồi chọn file MACrossSystem2.afl đã save trước đó trong mục code editor.</p>
+
+<p><img src="/images/Amibroker/ami4.png" alt="chart3" class="center-image" /></p>
+
+<p>Trong menu Automatic Analysis, trong mục Settings chọn Report rồi chọn summary để kết quả sau khi tối ưu hóa hoặc backtest cho ra 1 report tổng hợp</p>
+
+<p>Sau đó ở menu automatic analysis, chọn current symbol (tức là VIC) đã chọn ở phần trên, chọn from 2014 tới ngày hiện tại, sau đó bấm Optimize để tối ưu hóa lựa chọn về độ nhanh chậm của đường MA. Amibroker sẽ mô phỏng từ 4100 mẫu test để cho ra kết quả với lợi nhuận cao nhất được test với tín hiệu Cross MA.</p>
+
+<p><img src="/images/Amibroker/ami5.png" alt="chart3" class="center-image" /></p>
+
+<p>Kết quả được thể hiện như hình bên dưới, lợi nhuận cao nhất là 70% khi kết hợp 2 đường MA nhanh là 65 và chậm là 24. Kì cục ở chỗ là tín hiệu cho ra khi thực hiện optimize lại cho thấy rằng đường MA chậm cắt lên trên đường MA nhanh thì tín hiệu mua cho ra lợi nhuận cao nhất. Cụ thể ở đây Length1 có giá trị 65 và Length2 có giá trị 24. Tôi tạo 1 đoạn code khác và apply vào chart VIC như sau:</p>
+
+<div class="highlight"><pre><code class="language-c" data-lang="c"><span class="n">Length1</span> <span class="o">=</span> <span class="mi">65</span><span class="p">;</span>
+<span class="n">Length2</span> <span class="o">=</span> <span class="mi">24</span><span class="p">;</span>
+<span class="n">MA1</span> <span class="o">=</span> <span class="n">MA</span><span class="p">(</span><span class="n">C</span><span class="p">,</span> <span class="n">Length1</span><span class="p">);</span>
+<span class="n">MA2</span> <span class="o">=</span> <span class="n">MA</span><span class="p">(</span><span class="n">C</span><span class="p">,</span> <span class="n">Length2</span><span class="p">);</span>
+<span class="n">Buy</span> <span class="o">=</span> <span class="n">Cross</span><span class="p">(</span><span class="n">MA1</span><span class="p">,</span> <span class="n">MA2</span><span class="p">);</span>
+<span class="n">Sell</span> <span class="o">=</span> <span class="n">Cross</span><span class="p">(</span><span class="n">MA2</span><span class="p">,</span> <span class="n">MA1</span><span class="p">);</span>
+
+<span class="n">e</span> <span class="o">=</span> <span class="n">Equity</span><span class="p">();</span>
+<span class="n">Maxe</span> <span class="o">=</span> <span class="n">LastValue</span><span class="p">(</span><span class="n">Highest</span><span class="p">(</span><span class="n">e</span><span class="p">));</span>
+<span class="n">Plot</span><span class="p">(</span><span class="n">Close</span><span class="p">,</span> <span class="s">"Price"</span><span class="p">,</span> <span class="n">colorBlack</span><span class="p">,</span> <span class="n">styleCandle</span><span class="p">);</span>
+
+<span class="n">Plot</span><span class="p">(</span><span class="n">MA1</span><span class="p">,</span> <span class="s">"MA1"</span><span class="p">,</span> <span class="n">colorGreen</span><span class="p">,</span> <span class="n">styleLine</span><span class="p">);</span>
+<span class="n">Plot</span><span class="p">(</span><span class="n">MA2</span><span class="p">,</span> <span class="s">"MA2"</span><span class="p">,</span> <span class="n">colorBlue</span><span class="p">,</span> <span class="n">styleLine</span><span class="p">);</span>
+
+<span class="n">shape</span> <span class="o">=</span> <span class="n">Buy</span><span class="o">*</span><span class="n">shapeUpArrow</span> <span class="o">+</span> <span class="n">Sell</span><span class="o">*</span><span class="n">shapeDownArrow</span><span class="p">;</span>
+<span class="n">PlotShapes</span><span class="p">(</span><span class="n">shape</span><span class="p">(</span><span class="n">IIf</span><span class="p">(</span><span class="n">Buy</span><span class="p">,</span> <span class="n">colorGreen</span><span class="p">,</span> <span class="n">colorRed</span><span class="p">),</span> <span class="mi">0</span> <span class="p">,</span> <span class="n">Iff</span><span class="p">(</span><span class="n">Buy</span><span class="p">,</span> <span class="n">Low</span><span class="p">,</span> <span class="n">High</span><span class="p">)));</span></code></pre></div>
+
+<p>Hệ thống cho ra tín hiệu như sau:</p>
+
+<p><img src="/images/Amibroker/ami6.png" alt="chart4" class="center-image" /></p>
+
+<p>Cụ thể hơn, khi đường MA(65) cắt lên trên đường MA(24) tín hiệu cho lợi nhuận cao hơn nhiều, đối nghịch hoàn toàn với lý thuyết thường thấy. Khi áp dụng kết quả của quá trình tối ưu hóa, cổ phiếu cho ra lợi nhuận 77%. Giả sử tôi có 100 triệu vào ngày 1/1/2014, nếu theo hệ thống giao dịch này, tới 29/4/2016, tôi đã có 177 triệu VND trong tài khoản theo như kết quả backtest, đánh bại hoàn toàn hệ thống giao dịch sử dụng tín hiệu MA nhanh cắt lên trên MA chậm cổ điển. Tuy nhiên tối ưu hóa hệ thống giao dịch không đảm bảo trong tương lai bạn sẽ có lợi nhuận y hệt.</p>
+
+<p>1 Điều cần lưu ý là nếu áp dụng MACS thì chu kì nắm giữ sẽ dài hơn, theo kết quả backtest, chu kì nắm giữ trung bình vào khoảng 44 ngày giao dịch, tức khoảng hơn 2 tháng. Các tay trader ngắn hạn theo xu hướng vài tuần tới 1 tháng hay những tay giao dịch T+3 sẽ không thích hệ thống này.</p>
+
+<p><img src="/images/Amibroker/ami7.png" alt="chart5" class="center-image" /></p>
+
+<p>Bạn có thể backtest và optimize nhiều mã dựa vào chiến lược giao dịch như trên. Có thể thấy từ ví dụ này, các chỉ báo phân tích kĩ thuật cần được điều chỉnh và tối ưu hóa để cho ra tín hiệu tốt nhất. Một hệ thống giao dịch chỉ đúng khi được backtest hiệu quả và cho ra kết quả Out-of-sample tích cực.</p>
+
+</div>
+
+<h1>
+<a href="/misc/tinhbetaexcle">Tinh beta bằng Excel</a>
+</h1>
+<p class="author">
+<span class="date">2016-04-28 12:00:00 +0000</span>
+</p>
+<div class="content">
+<p>Cách tiếp cận truyền thống để tính toán hệ số Beta là dựa vào phương trình hồi quy cho lợi nhuận của chỉ số thị trường và lợi nhuận của cổ phiếu. Thông thường tỉ suất lợi nhuận được tính toán dựa trên số liệu về giá đã được điều chỉnh cho các khoản như chia tách hoặc chia cổ tức bằng cổ phiếu.</p>
+
+<p>Tỉ suất lợi nhuận nên được tính toán theo tháng hoặc theo tuần (theo Investment Valuation - Damodaran). Hệ số Beta về mặt lý thuyết được tính như sau:</p>
+
+<script type="math/tex; mode=display">\frac{covariance(r_s, r_m)}{variance(r_m)}</script>
+
+<p>Covariance là hiệp phương sai giữa tỉ suất lợi nhuận của cổ phiếu và tỉ suất lợi nhuận của thị trường cần tính toán.
+Variance trong công thức là phương sai của tỉ suất lợi nhuận của chỉ số thị trường.
+Hệ số beta được giải thích như sau:</p>
+
+<ul>
+  <li>
+    <p>Giả sử Beta của 1 cổ phiếu đo được là 1.3, theo lý thuyết, khi thị trường đạt tỉ suất lợi nhuận là 1% thì tỉ suất lợi nhuận của cổ phiếu có thể đạt được là 1.3 * 1% = 1.3%. Kết quả trên chỉ đúng khi lãi suất phi rủi ro gần hoặc tương đương 0%.</p>
+  </li>
+  <li>
+    <p>Nếu chúng ta ước lượng thị trường có tỉ lệ lãi suất phi rủi ro là 7%, tỉ suất lợi nhuận kì vọng của thị trường chung là 10%. Vậy 1 cổ phiếu có beta bằng 1.3 sẽ có tỉ suất lợi nhuận kì vọng tương đương:</p>
+  </li>
+</ul>
+
+<script type="math/tex; mode=display">E(r_s) = r_f + \beta \times (E(r_m) - r_f) = 7\% + 1.3\% \times (10\% - 7\%) = 10.9 \%</script>
+
+<p>Lúc này tỉ suất lợi nhuận kì vọng của cổ phiếu được tính toán dựa trên hệ số beta là 10.9%, cao hơn 0.9% so với tỉ suất lợi nhuận kì vọng của thị trường chung.</p>
+
+<ul>
+  <li>
+    <p>Beta cũng có thể âm hoặc dương. Beta dương tức là khi thị trường có tỉ suất lợi nhuận dương, cổ phiếu cho tỉ suất lợi nhuận dương, tức là vận động cùng với thị trường. Khi Beta âm, thị trường có thể có tỉ suất loại nhuận dương, nhưng lúc này tỉ suất lợi nhuận ở cổ phiếu có thể âm, vận động ngược chiều với thị trường.</p>
+  </li>
+  <li>
+    <p>Khi chỉ số Beta bằng 0, tức là cổ phiếu không có mối tương quan với thị trường.</p>
+  </li>
+</ul>
+
+<p>Đa số các trang web tài chính ở Việt Nam như CafeF hay Vietstock đều cung cấp hệ số Beta. Tuy nhiên với những ai muốn tính toán trực tiếp hệ số Beta, điều chỉnh các thông số có thể tính toán rất nhanh qua Excel bằng hàm Slope.
+Đầu tiên bạn truy cập vào <a href="http://cophieu68.com">cophieu68</a>, download dữ liệu excel về giá đã được điều chỉnh hằng ngày.</p>
+
+<p><img src="/images/Excel/excel1.png" alt="c1" /></p>
+
+<p>Sau đó lấy dữ liệu từ 2 cột <DTYYYMMDD> và <Close> để tính toán Beta.</Close></DTYYYMMDD></p>
+
+<p><img src="/images/Excel/excel2.png" alt="c2" /></p>
+
+<p>Vấn đề ở đây là dữ liệu của cophieu68 được input cho Amibroker và Metastock Format nên ngày tháng sẽ viết liền như hình ở trên. Vì thế chúng ta chuyển đổi dữ liệu sang dạng chuẩn qua excel thông qua hàm Date như sau:</p>
+
+<p><img src="/images/Excel/excel3.png" alt="c3" /></p>
+
+<p>Dữ liệu trong Cophieu68 được sắp xếp theo thứ tự dữ liệu mới nhất được cập nhật ở trên, vì thế khi lọc xong data, chúng ta dùng bộ lọc Filter chỉnh từ oldest to newest để thuận tiện cho việc tính toán tỉ suất lợi nhuận. Sau đó copy Date, Close của VNindex và mã cổ phiếu cần tính toán ra 1 sheet riêng như hình bên dưới:</p>
+
+<p><img src="/images/Excel/excel4.png" alt="c4" /></p>
+
+<p>Tỉ suất lợi nhuận theo tháng sẽ được tính theo số liệu Close và ngày cuối cùng của tháng như công thức bên dưới:</p>
+
+<p><img src="/images/Excel/excel5.png" alt="c5" /></p>
+
+<p>Thông thường, chúng ta nên tính toán tỉ suất lợi nhuận tối thiểu trong 2 năm (24) tháng do yêu cầu của hồi quy thường phải có tối thiểu 25 quan sát. Sau khi đã có đủ số lượng quan sát của tí suất lợi nhuận, chúng ta dùng hàm Slope để tính toán ra Beta như hình dưới:</p>
+
+<p><img src="/images/Excel/excel6.png" alt="c6" /></p>
+
+<p>Do mã CAV chỉ có số liệu từ năm 2015 nên ở bài viết tôi chỉ tính toán trên 12 quan sát, số liệu sẽ không thật sự chính xác. Theo Damodaran, việc dùng tỉ suất lợi nhuận theo tuần hay theo tháng ảnh hưởng tương đối lớn đến việc tính toán beta. Ngoài ra có thể chọn chuỗi thời gian trong 2 năm tới 3 năm hoặc hơn. Tuy nhiên, chuỗi thời gian càng dài, bản chất rủi ro và hoạt động của doanh nghiệp thay đổi nên hệ số beta có khả năng không phản ánh đúng bản chất của cổ phiếu ở thời điểm tính toán.</p>
+
+<p>Hàm Slope trong Beta cũng không cho xem xét hệ số R-squared (coefficient of determination) nên chúng ta khó có thể biết độ chính xác của hệ số Beta trong thực tế. Bài viết sau về OLS sẽ có cái nhìn chi tiết hơn về phương trình hồi quy dạng cơ bản trong excel.</p>
+
+<p>Ngoài ra việc chọn chỉ số thị trường để tính toán beta cũng quan trọng. Giả sử cổ phiếu giao dịch trên sàn Upcom, bạn nên sử dụng chỉ số Upcom để tính toán thay vì VN-index hay HNX-index.</p>
+
+</div>
+
 </div> -->
 
 <div>
@@ -585,7 +808,7 @@ Các đoạn code tiếp theo dùng để hiển thị tín hiệu mua bán trê
     <div class="row">
         
         <div class="col-md-4">
-            <div class="card mb-4 box-shadow border-secondary" style="max-width:35rem;">
+            <div class="card mb-4 box-shadow border-secondary">
                 <!-- <img class="card-img-top" src="" alt="Thumbnail"> -->
                 <div class="card-body" >
                     <h5 class="card-title">
@@ -611,7 +834,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
         </div>
         
         <div class="col-md-4">
-            <div class="card mb-4 box-shadow border-secondary" style="max-width:35rem;">
+            <div class="card mb-4 box-shadow border-secondary">
                 <!-- <img class="card-img-top" src="/images/MF/safe.jpeg" alt="Thumbnail"> -->
                 <div class="card-body" >
                     <h5 class="card-title">
@@ -638,7 +861,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
         </div>
         
         <div class="col-md-4">
-            <div class="card mb-4 box-shadow border-secondary" style="max-width:35rem;">
+            <div class="card mb-4 box-shadow border-secondary">
                 <!-- <img class="card-img-top" src="/images/MF/safe.jpeg" alt="Thumbnail"> -->
                 <div class="card-body" >
                     <h5 class="card-title">
@@ -661,7 +884,57 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
         </div>
         
         <div class="col-md-4">
-            <div class="card mb-4 box-shadow border-secondary" style="max-width:35rem;">
+            <div class="card mb-4 box-shadow border-secondary">
+                <!-- <img class="card-img-top" src="/images/PM/pmp1.jpg" alt="Thumbnail"> -->
+                <div class="card-body" >
+                    <h5 class="card-title">
+                        <a class="title-color" href="/misc/RiskContributionAndPortfolio">
+                            Risk contribution và danh mục đầu tư
+                        </a>
+                    </h5>
+                    <h6 >Oct 14, 2016</h6>
+                    <p class="card-text">
+                        <p><em>Bài viết dựa trên lý thuyết Risk Parity.</em></p>
+
+<p>Giả sử 1 danh mục đầu tư có 2 tài sản, 1 là cổ phiếu và 2 là trái phiếu. Thường thấy chúng ta sẽ đầu tư theo tỉ lệ vàng, phân bổ 60% nguồn vồn vào cổ phiếu và 40% nguồn vốn vào trái phiếu.</p>
+
+<p>Dữ liệu phân tích chỉ ra rằng, volatili...
+                    </p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <a class="btn btn-light btn-md border-secondary" href="/misc/RiskContributionAndPortfolio">Đọc tiếp</a>
+                            <a class="btn btn-light btn-md border-secondary" href="#">misc</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="card mb-4 box-shadow border-secondary">
+                <!-- <img class="card-img-top" src="/images/Amibroker/amp1.jpg" alt="Thumbnail"> -->
+                <div class="card-body" >
+                    <h5 class="card-title">
+                        <a class="title-color" href="/misc/AmibrokerTrendFollowing0">
+                            Amibroker: Trend Following System trong Amibroker (1)
+                        </a>
+                    </h5>
+                    <h6 >Apr 29, 2016</h6>
+                    <p class="card-text">
+                        <p><em>HỆ THỐNG GIAO DỊCH DỰA THEO XU HƯỚNG (TREND FOLLOWING SYSTEM) ĐƯỢC DỰA TRÊN GIẢ THIẾT RẰNG GIÁ THƯỜNG VẬN ĐỘNG THEO 1 XU HƯỚNG NHẤT ĐỊNH ĐỦ LÂU ĐỂ TRADER CÓ THỂ NHẬN RA KHI NÀO XU HƯỚNG BẮT ĐẦU, ĐẶT LỆNH VÀ KIẾM LỢI NHUẬN TỪ VIỆC ĐI THEO XU HƯỚNG. 2 CHIẾN LƯỢC CỔ ĐIỂN NỔI BẬT NHẤT TRONG HỆ...
+                    </p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <a class="btn btn-light btn-md border-secondary" href="/misc/AmibrokerTrendFollowing0">Đọc tiếp</a>
+                            <a class="btn btn-light btn-md border-secondary" href="#">misc</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="card mb-4 box-shadow border-secondary">
                 <!-- <img class="card-img-top" src="/images/Amibroker/amp1.jpg" alt="Thumbnail"> -->
                 <div class="card-body" >
                     <h5 class="card-title">
@@ -676,6 +949,29 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
                             <a class="btn btn-light btn-md border-secondary" href="/misc/AmibrokerTrendFollowing">Đọc tiếp</a>
+                            <a class="btn btn-light btn-md border-secondary" href="#">misc</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="card mb-4 box-shadow border-secondary">
+                <!-- <img class="card-img-top" src="/images/Excel/excel1p.png" alt="Thumbnail"> -->
+                <div class="card-body" >
+                    <h5 class="card-title">
+                        <a class="title-color" href="/misc/tinhbetaexcle">
+                            Tinh beta bằng Excel
+                        </a>
+                    </h5>
+                    <h6 >Apr 28, 2016</h6>
+                    <p class="card-text">
+                        <p>Cách tiếp cận truyền thống để tính toán hệ số Beta là dựa vào phương trình hồi quy cho lợi nhuận của chỉ số thị trường và lợi nhuận của cổ phiếu. Thông thường tỉ suất lợi nhuận được tính toán dựa trên số liệu về giá đã được điều chỉnh cho các khoản như chia tách hoặc chia cổ tức bằng cổ phiếu....
+                    </p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <a class="btn btn-light btn-md border-secondary" href="/misc/tinhbetaexcle">Đọc tiếp</a>
                             <a class="btn btn-light btn-md border-secondary" href="#">misc</a>
                         </div>
                     </div>
@@ -761,9 +1057,17 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 </footer>
 
 
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+        
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
 
     </body>
 </html>

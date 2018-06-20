@@ -12,7 +12,7 @@ github_username:  NTLresearchgroup
 
 permalink: /:categories/:title
 paginate_path: "/blog/page:num/"
-paginate: 5
+paginate: 18
 
 links:
 - title: Về chúng tôi

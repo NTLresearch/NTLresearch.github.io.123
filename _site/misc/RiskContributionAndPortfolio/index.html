@@ -6,13 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Phân tích cổ phiếu giá trị</title>
-    <meta name="description" content="Chiến lược Value Investing">
+    <title>Risk contribution và danh mục đầu tư</title>
+    <meta name="description" content="Bài viết dựa trên lý thuyết Risk Parity.">
 
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-    <link rel="canonical" href="http://NTLresearch.github.io/mf/thanh">
+    <link rel="canonical" href="http://NTLresearch.github.io/misc/RiskContributionAndPortfolio">
     <link rel="alternate" type="application/rss+xml" title="NTL RESEARCH" href="http://NTLresearch.github.io/feed.xml" />
 </head>
 
@@ -124,7 +124,7 @@
                     <div class="container text-secondary">
                         <h4 class="display-5">
                             
-                            <h3 class="display-5">Thanh Nguyen</h3>
+                            <h3 class="display-5">Duong Vu</h3>
                             
                         </h4>
                     </div>
@@ -132,30 +132,51 @@
                 <div class="col-md-8">
                     <div class="container">
                         <header class="post-header">
-                            <h1 class="post-title">Phân tích cổ phiếu giá trị</h1>
-                            <p class="post-meta">Jun 7, 2018</p>
+                            <h1 class="post-title">Risk contribution và danh mục đầu tư</h1>
+                            <p class="post-meta">Oct 14, 2016</p>
                         </header>
                         <div>
-                            <img class="center-image" src="/images/MF/safe.jpeg" height=400px>
+                            <img class="center-image" src="/images/PM/pmp1.jpg" height=400px>
                         </div>
                         <br>
                         <article class="post-content font-body1">
-                            <p>Chiến lược Value Investing</p>
+                            <p><em>Bài viết dựa trên lý thuyết Risk Parity.</em></p>
 
-<p>This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <a href="http://rmarkdown.rstudio.com">http://rmarkdown.rstudio.com</a>.</p>
+<p>Giả sử 1 danh mục đầu tư có 2 tài sản, 1 là cổ phiếu và 2 là trái phiếu. Thường thấy chúng ta sẽ đầu tư theo tỉ lệ vàng, phân bổ 60% nguồn vồn vào cổ phiếu và 40% nguồn vốn vào trái phiếu.</p>
 
-<p>When you click the <strong>Knit</strong> button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:</p>
+<p>Dữ liệu phân tích chỉ ra rằng, volatility của stock (cổ phiếu) tính bằng standard deviation (độ lệch chuẩn) là 15% và của bond (trái phiếu) là 5%. Correlation hay còn gọi là hệ số tương quan của cổ phiếu và trái phiếu là 0.2.</p>
 
-<p><code>{r cars}
-summary(cars)
-</code>
-You can also embed plots, for example:</p>
+<p>Theo công thức tính volatility của cả portfolio, chúng ta có:</p>
 
-<p><code>{r pressure, echo=FALSE}
-plot(pressure)
-</code></p>
+<script type="math/tex; mode=display">\sigma_p = \displaystyle\sqrt{(\sigma_s^2 w_s^2 + \sigma_b^2 w_b^2 + 2 w_b w_s \sigma_s \sigma_b \rho_{sb}})</script>
 
-<p>Note that the <code>echo = FALSE</code> parameter was added to the code chunk to prevent printing of the R code that generated the plot.</p>
+<p>Áp dụng công thức trên vào số liệu chúng ta ước lượng, volatility của portfolio tương đương 9.6% dựa vào standard deviation. Cần nhớ chúng ta có công thức liên hệ giữa standard deviation và variance (độ lệch chuẩn và phương sai) như sau:</p>
+
+<script type="math/tex; mode=display">var(p) = \sigma_p^2</script>
+
+<p>Thay vì dùng volatility dựa trên standard deviation thuần túy, chúng ta có thể xác định mức độ đóng góp rủi ro của mỗi tài sản vào danh mục chung bằng variance. Cụ thể ở đây, có thể xác định được variance của stock tương đương:</p>
+
+<script type="math/tex; mode=display">\sigma_s^2 w_s^2 + \rho_{sb} w_s w_b \sigma_s \sigma_b</script>
+
+<script type="math/tex; mode=display">0.6^2\times0.15^2 + 0.2 \times0.6\times0.4\times0.15\times0.05 = 0.00846</script>
+
+<p>và variance của bond tương đương:</p>
+
+<script type="math/tex; mode=display">\sigma_b^2 w_b^2 + \rho_{sb} w_s w_b \sigma_s \sigma_b</script>
+
+<script type="math/tex; mode=display">0.4^2\times0.05^2 + 0.2\times0.6\times0.4\times0.15\times0.05 = 0.00076</script>
+
+<p>Chúng ta có variance của portfolio tương đương 0.009216. Vậy mức độ rủi ro đóng góp vào danh mục chung của stock và bond lần lượt là :</p>
+
+<script type="math/tex; mode=display">\frac{0.00846}{0.009216} = 0.92 = 92 \%</script>
+
+<script type="math/tex; mode=display">\frac{0.00076}{0.009216} = 0.08 = 8 \%</script>
+
+<p>Vậy với 1 danh mục đầu tư thuần túy với 60% cổ phiếu và 40% trái phiếu, rủi ro của danh mục chủ yếu đến từ rủi ro của cổ phiếu hơn là trái phiếu.</p>
+
+<p>Việc sử dụng thuật ngữ “balanced-portfolio” với 60% cổ phiếu và 40% trái phiếu không thực sự phản ánh thực tế rằng, 60% phân bổ cổ phiếu đóng góp tới 92% rủi ro.</p>
+
+<p>Điều nhiều nhà đầu tư vẫn tin đó là 1 danh mục 60% cổ phiếu và 40% trái  sẽ có 60% rủi ro đóng góp bởi cổ phiếu và 40% đóng góp bởi trái phiếu. Vậy hiệu quả và rủi ro của danh mục đầu tư cần được đánh giá kĩ càng hơn.</p>
 
                         </article>
                     </div>

@@ -6,13 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Phân tích cổ phiếu giá trị</title>
-    <meta name="description" content="Chiến lược Value Investing">
+    <title>Tinh beta bằng Excel</title>
+    <meta name="description" content="Cách tiếp cận truyền thống để tính toán hệ số Beta là dựa vào phương trình hồi quy cho lợi nhuận của chỉ số thị trường và lợi nhuận của cổ phiếu. Thông thườn...">
 
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-    <link rel="canonical" href="http://NTLresearch.github.io/mf/thanh">
+    <link rel="canonical" href="http://NTLresearch.github.io/misc/tinhbetaexcle">
     <link rel="alternate" type="application/rss+xml" title="NTL RESEARCH" href="http://NTLresearch.github.io/feed.xml" />
 </head>
 
@@ -124,7 +124,7 @@
                     <div class="container text-secondary">
                         <h4 class="display-5">
                             
-                            <h3 class="display-5">Thanh Nguyen</h3>
+                            <h3 class="display-5">Thanh Nguyen M</h3>
                             
                         </h4>
                     </div>
@@ -132,30 +132,76 @@
                 <div class="col-md-8">
                     <div class="container">
                         <header class="post-header">
-                            <h1 class="post-title">Phân tích cổ phiếu giá trị</h1>
-                            <p class="post-meta">Jun 7, 2018</p>
+                            <h1 class="post-title">Tinh beta bằng Excel</h1>
+                            <p class="post-meta">Apr 28, 2016</p>
                         </header>
                         <div>
-                            <img class="center-image" src="/images/MF/safe.jpeg" height=400px>
+                            <img class="center-image" src="/images/Excel/excel1p.png" height=400px>
                         </div>
                         <br>
                         <article class="post-content font-body1">
-                            <p>Chiến lược Value Investing</p>
+                            <p>Cách tiếp cận truyền thống để tính toán hệ số Beta là dựa vào phương trình hồi quy cho lợi nhuận của chỉ số thị trường và lợi nhuận của cổ phiếu. Thông thường tỉ suất lợi nhuận được tính toán dựa trên số liệu về giá đã được điều chỉnh cho các khoản như chia tách hoặc chia cổ tức bằng cổ phiếu.</p>
 
-<p>This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <a href="http://rmarkdown.rstudio.com">http://rmarkdown.rstudio.com</a>.</p>
+<p>Tỉ suất lợi nhuận nên được tính toán theo tháng hoặc theo tuần (theo Investment Valuation - Damodaran). Hệ số Beta về mặt lý thuyết được tính như sau:</p>
 
-<p>When you click the <strong>Knit</strong> button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:</p>
+<script type="math/tex; mode=display">\frac{covariance(r_s, r_m)}{variance(r_m)}</script>
 
-<p><code>{r cars}
-summary(cars)
-</code>
-You can also embed plots, for example:</p>
+<p>Covariance là hiệp phương sai giữa tỉ suất lợi nhuận của cổ phiếu và tỉ suất lợi nhuận của thị trường cần tính toán.
+Variance trong công thức là phương sai của tỉ suất lợi nhuận của chỉ số thị trường.
+Hệ số beta được giải thích như sau:</p>
 
-<p><code>{r pressure, echo=FALSE}
-plot(pressure)
-</code></p>
+<ul>
+  <li>
+    <p>Giả sử Beta của 1 cổ phiếu đo được là 1.3, theo lý thuyết, khi thị trường đạt tỉ suất lợi nhuận là 1% thì tỉ suất lợi nhuận của cổ phiếu có thể đạt được là 1.3 * 1% = 1.3%. Kết quả trên chỉ đúng khi lãi suất phi rủi ro gần hoặc tương đương 0%.</p>
+  </li>
+  <li>
+    <p>Nếu chúng ta ước lượng thị trường có tỉ lệ lãi suất phi rủi ro là 7%, tỉ suất lợi nhuận kì vọng của thị trường chung là 10%. Vậy 1 cổ phiếu có beta bằng 1.3 sẽ có tỉ suất lợi nhuận kì vọng tương đương:</p>
+  </li>
+</ul>
 
-<p>Note that the <code>echo = FALSE</code> parameter was added to the code chunk to prevent printing of the R code that generated the plot.</p>
+<script type="math/tex; mode=display">E(r_s) = r_f + \beta \times (E(r_m) - r_f) = 7\% + 1.3\% \times (10\% - 7\%) = 10.9 \%</script>
+
+<p>Lúc này tỉ suất lợi nhuận kì vọng của cổ phiếu được tính toán dựa trên hệ số beta là 10.9%, cao hơn 0.9% so với tỉ suất lợi nhuận kì vọng của thị trường chung.</p>
+
+<ul>
+  <li>
+    <p>Beta cũng có thể âm hoặc dương. Beta dương tức là khi thị trường có tỉ suất lợi nhuận dương, cổ phiếu cho tỉ suất lợi nhuận dương, tức là vận động cùng với thị trường. Khi Beta âm, thị trường có thể có tỉ suất loại nhuận dương, nhưng lúc này tỉ suất lợi nhuận ở cổ phiếu có thể âm, vận động ngược chiều với thị trường.</p>
+  </li>
+  <li>
+    <p>Khi chỉ số Beta bằng 0, tức là cổ phiếu không có mối tương quan với thị trường.</p>
+  </li>
+</ul>
+
+<p>Đa số các trang web tài chính ở Việt Nam như CafeF hay Vietstock đều cung cấp hệ số Beta. Tuy nhiên với những ai muốn tính toán trực tiếp hệ số Beta, điều chỉnh các thông số có thể tính toán rất nhanh qua Excel bằng hàm Slope.
+Đầu tiên bạn truy cập vào <a href="http://cophieu68.com">cophieu68</a>, download dữ liệu excel về giá đã được điều chỉnh hằng ngày.</p>
+
+<p><img src="/images/Excel/excel1.png" alt="c1" /></p>
+
+<p>Sau đó lấy dữ liệu từ 2 cột <DTYYYMMDD> và <Close> để tính toán Beta.</Close></DTYYYMMDD></p>
+
+<p><img src="/images/Excel/excel2.png" alt="c2" /></p>
+
+<p>Vấn đề ở đây là dữ liệu của cophieu68 được input cho Amibroker và Metastock Format nên ngày tháng sẽ viết liền như hình ở trên. Vì thế chúng ta chuyển đổi dữ liệu sang dạng chuẩn qua excel thông qua hàm Date như sau:</p>
+
+<p><img src="/images/Excel/excel3.png" alt="c3" /></p>
+
+<p>Dữ liệu trong Cophieu68 được sắp xếp theo thứ tự dữ liệu mới nhất được cập nhật ở trên, vì thế khi lọc xong data, chúng ta dùng bộ lọc Filter chỉnh từ oldest to newest để thuận tiện cho việc tính toán tỉ suất lợi nhuận. Sau đó copy Date, Close của VNindex và mã cổ phiếu cần tính toán ra 1 sheet riêng như hình bên dưới:</p>
+
+<p><img src="/images/Excel/excel4.png" alt="c4" /></p>
+
+<p>Tỉ suất lợi nhuận theo tháng sẽ được tính theo số liệu Close và ngày cuối cùng của tháng như công thức bên dưới:</p>
+
+<p><img src="/images/Excel/excel5.png" alt="c5" /></p>
+
+<p>Thông thường, chúng ta nên tính toán tỉ suất lợi nhuận tối thiểu trong 2 năm (24) tháng do yêu cầu của hồi quy thường phải có tối thiểu 25 quan sát. Sau khi đã có đủ số lượng quan sát của tí suất lợi nhuận, chúng ta dùng hàm Slope để tính toán ra Beta như hình dưới:</p>
+
+<p><img src="/images/Excel/excel6.png" alt="c6" /></p>
+
+<p>Do mã CAV chỉ có số liệu từ năm 2015 nên ở bài viết tôi chỉ tính toán trên 12 quan sát, số liệu sẽ không thật sự chính xác. Theo Damodaran, việc dùng tỉ suất lợi nhuận theo tuần hay theo tháng ảnh hưởng tương đối lớn đến việc tính toán beta. Ngoài ra có thể chọn chuỗi thời gian trong 2 năm tới 3 năm hoặc hơn. Tuy nhiên, chuỗi thời gian càng dài, bản chất rủi ro và hoạt động của doanh nghiệp thay đổi nên hệ số beta có khả năng không phản ánh đúng bản chất của cổ phiếu ở thời điểm tính toán.</p>
+
+<p>Hàm Slope trong Beta cũng không cho xem xét hệ số R-squared (coefficient of determination) nên chúng ta khó có thể biết độ chính xác của hệ số Beta trong thực tế. Bài viết sau về OLS sẽ có cái nhìn chi tiết hơn về phương trình hồi quy dạng cơ bản trong excel.</p>
+
+<p>Ngoài ra việc chọn chỉ số thị trường để tính toán beta cũng quan trọng. Giả sử cổ phiếu giao dịch trên sàn Upcom, bạn nên sử dụng chỉ số Upcom để tính toán thay vì VN-index hay HNX-index.</p>
 
                         </article>
                     </div>

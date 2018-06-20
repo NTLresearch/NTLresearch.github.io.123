@@ -1,16 +1,18 @@
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
+title: NTL RESEARCH
+email: NTLresearchgroup@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Luôn có những rủi ro liên quan đến vấn đề đầu tư bao gồm cả việc mất toàn bộ vốn. Hiệu quả đầu tư trong quá khứ
+  không đảm bảo cho kết quả trong tương lai. Nhà đầu tư nên xem xét cẩn thận mục tiêu đầu tư, ràng buộc, rủi ro và
+  những chi phí liên quan.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://NTLresearch.github.io" # the base hostname & protocol for your site
-twitter_username: jekyllrb  
-github_username:  jekyll
+twitter_username: D4xu0
+github_username:  NTLresearchgroup
 
 permalink: /:categories/:title
+paginate_path: "/blog/page:num/"
+paginate: 3
 
 links:
 - title: Về chúng tôi
@@ -33,3 +35,4 @@ links:
 
 # Build settings
 markdown: kramdown
+highlighter: rouge

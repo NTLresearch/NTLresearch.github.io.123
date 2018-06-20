@@ -1,31 +1,187 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Your awesome title</title>
-    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+    <title>NTL RESEARCH</title>
+    <description>Luôn có những rủi ro liên quan đến vấn đề đầu tư bao gồm cả việc mất toàn bộ vốn. Hiệu quả đầu tư trong quá khứ không đảm bảo cho kết quả trong tương lai. Nhà đầu tư nên xem xét cẩn thận mục tiêu đầu tư, ràng buộc, rủi ro và những chi phí liên quan.
 </description>
     <link>http://NTLresearch.github.io/</link>
     <atom:link href="http://NTLresearch.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 19 Jun 2018 19:46:47 +0300</pubDate>
-    <lastBuildDate>Tue, 19 Jun 2018 19:46:47 +0300</lastBuildDate>
+    <pubDate>Wed, 20 Jun 2018 16:23:01 +0300</pubDate>
+    <lastBuildDate>Wed, 20 Jun 2018 16:23:01 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
         <title>Welcome to Jekyll!</title>
-        <description>&lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+        <description>&lt;p&gt;asdasd
+asdasd
+asdasd
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;Tom&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &#39;Hi, Tom&#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
 
 &lt;p&gt;To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
 
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;__future__&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;absolute_import&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;division&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;print_function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+                        &lt;span class=&quot;n&quot;&gt;unicode_literals&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Tom&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &amp;#39;Hi, Tom&amp;#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;datetime&lt;/span&gt;  &lt;span class=&quot;c&quot;&gt;# For datetime objects&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;os.path&lt;/span&gt;  &lt;span class=&quot;c&quot;&gt;# To manage paths&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sys&lt;/span&gt;  &lt;span class=&quot;c&quot;&gt;# To find out the script name (in argv[0])&lt;/span&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://github.com/jekyll/jekyll-help&quot;&gt;Jekyll’s dedicated Help repository&lt;/a&gt;.&lt;/p&gt;
 
+&lt;span class=&quot;c&quot;&gt;# Import the backtrader platform&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;backtrader&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bt&lt;/span&gt;
+
+
+&lt;span class=&quot;c&quot;&gt;# Create a Stratey&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;TestStrategy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Strategy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;params&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;maperiod&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;15&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;printlog&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;False&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;txt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;None&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;doprint&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;False&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;s&quot;&gt;&#39;&#39;&#39; Logging function fot this strategy&#39;&#39;&#39;&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;params&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;printlog&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;doprint&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;dt&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dt&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;datas&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;datetime&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;date&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;s, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;s&#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;isoformat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;txt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;__init__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;c&quot;&gt;# Keep a reference to the &quot;close&quot; line in the data[0] dataseries&lt;/span&gt;
+        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dataclose&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;datas&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;close&lt;/span&gt;
+
+        &lt;span class=&quot;c&quot;&gt;# To keep track of pending orders and buy price/commission&lt;/span&gt;
+        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;order&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;None&lt;/span&gt;
+        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;buyprice&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;None&lt;/span&gt;
+        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;buycomm&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;None&lt;/span&gt;
+
+        &lt;span class=&quot;c&quot;&gt;# Add a MovingAverageSimple indicator&lt;/span&gt;
+        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sma&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;indicators&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SimpleMovingAverage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+            &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;datas&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;period&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;params&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;maperiod&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;notify_order&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;order&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;order&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;status&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;order&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Submitted&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;order&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Accepted&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]:&lt;/span&gt;
+            &lt;span class=&quot;c&quot;&gt;# Buy/Sell order submitted/accepted to/by broker - Nothing to do&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;
+
+        &lt;span class=&quot;c&quot;&gt;# Check if an order has been completed&lt;/span&gt;
+        &lt;span class=&quot;c&quot;&gt;# Attention: broker could reject order if not enough cash&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;order&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;status&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;order&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Completed&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]:&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;order&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;isbuy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
+                &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+                    &lt;span class=&quot;s&quot;&gt;&#39;BUY EXECUTED, Price: &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;%.2&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;f, Cost: &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;%.2&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;f, Comm &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;%.2&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;f&#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;
+                    &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;order&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;executed&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;price&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+                     &lt;span class=&quot;n&quot;&gt;order&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;executed&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+                     &lt;span class=&quot;n&quot;&gt;order&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;executed&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;comm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+
+                &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;buyprice&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;order&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;executed&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;price&lt;/span&gt;
+                &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;buycomm&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;order&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;executed&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;comm&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;  &lt;span class=&quot;c&quot;&gt;# Sell&lt;/span&gt;
+                &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;SELL EXECUTED, Price: &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;%.2&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;f, Cost: &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;%.2&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;f, Comm &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;%.2&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;f&#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;
+                         &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;order&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;executed&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;price&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+                          &lt;span class=&quot;n&quot;&gt;order&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;executed&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+                          &lt;span class=&quot;n&quot;&gt;order&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;executed&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;comm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+
+            &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bar_executed&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;elif&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;order&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;status&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;order&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Canceled&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;order&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Margin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;order&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Rejected&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]:&lt;/span&gt;
+            &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;Order Canceled/Margin/Rejected&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+        &lt;span class=&quot;c&quot;&gt;# Write down: no pending order&lt;/span&gt;
+        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;order&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;None&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;notify_trade&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;trade&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;not&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;trade&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;isclosed&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;
+
+        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;OPERATION PROFIT, GROSS &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;%.2&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;f, NET &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;%.2&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;f&#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;
+                 &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;trade&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pnl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;trade&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pnlcomm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;c&quot;&gt;# Simply log the closing price of the series from the reference&lt;/span&gt;
+        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;Close, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;%.2&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;f&#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dataclose&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+
+        &lt;span class=&quot;c&quot;&gt;# Check if an order is pending ... if yes, we cannot send a 2nd one&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;order&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;
+
+        &lt;span class=&quot;c&quot;&gt;# Check if we are in the market&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;not&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+
+            &lt;span class=&quot;c&quot;&gt;# Not yet ... we MIGHT BUY if ...&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dataclose&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sma&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]:&lt;/span&gt;
+
+                &lt;span class=&quot;c&quot;&gt;# BUY, BUY, BUY!!! (with all possible default parameters)&lt;/span&gt;
+                &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;BUY CREATE, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;%.2&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;f&#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dataclose&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+
+                &lt;span class=&quot;c&quot;&gt;# Keep track of the created order to avoid a 2nd order&lt;/span&gt;
+                &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;order&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;buy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+
+            &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dataclose&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sma&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]:&lt;/span&gt;
+                &lt;span class=&quot;c&quot;&gt;# SELL, SELL, SELL!!! (with all possible default parameters)&lt;/span&gt;
+                &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;SELL CREATE, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;%.2&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;f&#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dataclose&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+
+                &lt;span class=&quot;c&quot;&gt;# Keep track of the created order to avoid a 2nd order&lt;/span&gt;
+                &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;order&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sell&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;stop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;(MA Period &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;%2&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;d) Ending Value &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;%.2&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;f&#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;
+                 &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;params&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;maperiod&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;broker&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;getvalue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;doprint&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;__name__&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;__main__&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;# Create a cerebro entity&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;cerebro&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Cerebro&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+
+    &lt;span class=&quot;c&quot;&gt;# Add a strategy&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;strats&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cerebro&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;optstrategy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;TestStrategy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;maperiod&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;31&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+
+    &lt;span class=&quot;c&quot;&gt;# Datas are in a subfolder of the samples. Need to find where the script is&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;# because it could have been called from anywhere&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;modpath&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;os&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;path&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dirname&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;os&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;path&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;abspath&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sys&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;argv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]))&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;datapath&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;os&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;path&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;modpath&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;../../datas/orcl-1995-2014.txt&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+    &lt;span class=&quot;c&quot;&gt;# Create a Data Feed&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;feeds&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;YahooFinanceCSVData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;dataname&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;datapath&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;c&quot;&gt;# Do not pass values before this date&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;fromdate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;datetime&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;datetime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+        &lt;span class=&quot;c&quot;&gt;# Do not pass values before this date&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;todate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;datetime&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;datetime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;31&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+        &lt;span class=&quot;c&quot;&gt;# Do not pass values after this date&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;reverse&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;False&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+    &lt;span class=&quot;c&quot;&gt;# Add the Data Feed to Cerebro&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;cerebro&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;adddata&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+    &lt;span class=&quot;c&quot;&gt;# Set our desired cash start&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;cerebro&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;broker&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;setcash&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;1000.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+    &lt;span class=&quot;c&quot;&gt;# Add a FixedSize sizer according to the stake&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;cerebro&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;addsizer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sizers&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;FixedSize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;stake&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+    &lt;span class=&quot;c&quot;&gt;# Set the commission&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;cerebro&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;broker&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;setcommission&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;commission&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+    &lt;span class=&quot;c&quot;&gt;# Run over everything&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;cerebro&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;jekyllrb.com&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;You can find the source code for the Jekyll new theme at: &lt;a href=&quot;https://github.com/jglovier/jekyll-new&quot;&gt;github.com/jglovier/jekyll-new&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;You can find the source code for Jekyll at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;github.com/jekyll/jekyll&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Tue, 19 Jun 2018 08:55:59 +0000</pubDate>
         <link>http://NTLresearch.github.io/jekyll/update/welcome-to-jekyll10</link>
@@ -35,120 +191,6 @@
         <category>jekyll</category>
         
         <category>update</category>
-        
-      </item>
-    
-      <item>
-        <title>Welcome to Jekyll!</title>
-        <description>&lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
-
-&lt;p&gt;To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
-
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Tom&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &amp;#39;Hi, Tom&amp;#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://github.com/jekyll/jekyll-help&quot;&gt;Jekyll’s dedicated Help repository&lt;/a&gt;.&lt;/p&gt;
-
-</description>
-        <pubDate>Tue, 19 Jun 2018 08:55:59 +0000</pubDate>
-        <link>http://NTLresearch.github.io/jekyll/update/welcome-to-jekyll1</link>
-        <guid isPermaLink="true">http://NTLresearch.github.io/jekyll/update/welcome-to-jekyll1</guid>
-        
-        
-        <category>jekyll</category>
-        
-        <category>update</category>
-        
-      </item>
-    
-      <item>
-        <title>Welcome to Jekyll!</title>
-        <description>&lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
-
-&lt;p&gt;To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
-
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Tom&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &amp;#39;Hi, Tom&amp;#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://github.com/jekyll/jekyll-help&quot;&gt;Jekyll’s dedicated Help repository&lt;/a&gt;.&lt;/p&gt;
-
-</description>
-        <pubDate>Tue, 19 Jun 2018 08:55:59 +0000</pubDate>
-        <link>http://NTLresearch.github.io/jekyll/update/welcome-to-jekyll0</link>
-        <guid isPermaLink="true">http://NTLresearch.github.io/jekyll/update/welcome-to-jekyll0</guid>
-        
-        
-        <category>jekyll</category>
-        
-        <category>update</category>
-        
-      </item>
-    
-      <item>
-        <title>Welcome to Jekyll!</title>
-        <description>&lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
-
-&lt;p&gt;To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
-
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Tom&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &amp;#39;Hi, Tom&amp;#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://github.com/jekyll/jekyll-help&quot;&gt;Jekyll’s dedicated Help repository&lt;/a&gt;.&lt;/p&gt;
-
-</description>
-        <pubDate>Tue, 19 Jun 2018 08:55:59 +0000</pubDate>
-        <link>http://NTLresearch.github.io/jekyll/update/welcome-to-jekyll</link>
-        <guid isPermaLink="true">http://NTLresearch.github.io/jekyll/update/welcome-to-jekyll</guid>
-        
-        
-        <category>jekyll</category>
-        
-        <category>update</category>
-        
-      </item>
-    
-      <item>
-        <title>Quản lý danh mục đầu tư hiệu quả</title>
-        <description>&lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
-
-&lt;p&gt;To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
-
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;lineno&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt;2&lt;/span&gt;   &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt;4&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Tom&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt;5&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &amp;#39;Hi, Tom&amp;#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://github.com/jekyll/jekyll-help&quot;&gt;Jekyll’s dedicated Help repository&lt;/a&gt;.&lt;/p&gt;
-
-</description>
-        <pubDate>Thu, 07 Jun 2018 18:08:54 +0000</pubDate>
-        <link>http://NTLresearch.github.io/blog/welcome-to-jekyll</link>
-        <guid isPermaLink="true">http://NTLresearch.github.io/blog/welcome-to-jekyll</guid>
-        
-        <category>layout</category>
-        
-        <category>code</category>
-        
-        
-        <category>blog</category>
         
       </item>
     
@@ -183,43 +225,314 @@ plot(pressure)
       </item>
     
       <item>
-        <title>Tối ưu hóa lợi nhuận </title>
-        <description>&lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+        <title>Hedging bằng hợp đồng tương lai VN30 (phần 1)</title>
+        <description>&lt;p&gt;Mục đích ban đầu của công cụ phái sinh là giúp nhà đầu tư giảm thiểu được rủi ro khi thị trường vận động không đúng theo kì vọng. Năm 2017, thị trường Việt Nam chứng kiến sự ra đời của công cụ phái sinh đầu tiên - hợp đồng tương lai. Series bài viết này phân tích ngắn gọn đặc điểm chung của hợp đồng tương lai, cũng như cách để hedge 1 danh mục bao gồm 1 cổ phiếu hoặc 1 danh mục đầu tư cổ phiếu, sử dụng hợp đồng tương lai với tài sản cơ sở là chỉ số VN30.&lt;/p&gt;
 
-&lt;p&gt;To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+&lt;h1 id=&quot;khi-nim-hedging&quot;&gt;1. Khái niệm Hedging.&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;Đầu tiên chúng ta đề cập tới khái niệm hedging (tiếng việt dịch ra là nghiệp vụ đảm bảo). Lấy ví dụ đơn giản thế này, tôi là chủ quán phở bò, &lt;strong&gt;hôm qua tôi nghe phóng viên Sỹ Khỏe trên VTV1 chuyên mục “bạn nhà nông” nói, số lượng bò tiêu thụ tăng lên đột biến trong khi nguồn cung đang bị thiếu hụt ở nửa cuối năm 2018. Vậy chắc chắn giá thịt bò sẽ tăng lên tương ứng (giả sử có duy nhất 1 loại thịt bò trên thị trường và có hạn mức nhập khẩu bò từ nước ngoài).&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;h3 id=&quot;this-is-the-markdown-page&quot;&gt;This is the markdown page&lt;/h3&gt;
-&lt;p&gt;Hi how’s it going&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/MF/pic1.jpg&quot; alt=&quot;Beef&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;python
-x = 5
-y = 5
-z = x * y
-g = [x*2 for x in range(1,5)]
-&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Chiến lược kinh doanh của cửa hàng phở của tôi tập trung vào giá, đó là đưa ra 1 mức giá hợp lý, phù hợp với đa số người dân lao động trong khu vực. &lt;strong&gt;Cấu trúc chi phí có đến 50% tới từ thịt bò. Vậy giả sử 1 bát phở có giá 30,000 VND, vậy cứ mỗi kg thịt bò tăng lên từ 200,000 VND lên 280,000 VND tức là 40%, tôi phải tăng chi phí của 1 bát phở lên 1 lượng tương đương 6,000 VND. Giả sử tôi muốn giữ nguyên biên lợi nhuận của mình, vậy 6,000 VND tăng lên kia sẽ được cộng toàn bộ vào giá mà khách hàng phải trả cho 1 bát phở. Lúc này giá sẽ tương đương 36,000 VND.&lt;/strong&gt; Thêm nữa, vì thịt bò phải nhập tươi 8 tiếng trước khi chế biến và sẵn sàng cho giờ mở cửa vào lúc 6h sáng, tức là tôi không thể mua trước thịt bò vào ngăn đá như 1 dạng hàng tồn kho. 1 điều quan trọng hơn nữa là tôi sẽ không biết giá thịt bò liệu sẽ tăng tới mức bao nhiêu, tốc độ tăng sẽ nhanh hay chậm, &lt;strong&gt;liệu 1 tháng nữa thịt bò có tăng lên mức 350,000 VND hay chỉ tăng lên 240,000 VND 1 kg?&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;&lt;code&gt;python
-print(g)
-&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/MF/pic2.png&quot; alt=&quot;Beef&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;[2, 4, 6, 8]&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Điều quan trọng nhất ở đây là tôi không hề biết giá mà mình sẽ phải trả cho người buôn thịt bò vào mỗi ngày trước khi mở cửa hàng. Hơn nữa, viêc điều chỉnh giá bán phở cho khách hàng rất cứng nhắc, &lt;strong&gt;việc tăng giá hay giảm giá không hợp lý sẽ khiến khách hàng bỏ đi ngay lập tức&lt;/strong&gt; bởi chiến lược kinh doanh của cửa hàng là tập trung vào phân khúc khách hàng bình dân.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Vậy làm thế nào để hạn chế việc biến động của giá đầu vào? Đầu tiên tôi gọi cho nhà phân phối thịt bò, thỏa thuận với họ, tôi vẫn sẽ tiếp tục mua thịt bò, nhưng lúc này giá thịt bò sẽ không được thương lượng vào mỗi buổi sáng nữa mà sẽ được thỏa thuận trong chu kì 1 tháng. Vào mỗi ngày đầu tiên của tháng, người bán thịt bò sẽ đưa ra mức giá mà tôi phải trả trong toàn bộ tháng tiếp theo. &lt;strong&gt;Giả sử lúc này là đầu tháng 10, tôi sẽ thỏa thuận giá cho toàn bộ tháng 11, bắt đầu từ ngày mùng 1/11 tới ngày 30/11. Vậy điều gì tạo nên sự khác biệt? Lúc này, tôi biết chắc chắn mức giá mình phải trả mỗi buổi sáng là bao nhiêu, và có 1 kế hoạch cụ thể cho tháng đó.&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Vậy Hedging ở đây được hiểu là gì? Chúng ta có thể hiểu đó là thỏa thuận 1 mức giá cố định cho 1 loại hàng hóa nào đó, được giao dịch trong tương lai, ở thời điểm hiện tại.&lt;/strong&gt; Dù mức giá ngoài thị trường có biến động như thế nào thì tôi vẫn có thể mua 1 mặt hàng với giá được xác định trước. Vậy câu hỏi đặt lúc này là việc thỏa thuận với nhà phân phối thịt bò kia sẽ đem đến lợi ích và những bất lợi cụ thể gì?&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;```python
-print(x)&lt;/p&gt;
+&lt;h1 id=&quot;hedging-li-ch-v-bt-li&quot;&gt;2. Hedging, lợi ích và bất lợi&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Kịch bản thứ 1, trong suốt tháng 11, giá thịt bò trong tháng tăng lên rất nhanh, dao động quanh ngưỡng 400,000 VND 1 kg. Giá mà tôi thỏa thuận với nhà buôn thịt bò chỉ là 280,000 VND 1kg. Vậy đương nhiên chỉ phí đầu vào của 1 bát phở của tôi đương nhiên sẽ thấp hơn đối thủ cạnh tranh.&lt;/strong&gt; Nếu điều chỉnh giá bán hợp lý thì biên lợi nhuận vẫn có thể được duy trì, khách hàng sẽ vẫn trung thành với cửa hàng. Vậy việc hedging lúc này đương nhiên đem lại lợi ích.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Kịch bản thứ 2, trong suốt tháng 11, giá thịt bò bỗng nhiên suy giảm mạnh mẽ, chỉ ở mức 150,000 VND 1 kg. Lúc này, thay vì mua của nhà buôn thịt bò kia, giá tôi có thể mua ngoài thị trường thấp hơn nhiều. Lúc này chi phí đầu vào cao hơn hẳn thị trường, tuy nhiên giá bán cho khách hàng không thể tăng tương ứng&lt;/strong&gt;. Kết quả là việc hedging làm cho biên lợi nhuận suy giảm rõ rệt và ảnh hưởng đến hoạt động kinh doanh.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;```&lt;/p&gt;
+&lt;h1 id=&quot;khi-no-th-s-dng-hedging-bng-hp-ng-tng-lai&quot;&gt;3. Khi nào thì sử dụng hedging bằng hợp đồng tương lai&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Vậy lúc nào thì nên thực hiện hedging? Tôi chỉ nên thực hiện hedging khi tôi chắc chắn biết rằng giá thịt bò sẽ tăng mạnh trong thời gian tới.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Thứ nhất, khi giá thịt bò tăng, mọi cửa hàng phở đều có chi phí đầu vào tăng, vậy giá bán cho người tiêu dùng chắc chắn tăng lên tương ứng. Tuy nhiên mức giá mà cửa hàng đưa ra sẽ khác nhau do cơ cấu chi phí khác nhau và chiến lược kinh doanh khác nhau. Vậy có thực sự cần thiết thực hiện hedging nếu ảnh hưởng của việc tăng giá thịt bò đến cấu trúc chi phí và giá bán là không đáng kể?&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Thứ hai, hedging không đồng nghĩ với việc chắc chắn có lợi nhuận. Hedging nên được hiểu như việc cố định giá để mua 1 mặt hàng trong tương lai. Nếu giá tăng nhiều hơn mức giá thỏa thuận trước, người bán thịt bò hưởng lợi. Nếu giá giảm nhiều hơn mức giá thỏa thuận trước, người bán thịt bò thua thiệt.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;pre&gt;&lt;code&gt;5
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&quot;/images/MF/pic3.jpg&quot; alt=&quot;Beef&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;long-hedge-v-short-hedge-vi-hp-ng-tng-lai&quot;&gt;4. Long hedge và Short hedge với hợp đồng tương lai&lt;/h1&gt;
+
+&lt;h2 id=&quot;long-hedge&quot;&gt;Long hedge&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Ví dụ đề cập ở trên được phân loại là long hedge. Long hedge được sử dụng khi chủ thể cần phải mua phải mua một loại tài sản hay hàng hóa trong tương lai. Ở đây là chủ cửa hàng phở muốn mua thịt bò trong tương lai. Tương tự, 1 công ty sản xuất ô tô sẽ cần mua sắt thép, da, bông, cao su … làm nguyên liệu, họ sẽ cần long hedge cho các nguyên liệu cơ bản đầu vào. Hoặc các chuỗi bán lẻ cafe như Starbucks sẽ cần mua cafe, đường, các nguyên liệu và hương liệu phục vụ cho sản xuất đồ uống. Tương tự họ cũng cần biết chính xác giá mà họ sẽ phải trả cho các chi phí đầu vào khi lên kế hoạch kinh doanh và thiết lập hệ thống quản lý rủi ro khi cần thiết.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;short-hedge&quot;&gt;Short hedge&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Short hedge được sử dụng khi chủ thể đã sở hữu một tài sản và muốn bán nó trong tương lai. Chúng ta thường thấy người nông dân khai thác nông sản như vải, dưa hấu, nhãn … sau khi thu hoạch sẽ muốn biết rõ mức giá mà họ có thể bán ra thị trường. Việc biết trước được mức giá họ có thể bán sẽ giúp họ tính toán được mức lợi nhuận và kế hoạch cho mùa tiếp theo. Ngay cả trong trường hợp thị trường dư thừa nguồn cung, họ cũng cần xác định mức giá họ có thể bán để bù đắp cho chi phí lỗ họ phải hứng chịu.&lt;/li&gt;
+&lt;/ul&gt;
 </description>
-        <pubDate>Wed, 06 Jun 2018 18:08:54 +0000</pubDate>
-        <link>http://NTLresearch.github.io/blog/markdown</link>
-        <guid isPermaLink="true">http://NTLresearch.github.io/blog/markdown</guid>
+        <pubDate>Wed, 06 Jun 2018 18:08:08 +0000</pubDate>
+        <link>http://NTLresearch.github.io/mf/HedgingFutures13</link>
+        <guid isPermaLink="true">http://NTLresearch.github.io/mf/HedgingFutures13</guid>
         
-        <category>code</category>
+        <category>MF</category>
         
         
-        <category>blog</category>
+        <category>mf</category>
+        
+      </item>
+    
+      <item>
+        <title>Hedging bằng hợp đồng tương lai VN30 (phần 1)</title>
+        <description>&lt;p&gt;Mục đích ban đầu của công cụ phái sinh là giúp nhà đầu tư giảm thiểu được rủi ro khi thị trường vận động không đúng theo kì vọng. Năm 2017, thị trường Việt Nam chứng kiến sự ra đời của công cụ phái sinh đầu tiên - hợp đồng tương lai. Series bài viết này phân tích ngắn gọn đặc điểm chung của hợp đồng tương lai, cũng như cách để hedge 1 danh mục bao gồm 1 cổ phiếu hoặc 1 danh mục đầu tư cổ phiếu, sử dụng hợp đồng tương lai với tài sản cơ sở là chỉ số VN30.&lt;/p&gt;
+
+&lt;h1 id=&quot;khi-nim-hedging&quot;&gt;1. Khái niệm Hedging.&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;Đầu tiên chúng ta đề cập tới khái niệm hedging (tiếng việt dịch ra là nghiệp vụ đảm bảo). Lấy ví dụ đơn giản thế này, tôi là chủ quán phở bò, &lt;strong&gt;hôm qua tôi nghe phóng viên Sỹ Khỏe trên VTV1 chuyên mục “bạn nhà nông” nói, số lượng bò tiêu thụ tăng lên đột biến trong khi nguồn cung đang bị thiếu hụt ở nửa cuối năm 2018. Vậy chắc chắn giá thịt bò sẽ tăng lên tương ứng (giả sử có duy nhất 1 loại thịt bò trên thị trường và có hạn mức nhập khẩu bò từ nước ngoài).&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/MF/pic1.jpg&quot; alt=&quot;Beef&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Chiến lược kinh doanh của cửa hàng phở của tôi tập trung vào giá, đó là đưa ra 1 mức giá hợp lý, phù hợp với đa số người dân lao động trong khu vực. &lt;strong&gt;Cấu trúc chi phí có đến 50% tới từ thịt bò. Vậy giả sử 1 bát phở có giá 30,000 VND, vậy cứ mỗi kg thịt bò tăng lên từ 200,000 VND lên 280,000 VND tức là 40%, tôi phải tăng chi phí của 1 bát phở lên 1 lượng tương đương 6,000 VND. Giả sử tôi muốn giữ nguyên biên lợi nhuận của mình, vậy 6,000 VND tăng lên kia sẽ được cộng toàn bộ vào giá mà khách hàng phải trả cho 1 bát phở. Lúc này giá sẽ tương đương 36,000 VND.&lt;/strong&gt; Thêm nữa, vì thịt bò phải nhập tươi 8 tiếng trước khi chế biến và sẵn sàng cho giờ mở cửa vào lúc 6h sáng, tức là tôi không thể mua trước thịt bò vào ngăn đá như 1 dạng hàng tồn kho. 1 điều quan trọng hơn nữa là tôi sẽ không biết giá thịt bò liệu sẽ tăng tới mức bao nhiêu, tốc độ tăng sẽ nhanh hay chậm, &lt;strong&gt;liệu 1 tháng nữa thịt bò có tăng lên mức 350,000 VND hay chỉ tăng lên 240,000 VND 1 kg?&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/MF/pic2.png&quot; alt=&quot;Beef&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Điều quan trọng nhất ở đây là tôi không hề biết giá mà mình sẽ phải trả cho người buôn thịt bò vào mỗi ngày trước khi mở cửa hàng. Hơn nữa, viêc điều chỉnh giá bán phở cho khách hàng rất cứng nhắc, &lt;strong&gt;việc tăng giá hay giảm giá không hợp lý sẽ khiến khách hàng bỏ đi ngay lập tức&lt;/strong&gt; bởi chiến lược kinh doanh của cửa hàng là tập trung vào phân khúc khách hàng bình dân.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Vậy làm thế nào để hạn chế việc biến động của giá đầu vào? Đầu tiên tôi gọi cho nhà phân phối thịt bò, thỏa thuận với họ, tôi vẫn sẽ tiếp tục mua thịt bò, nhưng lúc này giá thịt bò sẽ không được thương lượng vào mỗi buổi sáng nữa mà sẽ được thỏa thuận trong chu kì 1 tháng. Vào mỗi ngày đầu tiên của tháng, người bán thịt bò sẽ đưa ra mức giá mà tôi phải trả trong toàn bộ tháng tiếp theo. &lt;strong&gt;Giả sử lúc này là đầu tháng 10, tôi sẽ thỏa thuận giá cho toàn bộ tháng 11, bắt đầu từ ngày mùng 1/11 tới ngày 30/11. Vậy điều gì tạo nên sự khác biệt? Lúc này, tôi biết chắc chắn mức giá mình phải trả mỗi buổi sáng là bao nhiêu, và có 1 kế hoạch cụ thể cho tháng đó.&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Vậy Hedging ở đây được hiểu là gì? Chúng ta có thể hiểu đó là thỏa thuận 1 mức giá cố định cho 1 loại hàng hóa nào đó, được giao dịch trong tương lai, ở thời điểm hiện tại.&lt;/strong&gt; Dù mức giá ngoài thị trường có biến động như thế nào thì tôi vẫn có thể mua 1 mặt hàng với giá được xác định trước. Vậy câu hỏi đặt lúc này là việc thỏa thuận với nhà phân phối thịt bò kia sẽ đem đến lợi ích và những bất lợi cụ thể gì?&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;hedging-li-ch-v-bt-li&quot;&gt;2. Hedging, lợi ích và bất lợi&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Kịch bản thứ 1, trong suốt tháng 11, giá thịt bò trong tháng tăng lên rất nhanh, dao động quanh ngưỡng 400,000 VND 1 kg. Giá mà tôi thỏa thuận với nhà buôn thịt bò chỉ là 280,000 VND 1kg. Vậy đương nhiên chỉ phí đầu vào của 1 bát phở của tôi đương nhiên sẽ thấp hơn đối thủ cạnh tranh.&lt;/strong&gt; Nếu điều chỉnh giá bán hợp lý thì biên lợi nhuận vẫn có thể được duy trì, khách hàng sẽ vẫn trung thành với cửa hàng. Vậy việc hedging lúc này đương nhiên đem lại lợi ích.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Kịch bản thứ 2, trong suốt tháng 11, giá thịt bò bỗng nhiên suy giảm mạnh mẽ, chỉ ở mức 150,000 VND 1 kg. Lúc này, thay vì mua của nhà buôn thịt bò kia, giá tôi có thể mua ngoài thị trường thấp hơn nhiều. Lúc này chi phí đầu vào cao hơn hẳn thị trường, tuy nhiên giá bán cho khách hàng không thể tăng tương ứng&lt;/strong&gt;. Kết quả là việc hedging làm cho biên lợi nhuận suy giảm rõ rệt và ảnh hưởng đến hoạt động kinh doanh.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;khi-no-th-s-dng-hedging-bng-hp-ng-tng-lai&quot;&gt;3. Khi nào thì sử dụng hedging bằng hợp đồng tương lai&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Vậy lúc nào thì nên thực hiện hedging? Tôi chỉ nên thực hiện hedging khi tôi chắc chắn biết rằng giá thịt bò sẽ tăng mạnh trong thời gian tới.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Thứ nhất, khi giá thịt bò tăng, mọi cửa hàng phở đều có chi phí đầu vào tăng, vậy giá bán cho người tiêu dùng chắc chắn tăng lên tương ứng. Tuy nhiên mức giá mà cửa hàng đưa ra sẽ khác nhau do cơ cấu chi phí khác nhau và chiến lược kinh doanh khác nhau. Vậy có thực sự cần thiết thực hiện hedging nếu ảnh hưởng của việc tăng giá thịt bò đến cấu trúc chi phí và giá bán là không đáng kể?&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Thứ hai, hedging không đồng nghĩ với việc chắc chắn có lợi nhuận. Hedging nên được hiểu như việc cố định giá để mua 1 mặt hàng trong tương lai. Nếu giá tăng nhiều hơn mức giá thỏa thuận trước, người bán thịt bò hưởng lợi. Nếu giá giảm nhiều hơn mức giá thỏa thuận trước, người bán thịt bò thua thiệt.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/MF/pic3.jpg&quot; alt=&quot;Beef&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;long-hedge-v-short-hedge-vi-hp-ng-tng-lai&quot;&gt;4. Long hedge và Short hedge với hợp đồng tương lai&lt;/h1&gt;
+
+&lt;h2 id=&quot;long-hedge&quot;&gt;Long hedge&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Ví dụ đề cập ở trên được phân loại là long hedge. Long hedge được sử dụng khi chủ thể cần phải mua phải mua một loại tài sản hay hàng hóa trong tương lai. Ở đây là chủ cửa hàng phở muốn mua thịt bò trong tương lai. Tương tự, 1 công ty sản xuất ô tô sẽ cần mua sắt thép, da, bông, cao su … làm nguyên liệu, họ sẽ cần long hedge cho các nguyên liệu cơ bản đầu vào. Hoặc các chuỗi bán lẻ cafe như Starbucks sẽ cần mua cafe, đường, các nguyên liệu và hương liệu phục vụ cho sản xuất đồ uống. Tương tự họ cũng cần biết chính xác giá mà họ sẽ phải trả cho các chi phí đầu vào khi lên kế hoạch kinh doanh và thiết lập hệ thống quản lý rủi ro khi cần thiết.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;short-hedge&quot;&gt;Short hedge&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Short hedge được sử dụng khi chủ thể đã sở hữu một tài sản và muốn bán nó trong tương lai. Chúng ta thường thấy người nông dân khai thác nông sản như vải, dưa hấu, nhãn … sau khi thu hoạch sẽ muốn biết rõ mức giá mà họ có thể bán ra thị trường. Việc biết trước được mức giá họ có thể bán sẽ giúp họ tính toán được mức lợi nhuận và kế hoạch cho mùa tiếp theo. Ngay cả trong trường hợp thị trường dư thừa nguồn cung, họ cũng cần xác định mức giá họ có thể bán để bù đắp cho chi phí lỗ họ phải hứng chịu.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Wed, 06 Jun 2018 18:08:08 +0000</pubDate>
+        <link>http://NTLresearch.github.io/mf/HedgingFutures12</link>
+        <guid isPermaLink="true">http://NTLresearch.github.io/mf/HedgingFutures12</guid>
+        
+        <category>MF</category>
+        
+        
+        <category>mf</category>
+        
+      </item>
+    
+      <item>
+        <title>Hedging bằng hợp đồng tương lai VN30 (phần 1)</title>
+        <description>&lt;p&gt;Mục đích ban đầu của công cụ phái sinh là giúp nhà đầu tư giảm thiểu được rủi ro khi thị trường vận động không đúng theo kì vọng. Năm 2017, thị trường Việt Nam chứng kiến sự ra đời của công cụ phái sinh đầu tiên - hợp đồng tương lai. Series bài viết này phân tích ngắn gọn đặc điểm chung của hợp đồng tương lai, cũng như cách để hedge 1 danh mục bao gồm 1 cổ phiếu hoặc 1 danh mục đầu tư cổ phiếu, sử dụng hợp đồng tương lai với tài sản cơ sở là chỉ số VN30.&lt;/p&gt;
+
+&lt;h1 id=&quot;khi-nim-hedging&quot;&gt;1. Khái niệm Hedging.&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;Đầu tiên chúng ta đề cập tới khái niệm hedging (tiếng việt dịch ra là nghiệp vụ đảm bảo). Lấy ví dụ đơn giản thế này, tôi là chủ quán phở bò, &lt;strong&gt;hôm qua tôi nghe phóng viên Sỹ Khỏe trên VTV1 chuyên mục “bạn nhà nông” nói, số lượng bò tiêu thụ tăng lên đột biến trong khi nguồn cung đang bị thiếu hụt ở nửa cuối năm 2018. Vậy chắc chắn giá thịt bò sẽ tăng lên tương ứng (giả sử có duy nhất 1 loại thịt bò trên thị trường và có hạn mức nhập khẩu bò từ nước ngoài).&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/MF/pic1.jpg&quot; alt=&quot;Beef&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Chiến lược kinh doanh của cửa hàng phở của tôi tập trung vào giá, đó là đưa ra 1 mức giá hợp lý, phù hợp với đa số người dân lao động trong khu vực. &lt;strong&gt;Cấu trúc chi phí có đến 50% tới từ thịt bò. Vậy giả sử 1 bát phở có giá 30,000 VND, vậy cứ mỗi kg thịt bò tăng lên từ 200,000 VND lên 280,000 VND tức là 40%, tôi phải tăng chi phí của 1 bát phở lên 1 lượng tương đương 6,000 VND. Giả sử tôi muốn giữ nguyên biên lợi nhuận của mình, vậy 6,000 VND tăng lên kia sẽ được cộng toàn bộ vào giá mà khách hàng phải trả cho 1 bát phở. Lúc này giá sẽ tương đương 36,000 VND.&lt;/strong&gt; Thêm nữa, vì thịt bò phải nhập tươi 8 tiếng trước khi chế biến và sẵn sàng cho giờ mở cửa vào lúc 6h sáng, tức là tôi không thể mua trước thịt bò vào ngăn đá như 1 dạng hàng tồn kho. 1 điều quan trọng hơn nữa là tôi sẽ không biết giá thịt bò liệu sẽ tăng tới mức bao nhiêu, tốc độ tăng sẽ nhanh hay chậm, &lt;strong&gt;liệu 1 tháng nữa thịt bò có tăng lên mức 350,000 VND hay chỉ tăng lên 240,000 VND 1 kg?&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/MF/pic2.png&quot; alt=&quot;Beef&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Điều quan trọng nhất ở đây là tôi không hề biết giá mà mình sẽ phải trả cho người buôn thịt bò vào mỗi ngày trước khi mở cửa hàng. Hơn nữa, viêc điều chỉnh giá bán phở cho khách hàng rất cứng nhắc, &lt;strong&gt;việc tăng giá hay giảm giá không hợp lý sẽ khiến khách hàng bỏ đi ngay lập tức&lt;/strong&gt; bởi chiến lược kinh doanh của cửa hàng là tập trung vào phân khúc khách hàng bình dân.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Vậy làm thế nào để hạn chế việc biến động của giá đầu vào? Đầu tiên tôi gọi cho nhà phân phối thịt bò, thỏa thuận với họ, tôi vẫn sẽ tiếp tục mua thịt bò, nhưng lúc này giá thịt bò sẽ không được thương lượng vào mỗi buổi sáng nữa mà sẽ được thỏa thuận trong chu kì 1 tháng. Vào mỗi ngày đầu tiên của tháng, người bán thịt bò sẽ đưa ra mức giá mà tôi phải trả trong toàn bộ tháng tiếp theo. &lt;strong&gt;Giả sử lúc này là đầu tháng 10, tôi sẽ thỏa thuận giá cho toàn bộ tháng 11, bắt đầu từ ngày mùng 1/11 tới ngày 30/11. Vậy điều gì tạo nên sự khác biệt? Lúc này, tôi biết chắc chắn mức giá mình phải trả mỗi buổi sáng là bao nhiêu, và có 1 kế hoạch cụ thể cho tháng đó.&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Vậy Hedging ở đây được hiểu là gì? Chúng ta có thể hiểu đó là thỏa thuận 1 mức giá cố định cho 1 loại hàng hóa nào đó, được giao dịch trong tương lai, ở thời điểm hiện tại.&lt;/strong&gt; Dù mức giá ngoài thị trường có biến động như thế nào thì tôi vẫn có thể mua 1 mặt hàng với giá được xác định trước. Vậy câu hỏi đặt lúc này là việc thỏa thuận với nhà phân phối thịt bò kia sẽ đem đến lợi ích và những bất lợi cụ thể gì?&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;hedging-li-ch-v-bt-li&quot;&gt;2. Hedging, lợi ích và bất lợi&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Kịch bản thứ 1, trong suốt tháng 11, giá thịt bò trong tháng tăng lên rất nhanh, dao động quanh ngưỡng 400,000 VND 1 kg. Giá mà tôi thỏa thuận với nhà buôn thịt bò chỉ là 280,000 VND 1kg. Vậy đương nhiên chỉ phí đầu vào của 1 bát phở của tôi đương nhiên sẽ thấp hơn đối thủ cạnh tranh.&lt;/strong&gt; Nếu điều chỉnh giá bán hợp lý thì biên lợi nhuận vẫn có thể được duy trì, khách hàng sẽ vẫn trung thành với cửa hàng. Vậy việc hedging lúc này đương nhiên đem lại lợi ích.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Kịch bản thứ 2, trong suốt tháng 11, giá thịt bò bỗng nhiên suy giảm mạnh mẽ, chỉ ở mức 150,000 VND 1 kg. Lúc này, thay vì mua của nhà buôn thịt bò kia, giá tôi có thể mua ngoài thị trường thấp hơn nhiều. Lúc này chi phí đầu vào cao hơn hẳn thị trường, tuy nhiên giá bán cho khách hàng không thể tăng tương ứng&lt;/strong&gt;. Kết quả là việc hedging làm cho biên lợi nhuận suy giảm rõ rệt và ảnh hưởng đến hoạt động kinh doanh.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;khi-no-th-s-dng-hedging-bng-hp-ng-tng-lai&quot;&gt;3. Khi nào thì sử dụng hedging bằng hợp đồng tương lai&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Vậy lúc nào thì nên thực hiện hedging? Tôi chỉ nên thực hiện hedging khi tôi chắc chắn biết rằng giá thịt bò sẽ tăng mạnh trong thời gian tới.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Thứ nhất, khi giá thịt bò tăng, mọi cửa hàng phở đều có chi phí đầu vào tăng, vậy giá bán cho người tiêu dùng chắc chắn tăng lên tương ứng. Tuy nhiên mức giá mà cửa hàng đưa ra sẽ khác nhau do cơ cấu chi phí khác nhau và chiến lược kinh doanh khác nhau. Vậy có thực sự cần thiết thực hiện hedging nếu ảnh hưởng của việc tăng giá thịt bò đến cấu trúc chi phí và giá bán là không đáng kể?&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Thứ hai, hedging không đồng nghĩ với việc chắc chắn có lợi nhuận. Hedging nên được hiểu như việc cố định giá để mua 1 mặt hàng trong tương lai. Nếu giá tăng nhiều hơn mức giá thỏa thuận trước, người bán thịt bò hưởng lợi. Nếu giá giảm nhiều hơn mức giá thỏa thuận trước, người bán thịt bò thua thiệt.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/MF/pic3.jpg&quot; alt=&quot;Beef&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;long-hedge-v-short-hedge-vi-hp-ng-tng-lai&quot;&gt;4. Long hedge và Short hedge với hợp đồng tương lai&lt;/h1&gt;
+
+&lt;h2 id=&quot;long-hedge&quot;&gt;Long hedge&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Ví dụ đề cập ở trên được phân loại là long hedge. Long hedge được sử dụng khi chủ thể cần phải mua phải mua một loại tài sản hay hàng hóa trong tương lai. Ở đây là chủ cửa hàng phở muốn mua thịt bò trong tương lai. Tương tự, 1 công ty sản xuất ô tô sẽ cần mua sắt thép, da, bông, cao su … làm nguyên liệu, họ sẽ cần long hedge cho các nguyên liệu cơ bản đầu vào. Hoặc các chuỗi bán lẻ cafe như Starbucks sẽ cần mua cafe, đường, các nguyên liệu và hương liệu phục vụ cho sản xuất đồ uống. Tương tự họ cũng cần biết chính xác giá mà họ sẽ phải trả cho các chi phí đầu vào khi lên kế hoạch kinh doanh và thiết lập hệ thống quản lý rủi ro khi cần thiết.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;short-hedge&quot;&gt;Short hedge&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Short hedge được sử dụng khi chủ thể đã sở hữu một tài sản và muốn bán nó trong tương lai. Chúng ta thường thấy người nông dân khai thác nông sản như vải, dưa hấu, nhãn … sau khi thu hoạch sẽ muốn biết rõ mức giá mà họ có thể bán ra thị trường. Việc biết trước được mức giá họ có thể bán sẽ giúp họ tính toán được mức lợi nhuận và kế hoạch cho mùa tiếp theo. Ngay cả trong trường hợp thị trường dư thừa nguồn cung, họ cũng cần xác định mức giá họ có thể bán để bù đắp cho chi phí lỗ họ phải hứng chịu.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Wed, 06 Jun 2018 18:08:08 +0000</pubDate>
+        <link>http://NTLresearch.github.io/mf/HedgingFutures11</link>
+        <guid isPermaLink="true">http://NTLresearch.github.io/mf/HedgingFutures11</guid>
+        
+        <category>MF</category>
+        
+        
+        <category>mf</category>
+        
+      </item>
+    
+      <item>
+        <title>Hedging bằng hợp đồng tương lai VN30 (phần 1)</title>
+        <description>&lt;p&gt;Mục đích ban đầu của công cụ phái sinh là giúp nhà đầu tư giảm thiểu được rủi ro khi thị trường vận động không đúng theo kì vọng. Năm 2017, thị trường Việt Nam chứng kiến sự ra đời của công cụ phái sinh đầu tiên - hợp đồng tương lai. Series bài viết này phân tích ngắn gọn đặc điểm chung của hợp đồng tương lai, cũng như cách để hedge 1 danh mục bao gồm 1 cổ phiếu hoặc 1 danh mục đầu tư cổ phiếu, sử dụng hợp đồng tương lai với tài sản cơ sở là chỉ số VN30.&lt;/p&gt;
+
+&lt;h1 id=&quot;khi-nim-hedging&quot;&gt;1. Khái niệm Hedging.&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;Đầu tiên chúng ta đề cập tới khái niệm hedging (tiếng việt dịch ra là nghiệp vụ đảm bảo). Lấy ví dụ đơn giản thế này, tôi là chủ quán phở bò, &lt;strong&gt;hôm qua tôi nghe phóng viên Sỹ Khỏe trên VTV1 chuyên mục “bạn nhà nông” nói, số lượng bò tiêu thụ tăng lên đột biến trong khi nguồn cung đang bị thiếu hụt ở nửa cuối năm 2018. Vậy chắc chắn giá thịt bò sẽ tăng lên tương ứng (giả sử có duy nhất 1 loại thịt bò trên thị trường và có hạn mức nhập khẩu bò từ nước ngoài).&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/MF/pic1.jpg&quot; alt=&quot;Beef&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Chiến lược kinh doanh của cửa hàng phở của tôi tập trung vào giá, đó là đưa ra 1 mức giá hợp lý, phù hợp với đa số người dân lao động trong khu vực. &lt;strong&gt;Cấu trúc chi phí có đến 50% tới từ thịt bò. Vậy giả sử 1 bát phở có giá 30,000 VND, vậy cứ mỗi kg thịt bò tăng lên từ 200,000 VND lên 280,000 VND tức là 40%, tôi phải tăng chi phí của 1 bát phở lên 1 lượng tương đương 6,000 VND. Giả sử tôi muốn giữ nguyên biên lợi nhuận của mình, vậy 6,000 VND tăng lên kia sẽ được cộng toàn bộ vào giá mà khách hàng phải trả cho 1 bát phở. Lúc này giá sẽ tương đương 36,000 VND.&lt;/strong&gt; Thêm nữa, vì thịt bò phải nhập tươi 8 tiếng trước khi chế biến và sẵn sàng cho giờ mở cửa vào lúc 6h sáng, tức là tôi không thể mua trước thịt bò vào ngăn đá như 1 dạng hàng tồn kho. 1 điều quan trọng hơn nữa là tôi sẽ không biết giá thịt bò liệu sẽ tăng tới mức bao nhiêu, tốc độ tăng sẽ nhanh hay chậm, &lt;strong&gt;liệu 1 tháng nữa thịt bò có tăng lên mức 350,000 VND hay chỉ tăng lên 240,000 VND 1 kg?&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/MF/pic2.png&quot; alt=&quot;Beef&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Điều quan trọng nhất ở đây là tôi không hề biết giá mà mình sẽ phải trả cho người buôn thịt bò vào mỗi ngày trước khi mở cửa hàng. Hơn nữa, viêc điều chỉnh giá bán phở cho khách hàng rất cứng nhắc, &lt;strong&gt;việc tăng giá hay giảm giá không hợp lý sẽ khiến khách hàng bỏ đi ngay lập tức&lt;/strong&gt; bởi chiến lược kinh doanh của cửa hàng là tập trung vào phân khúc khách hàng bình dân.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Vậy làm thế nào để hạn chế việc biến động của giá đầu vào? Đầu tiên tôi gọi cho nhà phân phối thịt bò, thỏa thuận với họ, tôi vẫn sẽ tiếp tục mua thịt bò, nhưng lúc này giá thịt bò sẽ không được thương lượng vào mỗi buổi sáng nữa mà sẽ được thỏa thuận trong chu kì 1 tháng. Vào mỗi ngày đầu tiên của tháng, người bán thịt bò sẽ đưa ra mức giá mà tôi phải trả trong toàn bộ tháng tiếp theo. &lt;strong&gt;Giả sử lúc này là đầu tháng 10, tôi sẽ thỏa thuận giá cho toàn bộ tháng 11, bắt đầu từ ngày mùng 1/11 tới ngày 30/11. Vậy điều gì tạo nên sự khác biệt? Lúc này, tôi biết chắc chắn mức giá mình phải trả mỗi buổi sáng là bao nhiêu, và có 1 kế hoạch cụ thể cho tháng đó.&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Vậy Hedging ở đây được hiểu là gì? Chúng ta có thể hiểu đó là thỏa thuận 1 mức giá cố định cho 1 loại hàng hóa nào đó, được giao dịch trong tương lai, ở thời điểm hiện tại.&lt;/strong&gt; Dù mức giá ngoài thị trường có biến động như thế nào thì tôi vẫn có thể mua 1 mặt hàng với giá được xác định trước. Vậy câu hỏi đặt lúc này là việc thỏa thuận với nhà phân phối thịt bò kia sẽ đem đến lợi ích và những bất lợi cụ thể gì?&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;hedging-li-ch-v-bt-li&quot;&gt;2. Hedging, lợi ích và bất lợi&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Kịch bản thứ 1, trong suốt tháng 11, giá thịt bò trong tháng tăng lên rất nhanh, dao động quanh ngưỡng 400,000 VND 1 kg. Giá mà tôi thỏa thuận với nhà buôn thịt bò chỉ là 280,000 VND 1kg. Vậy đương nhiên chỉ phí đầu vào của 1 bát phở của tôi đương nhiên sẽ thấp hơn đối thủ cạnh tranh.&lt;/strong&gt; Nếu điều chỉnh giá bán hợp lý thì biên lợi nhuận vẫn có thể được duy trì, khách hàng sẽ vẫn trung thành với cửa hàng. Vậy việc hedging lúc này đương nhiên đem lại lợi ích.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Kịch bản thứ 2, trong suốt tháng 11, giá thịt bò bỗng nhiên suy giảm mạnh mẽ, chỉ ở mức 150,000 VND 1 kg. Lúc này, thay vì mua của nhà buôn thịt bò kia, giá tôi có thể mua ngoài thị trường thấp hơn nhiều. Lúc này chi phí đầu vào cao hơn hẳn thị trường, tuy nhiên giá bán cho khách hàng không thể tăng tương ứng&lt;/strong&gt;. Kết quả là việc hedging làm cho biên lợi nhuận suy giảm rõ rệt và ảnh hưởng đến hoạt động kinh doanh.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;khi-no-th-s-dng-hedging-bng-hp-ng-tng-lai&quot;&gt;3. Khi nào thì sử dụng hedging bằng hợp đồng tương lai&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Vậy lúc nào thì nên thực hiện hedging? Tôi chỉ nên thực hiện hedging khi tôi chắc chắn biết rằng giá thịt bò sẽ tăng mạnh trong thời gian tới.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Thứ nhất, khi giá thịt bò tăng, mọi cửa hàng phở đều có chi phí đầu vào tăng, vậy giá bán cho người tiêu dùng chắc chắn tăng lên tương ứng. Tuy nhiên mức giá mà cửa hàng đưa ra sẽ khác nhau do cơ cấu chi phí khác nhau và chiến lược kinh doanh khác nhau. Vậy có thực sự cần thiết thực hiện hedging nếu ảnh hưởng của việc tăng giá thịt bò đến cấu trúc chi phí và giá bán là không đáng kể?&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Thứ hai, hedging không đồng nghĩ với việc chắc chắn có lợi nhuận. Hedging nên được hiểu như việc cố định giá để mua 1 mặt hàng trong tương lai. Nếu giá tăng nhiều hơn mức giá thỏa thuận trước, người bán thịt bò hưởng lợi. Nếu giá giảm nhiều hơn mức giá thỏa thuận trước, người bán thịt bò thua thiệt.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/MF/pic3.jpg&quot; alt=&quot;Beef&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;long-hedge-v-short-hedge-vi-hp-ng-tng-lai&quot;&gt;4. Long hedge và Short hedge với hợp đồng tương lai&lt;/h1&gt;
+
+&lt;h2 id=&quot;long-hedge&quot;&gt;Long hedge&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Ví dụ đề cập ở trên được phân loại là long hedge. Long hedge được sử dụng khi chủ thể cần phải mua phải mua một loại tài sản hay hàng hóa trong tương lai. Ở đây là chủ cửa hàng phở muốn mua thịt bò trong tương lai. Tương tự, 1 công ty sản xuất ô tô sẽ cần mua sắt thép, da, bông, cao su … làm nguyên liệu, họ sẽ cần long hedge cho các nguyên liệu cơ bản đầu vào. Hoặc các chuỗi bán lẻ cafe như Starbucks sẽ cần mua cafe, đường, các nguyên liệu và hương liệu phục vụ cho sản xuất đồ uống. Tương tự họ cũng cần biết chính xác giá mà họ sẽ phải trả cho các chi phí đầu vào khi lên kế hoạch kinh doanh và thiết lập hệ thống quản lý rủi ro khi cần thiết.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;short-hedge&quot;&gt;Short hedge&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Short hedge được sử dụng khi chủ thể đã sở hữu một tài sản và muốn bán nó trong tương lai. Chúng ta thường thấy người nông dân khai thác nông sản như vải, dưa hấu, nhãn … sau khi thu hoạch sẽ muốn biết rõ mức giá mà họ có thể bán ra thị trường. Việc biết trước được mức giá họ có thể bán sẽ giúp họ tính toán được mức lợi nhuận và kế hoạch cho mùa tiếp theo. Ngay cả trong trường hợp thị trường dư thừa nguồn cung, họ cũng cần xác định mức giá họ có thể bán để bù đắp cho chi phí lỗ họ phải hứng chịu.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Wed, 06 Jun 2018 18:08:08 +0000</pubDate>
+        <link>http://NTLresearch.github.io/mf/HedgingFutures10</link>
+        <guid isPermaLink="true">http://NTLresearch.github.io/mf/HedgingFutures10</guid>
+        
+        <category>MF</category>
+        
+        
+        <category>mf</category>
         
       </item>
     

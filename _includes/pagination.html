@@ -1,0 +1,55 @@
+<!-- <div class="page-content">
+{% for post in paginator.posts %}
+<h1>
+<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+</h1>
+<p class="author">
+<span class="date">{{ post.date }}</span>
+</p>
+<div class="content">
+{{ post.content || }}
+</div>
+{% endfor %}
+</div> -->
+
+<div class="page-content">
+    <h1 class="display-5"> Recent Posts </h1>
+    <br>
+    <div class="row">
+        {% for post in paginator.posts reversed %}
+        <div class="col-md-6">
+            <div class="card mb-4 box-shadow">
+                <!-- <img class="card-img-top" src="{{site.baseurl}}{{post.featured_image}}" alt="Thumbnail"> -->
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <a href="{{post.url | prepend:site.baseurl }}">
+                            {{post.title || truncate: 100}}
+                        </a>
+                    </h5>
+                    <h6>{{page.date | date: "%b %d, %Y"}}</h6>
+                    <p class="card-text">
+                        {{ post.content  | strip-html | strip-newlines | truncate: 300}}
+                    </p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <a class="btn btn-light btn-md" href="{{post.url | prepend: site.baseurl}}">Đọc tiếp</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<div class="page-content">
+    {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="previous btn btn-light">Previous</a>
+    {% else %}
+    <span class="previous">Previous</span>
+    {% endif %}
+    <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+    {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="next btn btn-light btn-xs">Next</a>
+    {% else %}
+    <span class="next ">Next</span>
+    {% endif %}
+</div>

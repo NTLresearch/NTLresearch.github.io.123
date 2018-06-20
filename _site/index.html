@@ -7,15 +7,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Your awesome title</title>
-    <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+    <title>NTL RESEARCH</title>
+    <meta name="description" content="Luôn có những rủi ro liên quan đến vấn đề đầu tư bao gồm cả việc mất toàn bộ vốn. Hiệu quả đầu tư trong quá khứ không đảm bảo cho kết quả trong tương lai. Nhà đầu tư nên xem xét cẩn thận mục tiêu đầu tư, ràng buộc, rủi ro và những chi phí liên quan.
 ">
 
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
     <link rel="canonical" href="http://NTLresearch.github.io/">
-    <link rel="alternate" type="application/rss+xml" title="Your awesome title" href="http://NTLresearch.github.io/feed.xml" />
+    <link rel="alternate" type="application/rss+xml" title="NTL RESEARCH" href="http://NTLresearch.github.io/feed.xml" />
 </head>
 
     </head>
@@ -172,253 +172,435 @@
 
         <div class="page-content">
             <div class="container">
-                <div class="page-content">
-    <h1 class="display-4">Recent Posts</h1>
-        <div class="row">
-            
-                <div class="col-md-6">
-    <div class="card mb-4 box-shadow">
-        <img class="card-img-top" src="/images/MF/safe.jpeg" alt="Thumbnail">
-        <div class="card-body">
-            <h5 class="card-title">
-                <a href="/mf/HedgingFutures1">
-                    Hedging bằng hợp đồng tương lai VN30 (phần 1)
-                </a>
+                <!-- <div class="page-content">
 
-            </h5>
-            <h6>Jun 6, 2018</h6>
-            <p class="card-text">
-                <p>Mục đích ban đầu của công cụ phái sinh là giúp nhà đầu tư giảm thiểu được rủi ro khi thị trường vận động không đúng theo kì vọng. Năm 2017, thị trường Việt Nam chứng kiến sự ra đời của công cụ phái sinh đầu tiên - hợp đồng tương lai. Series bài viết này phân tích ngắn gọn đặc điểm chung của hợ...
-            </p>
-            <div class="d-flex justify-content-between align-items-center">
-                <a class="btn btn-light btn-md" href="/mf/HedgingFutures1">Đọc tiếp</a>
-            </div>
-        </div>
-    </div>
+<h1>
+<a href="/jekyll/update/welcome-to-jekyll10">Welcome to Jekyll!</a>
+</h1>
+<p class="author">
+<span class="date">2018-06-19 08:55:59 +0000</span>
+</p>
+<div class="content">
+<p>asdasd
+asdasd
+asdasd
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
+<span class="k">end</span>
+<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
+<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></div>
+
+<p>You’ll find this post in your <code>_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code>jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+
+<p>To add new posts, simply add a file in the <code>_posts</code> directory that follows the convention <code>YYYY-MM-DD-name-of-post.ext</code> and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="p">(</span><span class="n">absolute_import</span><span class="p">,</span> <span class="n">division</span><span class="p">,</span> <span class="n">print_function</span><span class="p">,</span>
+                        <span class="n">unicode_literals</span><span class="p">)</span>
+
+<span class="kn">import</span> <span class="nn">datetime</span>  <span class="c"># For datetime objects</span>
+<span class="kn">import</span> <span class="nn">os.path</span>  <span class="c"># To manage paths</span>
+<span class="kn">import</span> <span class="nn">sys</span>  <span class="c"># To find out the script name (in argv[0])</span>
+
+
+<span class="c"># Import the backtrader platform</span>
+<span class="kn">import</span> <span class="nn">backtrader</span> <span class="k">as</span> <span class="n">bt</span>
+
+
+<span class="c"># Create a Stratey</span>
+<span class="k">class</span> <span class="nc">TestStrategy</span><span class="p">(</span><span class="n">bt</span><span class="o">.</span><span class="n">Strategy</span><span class="p">):</span>
+    <span class="n">params</span> <span class="o">=</span> <span class="p">(</span>
+        <span class="p">(</span><span class="s">'maperiod'</span><span class="p">,</span> <span class="mi">15</span><span class="p">),</span>
+        <span class="p">(</span><span class="s">'printlog'</span><span class="p">,</span> <span class="bp">False</span><span class="p">),</span>
+    <span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">log</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">txt</span><span class="p">,</span> <span class="n">dt</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">doprint</span><span class="o">=</span><span class="bp">False</span><span class="p">):</span>
+        <span class="s">''' Logging function fot this strategy'''</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">printlog</span> <span class="ow">or</span> <span class="n">doprint</span><span class="p">:</span>
+            <span class="n">dt</span> <span class="o">=</span> <span class="n">dt</span> <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="n">datas</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">date</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+            <span class="k">print</span><span class="p">(</span><span class="s">'</span><span class="si">%</span><span class="s">s, </span><span class="si">%</span><span class="s">s'</span> <span class="o">%</span> <span class="p">(</span><span class="n">dt</span><span class="o">.</span><span class="n">isoformat</span><span class="p">(),</span> <span class="n">txt</span><span class="p">))</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="c"># Keep a reference to the "close" line in the data[0] dataseries</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">dataclose</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">datas</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">close</span>
+
+        <span class="c"># To keep track of pending orders and buy price/commission</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">order</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">buyprice</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">buycomm</span> <span class="o">=</span> <span class="bp">None</span>
+
+        <span class="c"># Add a MovingAverageSimple indicator</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">sma</span> <span class="o">=</span> <span class="n">bt</span><span class="o">.</span><span class="n">indicators</span><span class="o">.</span><span class="n">SimpleMovingAverage</span><span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">datas</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">period</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">maperiod</span><span class="p">)</span>
+        <span class="bp">self</span>
+
+    <span class="k">def</span> <span class="nf">notify_order</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">order</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">order</span><span class="o">.</span><span class="n">status</span> <span class="ow">in</span> <span class="p">[</span><span class="n">order</span><span class="o">.</span><span class="n">Submitted</span><span class="p">,</span> <span class="n">order</span><span class="o">.</span><span class="n">Accepted</span><span class="p">]:</span>
+            <span class="c"># Buy/Sell order submitted/accepted to/by broker - Nothing to do</span>
+            <span class="k">return</span>
+
+        <span class="c"># Check if an order has been completed</span>
+        <span class="c"># Attention: broker could reject order if not enough cash</span>
+        <span class="k">if</span> <span class="n">order</span><span class="o">.</span><span class="n">status</span> <span class="ow">in</span> <span class="p">[</span><span class="n">order</span><span class="o">.</span><span class="n">Completed</span><span class="p">]:</span>
+            <span class="k">if</span> <span class="n">order</span><span class="o">.</span><span class="n">isbuy</span><span class="p">():</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="p">(</span>
+                    <span class="s">'BUY EXECUTED, Price: </span><span class="si">%.2</span><span class="s">f, Cost: </span><span class="si">%.2</span><span class="s">f, Comm </span><span class="si">%.2</span><span class="s">f'</span> <span class="o">%</span>
+                    <span class="p">(</span><span class="n">order</span><span class="o">.</span><span class="n">executed</span><span class="o">.</span><span class="n">price</span><span class="p">,</span>
+                     <span class="n">order</span><span class="o">.</span><span class="n">executed</span><span class="o">.</span><span class="n">value</span><span class="p">,</span>
+                     <span class="n">order</span><span class="o">.</span><span class="n">executed</span><span class="o">.</span><span class="n">comm</span><span class="p">))</span>
+
+                <span class="bp">self</span><span class="o">.</span><span class="n">buyprice</span> <span class="o">=</span> <span class="n">order</span><span class="o">.</span><span class="n">executed</span><span class="o">.</span><span class="n">price</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">buycomm</span> <span class="o">=</span> <span class="n">order</span><span class="o">.</span><span class="n">executed</span><span class="o">.</span><span class="n">comm</span>
+            <span class="k">else</span><span class="p">:</span>  <span class="c"># Sell</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="s">'SELL EXECUTED, Price: </span><span class="si">%.2</span><span class="s">f, Cost: </span><span class="si">%.2</span><span class="s">f, Comm </span><span class="si">%.2</span><span class="s">f'</span> <span class="o">%</span>
+                         <span class="p">(</span><span class="n">order</span><span class="o">.</span><span class="n">executed</span><span class="o">.</span><span class="n">price</span><span class="p">,</span>
+                          <span class="n">order</span><span class="o">.</span><span class="n">executed</span><span class="o">.</span><span class="n">value</span><span class="p">,</span>
+                          <span class="n">order</span><span class="o">.</span><span class="n">executed</span><span class="o">.</span><span class="n">comm</span><span class="p">))</span>
+
+            <span class="bp">self</span><span class="o">.</span><span class="n">bar_executed</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+
+        <span class="k">elif</span> <span class="n">order</span><span class="o">.</span><span class="n">status</span> <span class="ow">in</span> <span class="p">[</span><span class="n">order</span><span class="o">.</span><span class="n">Canceled</span><span class="p">,</span> <span class="n">order</span><span class="o">.</span><span class="n">Margin</span><span class="p">,</span> <span class="n">order</span><span class="o">.</span><span class="n">Rejected</span><span class="p">]:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="s">'Order Canceled/Margin/Rejected'</span><span class="p">)</span>
+
+        <span class="c"># Write down: no pending order</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">order</span> <span class="o">=</span> <span class="bp">None</span>
+
+    <span class="k">def</span> <span class="nf">notify_trade</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">trade</span><span class="p">):</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">trade</span><span class="o">.</span><span class="n">isclosed</span><span class="p">:</span>
+            <span class="k">return</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="s">'OPERATION PROFIT, GROSS </span><span class="si">%.2</span><span class="s">f, NET </span><span class="si">%.2</span><span class="s">f'</span> <span class="o">%</span>
+                 <span class="p">(</span><span class="n">trade</span><span class="o">.</span><span class="n">pnl</span><span class="p">,</span> <span class="n">trade</span><span class="o">.</span><span class="n">pnlcomm</span><span class="p">))</span>
+
+    <span class="k">def</span> <span class="nf">next</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="c"># Simply log the closing price of the series from the reference</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="s">'Close, </span><span class="si">%.2</span><span class="s">f'</span> <span class="o">%</span> <span class="bp">self</span><span class="o">.</span><span class="n">dataclose</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+
+        <span class="c"># Check if an order is pending ... if yes, we cannot send a 2nd one</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">order</span><span class="p">:</span>
+            <span class="k">return</span>
+
+        <span class="c"># Check if we are in the market</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">position</span><span class="p">:</span>
+
+            <span class="c"># Not yet ... we MIGHT BUY if ...</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">dataclose</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&gt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">sma</span><span class="p">[</span><span class="mi">0</span><span class="p">]:</span>
+
+                <span class="c"># BUY, BUY, BUY!!! (with all possible default parameters)</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="s">'BUY CREATE, </span><span class="si">%.2</span><span class="s">f'</span> <span class="o">%</span> <span class="bp">self</span><span class="o">.</span><span class="n">dataclose</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+
+                <span class="c"># Keep track of the created order to avoid a 2nd order</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">order</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">buy</span><span class="p">()</span>
+
+        <span class="k">else</span><span class="p">:</span>
+
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">dataclose</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&lt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">sma</span><span class="p">[</span><span class="mi">0</span><span class="p">]:</span>
+                <span class="c"># SELL, SELL, SELL!!! (with all possible default parameters)</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="s">'SELL CREATE, </span><span class="si">%.2</span><span class="s">f'</span> <span class="o">%</span> <span class="bp">self</span><span class="o">.</span><span class="n">dataclose</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+
+                <span class="c"># Keep track of the created order to avoid a 2nd order</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">order</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">sell</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">stop</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="s">'(MA Period </span><span class="si">%2</span><span class="s">d) Ending Value </span><span class="si">%.2</span><span class="s">f'</span> <span class="o">%</span>
+                 <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">maperiod</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">broker</span><span class="o">.</span><span class="n">getvalue</span><span class="p">()),</span> <span class="n">doprint</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+
+
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">'__main__'</span><span class="p">:</span>
+    <span class="c"># Create a cerebro entity</span>
+    <span class="n">cerebro</span> <span class="o">=</span> <span class="n">bt</span><span class="o">.</span><span class="n">Cerebro</span><span class="p">()</span>
+
+    <span class="c"># Add a strategy</span>
+    <span class="n">strats</span> <span class="o">=</span> <span class="n">cerebro</span><span class="o">.</span><span class="n">optstrategy</span><span class="p">(</span>
+        <span class="n">TestStrategy</span><span class="p">,</span>
+        <span class="n">maperiod</span><span class="o">=</span><span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">31</span><span class="p">))</span>
+
+    <span class="c"># Datas are in a subfolder of the samples. Need to find where the script is</span>
+    <span class="c"># because it could have been called from anywhere</span>
+    <span class="n">modpath</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
+    <span class="n">datapath</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">modpath</span><span class="p">,</span> <span class="s">'../../datas/orcl-1995-2014.txt'</span><span class="p">)</span>
+
+    <span class="c"># Create a Data Feed</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">bt</span><span class="o">.</span><span class="n">feeds</span><span class="o">.</span><span class="n">YahooFinanceCSVData</span><span class="p">(</span>
+        <span class="n">dataname</span><span class="o">=</span><span class="n">datapath</span><span class="p">,</span>
+        <span class="c"># Do not pass values before this date</span>
+        <span class="n">fromdate</span><span class="o">=</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="p">(</span><span class="mi">2000</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span>
+        <span class="c"># Do not pass values before this date</span>
+        <span class="n">todate</span><span class="o">=</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="p">(</span><span class="mi">2000</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">31</span><span class="p">),</span>
+        <span class="c"># Do not pass values after this date</span>
+        <span class="n">reverse</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+
+    <span class="c"># Add the Data Feed to Cerebro</span>
+    <span class="n">cerebro</span><span class="o">.</span><span class="n">adddata</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+
+    <span class="c"># Set our desired cash start</span>
+    <span class="n">cerebro</span><span class="o">.</span><span class="n">broker</span><span class="o">.</span><span class="n">setcash</span><span class="p">(</span><span class="mf">1000.0</span><span class="p">)</span>
+
+    <span class="c"># Add a FixedSize sizer according to the stake</span>
+    <span class="n">cerebro</span><span class="o">.</span><span class="n">addsizer</span><span class="p">(</span><span class="n">bt</span><span class="o">.</span><span class="n">sizers</span><span class="o">.</span><span class="n">FixedSize</span><span class="p">,</span> <span class="n">stake</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+
+    <span class="c"># Set the commission</span>
+    <span class="n">cerebro</span><span class="o">.</span><span class="n">broker</span><span class="o">.</span><span class="n">setcommission</span><span class="p">(</span><span class="n">commission</span><span class="o">=</span><span class="mf">0.0</span><span class="p">)</span>
+
+    <span class="c"># Run over everything</span>
+    <span class="n">cerebro</span><span class="o">.</span><span class="n">run</span><span class="p">()</span></code></pre></div>
+
+<p>This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at <a href="http://jekyllrb.com/">jekyllrb.com</a></p>
+
+<p>You can find the source code for the Jekyll new theme at: <a href="https://github.com/jglovier/jekyll-new">github.com/jglovier/jekyll-new</a></p>
+
+<p>You can find the source code for Jekyll at <a href="https://github.com/jekyll/jekyll">github.com/jekyll/jekyll</a></p>
+
 </div>
 
-            
-                <div class="col-md-6">
-    <div class="card mb-4 box-shadow">
-        <img class="card-img-top" src="/images/background3.jpg" alt="Thumbnail">
-        <div class="card-body">
-            <h5 class="card-title">
-                <a href="/blog/markdown">
-                    Tối ưu hóa lợi nhuận 
-                </a>
+<h1>
+<a href="/mf/thanh">Phân tích cổ phiếu giá trị</a>
+</h1>
+<p class="author">
+<span class="date">2018-06-07 12:08:58 +0000</span>
+</p>
+<div class="content">
+<p>Chiến lược Value Investing</p>
 
-            </h5>
-            <h6>Jun 6, 2018</h6>
-            <p class="card-text">
-                <p>You’ll find this post in your <code>_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code>jekyll serve</code>, which launches a web server and auto-regenerates your site ...
-            </p>
-            <div class="d-flex justify-content-between align-items-center">
-                <a class="btn btn-light btn-md" href="/blog/markdown">Đọc tiếp</a>
-            </div>
-        </div>
-    </div>
+<p>This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <a href="http://rmarkdown.rstudio.com">http://rmarkdown.rstudio.com</a>.</p>
+
+<p>When you click the <strong>Knit</strong> button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:</p>
+
+<p><code>{r cars}
+summary(cars)
+</code>
+You can also embed plots, for example:</p>
+
+<p><code>{r pressure, echo=FALSE}
+plot(pressure)
+</code></p>
+
+<p>Note that the <code>echo = FALSE</code> parameter was added to the code chunk to prevent printing of the R code that generated the plot.</p>
+
 </div>
 
-            
-                <div class="col-md-6">
-    <div class="card mb-4 box-shadow">
-        <img class="card-img-top" src="/images/MF/safe.jpeg" alt="Thumbnail">
-        <div class="card-body">
-            <h5 class="card-title">
-                <a href="/mf/thanh">
-                    Phân tích cổ phiếu giá trị
-                </a>
+<h1>
+<a href="/mf/HedgingFutures13">Hedging bằng hợp đồng tương lai VN30 (phần 1)</a>
+</h1>
+<p class="author">
+<span class="date">2018-06-06 18:08:08 +0000</span>
+</p>
+<div class="content">
+<p>Mục đích ban đầu của công cụ phái sinh là giúp nhà đầu tư giảm thiểu được rủi ro khi thị trường vận động không đúng theo kì vọng. Năm 2017, thị trường Việt Nam chứng kiến sự ra đời của công cụ phái sinh đầu tiên - hợp đồng tương lai. Series bài viết này phân tích ngắn gọn đặc điểm chung của hợp đồng tương lai, cũng như cách để hedge 1 danh mục bao gồm 1 cổ phiếu hoặc 1 danh mục đầu tư cổ phiếu, sử dụng hợp đồng tương lai với tài sản cơ sở là chỉ số VN30.</p>
 
-            </h5>
-            <h6>Jun 7, 2018</h6>
-            <p class="card-text">
-                <p>Chiến lược Value Investing</p>
+<h1 id="khi-nim-hedging">1. Khái niệm Hedging.</h1>
+<ul>
+  <li>Đầu tiên chúng ta đề cập tới khái niệm hedging (tiếng việt dịch ra là nghiệp vụ đảm bảo). Lấy ví dụ đơn giản thế này, tôi là chủ quán phở bò, <strong>hôm qua tôi nghe phóng viên Sỹ Khỏe trên VTV1 chuyên mục “bạn nhà nông” nói, số lượng bò tiêu thụ tăng lên đột biến trong khi nguồn cung đang bị thiếu hụt ở nửa cuối năm 2018. Vậy chắc chắn giá thịt bò sẽ tăng lên tương ứng (giả sử có duy nhất 1 loại thịt bò trên thị trường và có hạn mức nhập khẩu bò từ nước ngoài).</strong></li>
+</ul>
+
+<p><img src="/images/MF/pic1.jpg" alt="Beef" class="center-image" /></p>
+
+<ul>
+  <li>Chiến lược kinh doanh của cửa hàng phở của tôi tập trung vào giá, đó là đưa ra 1 mức giá hợp lý, phù hợp với đa số người dân lao động trong khu vực. <strong>Cấu trúc chi phí có đến 50% tới từ thịt bò. Vậy giả sử 1 bát phở có giá 30,000 VND, vậy cứ mỗi kg thịt bò tăng lên từ 200,000 VND lên 280,000 VND tức là 40%, tôi phải tăng chi phí của 1 bát phở lên 1 lượng tương đương 6,000 VND. Giả sử tôi muốn giữ nguyên biên lợi nhuận của mình, vậy 6,000 VND tăng lên kia sẽ được cộng toàn bộ vào giá mà khách hàng phải trả cho 1 bát phở. Lúc này giá sẽ tương đương 36,000 VND.</strong> Thêm nữa, vì thịt bò phải nhập tươi 8 tiếng trước khi chế biến và sẵn sàng cho giờ mở cửa vào lúc 6h sáng, tức là tôi không thể mua trước thịt bò vào ngăn đá như 1 dạng hàng tồn kho. 1 điều quan trọng hơn nữa là tôi sẽ không biết giá thịt bò liệu sẽ tăng tới mức bao nhiêu, tốc độ tăng sẽ nhanh hay chậm, <strong>liệu 1 tháng nữa thịt bò có tăng lên mức 350,000 VND hay chỉ tăng lên 240,000 VND 1 kg?</strong></li>
+</ul>
+
+<p><img src="/images/MF/pic2.png" alt="Beef" class="center-image" /></p>
+
+<ul>
+  <li>
+    <p>Điều quan trọng nhất ở đây là tôi không hề biết giá mà mình sẽ phải trả cho người buôn thịt bò vào mỗi ngày trước khi mở cửa hàng. Hơn nữa, viêc điều chỉnh giá bán phở cho khách hàng rất cứng nhắc, <strong>việc tăng giá hay giảm giá không hợp lý sẽ khiến khách hàng bỏ đi ngay lập tức</strong> bởi chiến lược kinh doanh của cửa hàng là tập trung vào phân khúc khách hàng bình dân.</p>
+  </li>
+  <li>
+    <p>Vậy làm thế nào để hạn chế việc biến động của giá đầu vào? Đầu tiên tôi gọi cho nhà phân phối thịt bò, thỏa thuận với họ, tôi vẫn sẽ tiếp tục mua thịt bò, nhưng lúc này giá thịt bò sẽ không được thương lượng vào mỗi buổi sáng nữa mà sẽ được thỏa thuận trong chu kì 1 tháng. Vào mỗi ngày đầu tiên của tháng, người bán thịt bò sẽ đưa ra mức giá mà tôi phải trả trong toàn bộ tháng tiếp theo. <strong>Giả sử lúc này là đầu tháng 10, tôi sẽ thỏa thuận giá cho toàn bộ tháng 11, bắt đầu từ ngày mùng 1/11 tới ngày 30/11. Vậy điều gì tạo nên sự khác biệt? Lúc này, tôi biết chắc chắn mức giá mình phải trả mỗi buổi sáng là bao nhiêu, và có 1 kế hoạch cụ thể cho tháng đó.</strong></p>
+  </li>
+  <li>
+    <p><strong>Vậy Hedging ở đây được hiểu là gì? Chúng ta có thể hiểu đó là thỏa thuận 1 mức giá cố định cho 1 loại hàng hóa nào đó, được giao dịch trong tương lai, ở thời điểm hiện tại.</strong> Dù mức giá ngoài thị trường có biến động như thế nào thì tôi vẫn có thể mua 1 mặt hàng với giá được xác định trước. Vậy câu hỏi đặt lúc này là việc thỏa thuận với nhà phân phối thịt bò kia sẽ đem đến lợi ích và những bất lợi cụ thể gì?</p>
+  </li>
+</ul>
+
+<h1 id="hedging-li-ch-v-bt-li">2. Hedging, lợi ích và bất lợi</h1>
+<ul>
+  <li>
+    <p><strong>Kịch bản thứ 1, trong suốt tháng 11, giá thịt bò trong tháng tăng lên rất nhanh, dao động quanh ngưỡng 400,000 VND 1 kg. Giá mà tôi thỏa thuận với nhà buôn thịt bò chỉ là 280,000 VND 1kg. Vậy đương nhiên chỉ phí đầu vào của 1 bát phở của tôi đương nhiên sẽ thấp hơn đối thủ cạnh tranh.</strong> Nếu điều chỉnh giá bán hợp lý thì biên lợi nhuận vẫn có thể được duy trì, khách hàng sẽ vẫn trung thành với cửa hàng. Vậy việc hedging lúc này đương nhiên đem lại lợi ích.</p>
+  </li>
+  <li>
+    <p><strong>Kịch bản thứ 2, trong suốt tháng 11, giá thịt bò bỗng nhiên suy giảm mạnh mẽ, chỉ ở mức 150,000 VND 1 kg. Lúc này, thay vì mua của nhà buôn thịt bò kia, giá tôi có thể mua ngoài thị trường thấp hơn nhiều. Lúc này chi phí đầu vào cao hơn hẳn thị trường, tuy nhiên giá bán cho khách hàng không thể tăng tương ứng</strong>. Kết quả là việc hedging làm cho biên lợi nhuận suy giảm rõ rệt và ảnh hưởng đến hoạt động kinh doanh.</p>
+  </li>
+</ul>
+
+<h1 id="khi-no-th-s-dng-hedging-bng-hp-ng-tng-lai">3. Khi nào thì sử dụng hedging bằng hợp đồng tương lai</h1>
+<ul>
+  <li>
+    <p>Vậy lúc nào thì nên thực hiện hedging? Tôi chỉ nên thực hiện hedging khi tôi chắc chắn biết rằng giá thịt bò sẽ tăng mạnh trong thời gian tới.</p>
+  </li>
+  <li>
+    <p>Thứ nhất, khi giá thịt bò tăng, mọi cửa hàng phở đều có chi phí đầu vào tăng, vậy giá bán cho người tiêu dùng chắc chắn tăng lên tương ứng. Tuy nhiên mức giá mà cửa hàng đưa ra sẽ khác nhau do cơ cấu chi phí khác nhau và chiến lược kinh doanh khác nhau. Vậy có thực sự cần thiết thực hiện hedging nếu ảnh hưởng của việc tăng giá thịt bò đến cấu trúc chi phí và giá bán là không đáng kể?</p>
+  </li>
+  <li>
+    <p>Thứ hai, hedging không đồng nghĩ với việc chắc chắn có lợi nhuận. Hedging nên được hiểu như việc cố định giá để mua 1 mặt hàng trong tương lai. Nếu giá tăng nhiều hơn mức giá thỏa thuận trước, người bán thịt bò hưởng lợi. Nếu giá giảm nhiều hơn mức giá thỏa thuận trước, người bán thịt bò thua thiệt.</p>
+  </li>
+</ul>
+
+<p><img src="/images/MF/pic3.jpg" alt="Beef" class="center-image" /></p>
+
+<h1 id="long-hedge-v-short-hedge-vi-hp-ng-tng-lai">4. Long hedge và Short hedge với hợp đồng tương lai</h1>
+
+<h2 id="long-hedge">Long hedge</h2>
+
+<ul>
+  <li>Ví dụ đề cập ở trên được phân loại là long hedge. Long hedge được sử dụng khi chủ thể cần phải mua phải mua một loại tài sản hay hàng hóa trong tương lai. Ở đây là chủ cửa hàng phở muốn mua thịt bò trong tương lai. Tương tự, 1 công ty sản xuất ô tô sẽ cần mua sắt thép, da, bông, cao su … làm nguyên liệu, họ sẽ cần long hedge cho các nguyên liệu cơ bản đầu vào. Hoặc các chuỗi bán lẻ cafe như Starbucks sẽ cần mua cafe, đường, các nguyên liệu và hương liệu phục vụ cho sản xuất đồ uống. Tương tự họ cũng cần biết chính xác giá mà họ sẽ phải trả cho các chi phí đầu vào khi lên kế hoạch kinh doanh và thiết lập hệ thống quản lý rủi ro khi cần thiết.</li>
+</ul>
+
+<h2 id="short-hedge">Short hedge</h2>
+<ul>
+  <li>Short hedge được sử dụng khi chủ thể đã sở hữu một tài sản và muốn bán nó trong tương lai. Chúng ta thường thấy người nông dân khai thác nông sản như vải, dưa hấu, nhãn … sau khi thu hoạch sẽ muốn biết rõ mức giá mà họ có thể bán ra thị trường. Việc biết trước được mức giá họ có thể bán sẽ giúp họ tính toán được mức lợi nhuận và kế hoạch cho mùa tiếp theo. Ngay cả trong trường hợp thị trường dư thừa nguồn cung, họ cũng cần xác định mức giá họ có thể bán để bù đắp cho chi phí lỗ họ phải hứng chịu.</li>
+</ul>
+
+</div>
+
+</div> -->
+
+<div class="page-content">
+    <h1 class="display-5"> Recent Posts </h1>
+    <br>
+    <div class="row">
+        
+        <div class="col-md-6">
+            <div class="card mb-4 box-shadow">
+                <!-- <img class="card-img-top" src="/images/MF/safe.jpeg" alt="Thumbnail"> -->
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <a href="/mf/HedgingFutures13">
+                            Hedging bằng hợp đồng tương lai VN30 (phần 1)
+                        </a>
+                    </h5>
+                    <h6></h6>
+                    <p class="card-text">
+                        <p>Mục đích ban đầu của công cụ phái sinh là giúp nhà đầu tư giảm thiểu được rủi ro khi thị trường vận động không đúng theo kì vọng. Năm 2017, thị trường Việt Nam chứng kiến sự ra đời của công cụ phái sinh đầu tiên - hợp đồng tương lai. Series bài viết này phân tích ngắn gọn đặc điểm chung của hợ...
+                    </p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <a class="btn btn-light btn-md" href="/mf/HedgingFutures13">Đọc tiếp</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-6">
+            <div class="card mb-4 box-shadow">
+                <!-- <img class="card-img-top" src="/images/MF/safe.jpeg" alt="Thumbnail"> -->
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <a href="/mf/thanh">
+                            Phân tích cổ phiếu giá trị
+                        </a>
+                    </h5>
+                    <h6></h6>
+                    <p class="card-text">
+                        <p>Chiến lược Value Investing</p>
 
 <p>This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <a href="http://rmarkdown.rstudio.com">http://rmarkdown.rstudio.com</a>.</p>
 
 <p>When you click the...
-            </p>
-            <div class="d-flex justify-content-between align-items-center">
-                <a class="btn btn-light btn-md" href="/mf/thanh">Đọc tiếp</a>
+                    </p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <a class="btn btn-light btn-md" href="/mf/thanh">Đọc tiếp</a>
+                    </div>
+                </div>
             </div>
         </div>
+        
+        <div class="col-md-6">
+            <div class="card mb-4 box-shadow">
+                <!-- <img class="card-img-top" src="" alt="Thumbnail"> -->
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <a href="/jekyll/update/welcome-to-jekyll10">
+                            Welcome to Jekyll!
+                        </a>
+                    </h5>
+                    <h6></h6>
+                    <p class="card-text">
+                        <p>asdasd
+asdasd
+asdasd
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit i...
+                    </p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <a class="btn btn-light btn-md" href="/jekyll/update/welcome-to-jekyll10">Đọc tiếp</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
     </div>
 </div>
 
-            
-                <div class="col-md-6">
-    <div class="card mb-4 box-shadow">
-        <img class="card-img-top" src="/images/MF/safe.jpeg" alt="Thumbnail">
-        <div class="card-body">
-            <h5 class="card-title">
-                <a href="/blog/welcome-to-jekyll">
-                    Quản lý danh mục đầu tư hiệu quả
-                </a>
-
-            </h5>
-            <h6>Jun 7, 2018</h6>
-            <p class="card-text">
-                <p>You’ll find this post in your <code>_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code>jekyll serve</code>, which launches a web server and auto-regenerates your site ...
-            </p>
-            <div class="d-flex justify-content-between align-items-center">
-                <a class="btn btn-light btn-md" href="/blog/welcome-to-jekyll">Đọc tiếp</a>
-            </div>
-        </div>
-    </div>
+<div class="page-content">
+    
+    <span class="previous">Previous</span>
+    
+    <span class="page_number ">Page: 1 of 3</span>
+    
+    <a href="/blog/page2/" class="next btn btn-light btn-xs">Next</a>
+    
 </div>
 
-            
-                <div class="col-md-6">
-    <div class="card mb-4 box-shadow">
-        <img class="card-img-top" src="" alt="Thumbnail">
-        <div class="card-body">
-            <h5 class="card-title">
-                <a href="/jekyll/update/welcome-to-jekyll">
-                    Welcome to Jekyll!
-                </a>
-
-            </h5>
-            <h6>Jun 19, 2018</h6>
-            <p class="card-text">
-                <p>You’ll find this post in your <code>_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code>jekyll serve</code>, which launches a web server and auto-regenerates your site ...
-            </p>
-            <div class="d-flex justify-content-between align-items-center">
-                <a class="btn btn-light btn-md" href="/jekyll/update/welcome-to-jekyll">Đọc tiếp</a>
-            </div>
-        </div>
-    </div>
-</div>
-
-            
-                <div class="col-md-6">
-    <div class="card mb-4 box-shadow">
-        <img class="card-img-top" src="" alt="Thumbnail">
-        <div class="card-body">
-            <h5 class="card-title">
-                <a href="/jekyll/update/welcome-to-jekyll0">
-                    Welcome to Jekyll!
-                </a>
-
-            </h5>
-            <h6>Jun 19, 2018</h6>
-            <p class="card-text">
-                <p>You’ll find this post in your <code>_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code>jekyll serve</code>, which launches a web server and auto-regenerates your site ...
-            </p>
-            <div class="d-flex justify-content-between align-items-center">
-                <a class="btn btn-light btn-md" href="/jekyll/update/welcome-to-jekyll0">Đọc tiếp</a>
-            </div>
-        </div>
-    </div>
-</div>
-
-            
-                <div class="col-md-6">
-    <div class="card mb-4 box-shadow">
-        <img class="card-img-top" src="" alt="Thumbnail">
-        <div class="card-body">
-            <h5 class="card-title">
-                <a href="/jekyll/update/welcome-to-jekyll1">
-                    Welcome to Jekyll!
-                </a>
-
-            </h5>
-            <h6>Jun 19, 2018</h6>
-            <p class="card-text">
-                <p>You’ll find this post in your <code>_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code>jekyll serve</code>, which launches a web server and auto-regenerates your site ...
-            </p>
-            <div class="d-flex justify-content-between align-items-center">
-                <a class="btn btn-light btn-md" href="/jekyll/update/welcome-to-jekyll1">Đọc tiếp</a>
-            </div>
-        </div>
-    </div>
-</div>
-
-            
-                <div class="col-md-6">
-    <div class="card mb-4 box-shadow">
-        <img class="card-img-top" src="" alt="Thumbnail">
-        <div class="card-body">
-            <h5 class="card-title">
-                <a href="/jekyll/update/welcome-to-jekyll10">
-                    Welcome to Jekyll!
-                </a>
-
-            </h5>
-            <h6>Jun 19, 2018</h6>
-            <p class="card-text">
-                <p>You’ll find this post in your <code>_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code>jekyll serve</code>, which launches a web server and auto-regenerates your site ...
-            </p>
-            <div class="d-flex justify-content-between align-items-center">
-                <a class="btn btn-light btn-md" href="/jekyll/update/welcome-to-jekyll10">Đọc tiếp</a>
-            </div>
-        </div>
-    </div>
-</div>
-
-            
-        </div>
-
-    <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
-
-</div>
 
             </div>
         </div>
 
         <footer class="site-footer">
 
-  <div class="wrapper">
+    <div class="wrapper">
 
-    <h2 class="footer-heading">Your awesome title</h2>
+        <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
 
-    <div class="footer-col-wrapper">
-      <div class="footer-col  footer-col-1">
-        <ul class="contact-list">
-          <li>Your awesome title</li>
-          <li><a href="mailto:your-email@domain.com">your-email@domain.com</a></li>
-        </ul>
-      </div>
+        <h2 class="footer-heading">NTL RESEARCH</h2>
 
-      <div class="footer-col  footer-col-2">
-        <ul class="social-media-list">
-          
-          <li>
-            <a href="https://github.com/jekyll">
-              <span class="icon  icon--github">
-                <svg viewBox="0 0 16 16">
-                  <path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/>
-                </svg>
-              </span>
+        <div class="footer-col-wrapper">
+            <div class="footer-col  footer-col-1">
+                <ul class="contact-list">
+                    <li>NTL RESEARCH</li>
+                    <li><a href="mailto:NTLresearchgroup@gmail.com">NTLresearchgroup@gmail.com</a></li>
+                </ul>
+            </div>
 
-              <span class="username">jekyll</span>
-            </a>
-          </li>
-          
+            <div class="footer-col  footer-col-2">
+                <ul class="social-media-list">
+                    
+                    <li>
+                        <a href="https://github.com/NTLresearchgroup">
+                            <span class="icon  icon--github">
+                                <svg viewBox="0 0 16 16">
+                                    <path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/>
+                                </svg>
+                            </span>
 
-          
-          <li>
-            <a href="https://twitter.com/jekyllrb">
-              <span class="icon  icon--twitter">
-                <svg viewBox="0 0 16 16">
-                  <path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809
-                  c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/>
-                </svg>
-              </span>
+                            <span class="username">NTLresearchgroup</span>
+                        </a>
+                    </li>
+                    
 
-              <span class="username">jekyllrb</span>
-            </a>
-          </li>
-          
-        </ul>
-      </div>
+                    
+                    <li>
+                        <a href="https://twitter.com/D4xu0">
+                            <span class="icon  icon--twitter">
+                                <svg viewBox="0 0 16 16">
+                                    <path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809
+                                    c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/>
+                                </svg>
+                            </span>
 
-      <div class="footer-col  footer-col-3">
-        <p class="text">Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+                            <span class="username">D4xu0</span>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+
+            <div class="footer-col  footer-col-3">
+                <p class="text">Luôn có những rủi ro liên quan đến vấn đề đầu tư bao gồm cả việc mất toàn bộ vốn. Hiệu quả đầu tư trong quá khứ không đảm bảo cho kết quả trong tương lai. Nhà đầu tư nên xem xét cẩn thận mục tiêu đầu tư, ràng buộc, rủi ro và những chi phí liên quan.
 </p>
-      </div>
-    </div>
+            </div>
+        </div>
 
-  </div>
+    </div>
 
 </footer>
 

@@ -2,14 +2,5 @@
 layout: front
 ---
 
-<div class="page-content">
-    <h1 class="display-4">Recent Posts</h1>
-        <div class="row">
-            {% for post in site.posts reversed | limit:10 %}
-                {% include postfront.html %}
-            {% endfor %}
-        </div>
 
-    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+{% include pagination.html %}

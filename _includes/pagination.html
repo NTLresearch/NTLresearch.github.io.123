@@ -13,16 +13,16 @@
 </div> -->
 
 <div class="page-content">
-    <h1 class="display-5"> Recent Posts </h1>
+    <h1 class="display-5 title-color"> Recent Posts </h1>
     <br>
     <div class="row">
         {% for post in paginator.posts reversed %}
         <div class="col-md-4">
-            <div class="card mb-4 box-shadow border-info" style="max-width:25rem;">
+            <div class="card mb-4 box-shadow border-secondary" style="max-width:25rem;">
                 <!-- <img class="card-img-top" src="{{site.baseurl}}{{post.featured_image}}" alt="Thumbnail"> -->
-                <div class="card-body">
+                <div class="card-body" >
                     <h5 class="card-title">
-                        <a href="{{post.url | prepend:site.baseurl }}">
+                        <a class="title-color" href="{{post.url | prepend:site.baseurl }}">
                             {{post.title || truncate: 100}}
                         </a>
                     </h5>

@@ -1,7 +1,7 @@
 <header>
     <div class="container-fluid bg-light font-header">
-        <nav class="navbar  navbar-expand-lg navbar-light bg-light">
-            <!-- <a class="navbar-brand" href="{{site.baseurl}}{{ site.url }}"> -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="{{site.baseurl}}{{ site.url }}">
                 <h3 class="display-5">NTL RESEARCH</h3>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -9,20 +9,29 @@
             </button>
             <div class="collaspe navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav bg-light" style="color:black">
-                <!-- <div class="navbar-nav"> -->
+                    <!-- <div class="navbar-nav"> -->
                     {% for link in site.links %}
-                    <li class="nav-item">
-                        <a class="nav-item nav-link text-dark" href="{{ site.baseurl }}{{ link.url }}">
-                            <h5 class="line">{{ link.title }}</h5>
-                            <!-- {{ link.title }} -->
+                    {% if forloop.index == 1 %}
+                    <li class="nav-item active">
+                        <a class="nav-link text-dark" href="{{ site.baseurl }}{{ link.url }}">
+                            {{ link.title }}
+                            <span class="sr-only">(current)</span>
                         </a>
                     </li>
+                    {% else %}
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="{{ site.baseurl }}{{ link.url }}">
+                            {{ link.title }}
+                        </a>
+                    </li>
+                    {% endif %}
                     {% endfor %}
                 </ul>
             </div>
 
         </nav>
     </div>
+
 
     {% include jumbo.html %}
     <!-- {% include carousel.html %} -->

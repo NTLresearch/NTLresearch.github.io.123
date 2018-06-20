@@ -7,9 +7,9 @@
 
 // Our variables
 $base-font-family: "Avenir Next", Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
+$base-font-size:   17px;
 $small-font-size:  $base-font-size * 0.875;
-$base-line-height: 2.0;
+$base-line-height: 1.7;
 
 $mega-font-size: 100px;
 
@@ -18,7 +18,7 @@ $h2-font-size: 40px;
 $h3-font-size: 30px;
 $h4-font-size: 25px;
 
-$spacing-unit: 30px;
+$spacing-unit: 25px;
 
 $text-color:       black;
 $background-color: #fdfdfd;
@@ -58,6 +58,7 @@ $on-laptop:        800px;
         "base",
         "layout",
         "article",
+        "pagination",
         "syntax-highlighting"
 ;
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');

@@ -13,7 +13,7 @@ dl, dd, ol, ul, figure {
  */
 body {
   font-family: "Avenir Next", Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 2.0;
   font-weight: 300;
   color: black;
@@ -26,7 +26,7 @@ body {
 h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure {
-  margin-bottom: 15px; }
+  margin-bottom: 12.5px; }
 
 /**
  * Images
@@ -42,13 +42,13 @@ figure > img {
   display: block; }
 
 figcaption {
-  font-size: 14px; }
+  font-size: 14.875px; }
 
 /**
  * Lists
  */
 ul, ol {
-  margin-left: 30px; }
+  margin-left: 25px; }
 
 li > ul,
 li > ol {
@@ -76,7 +76,7 @@ a {
 blockquote {
   color: #828282;
   border-left: 4px solid #e8e8e8;
-  padding-left: 15px;
+  padding-left: 12.5px;
   font-size: 18px;
   letter-spacing: -1px;
   font-style: italic; }
@@ -88,10 +88,9 @@ blockquote {
  */
 pre,
 code {
-  font-size: 15px;
+  font-size: 14px;
   border: 1px solid #e8e8e8;
-  border-radius: 3px;
-  background-color: #eef; }
+  border-radius: 2px; }
 
 code {
   padding: 1px 5px; }
@@ -108,18 +107,18 @@ pre {
  * Wrapper
  */
 .wrapper {
-  max-width: -webkit-calc(1400px - (30px * 2));
-  max-width: calc(1400px - (30px * 2));
+  max-width: -webkit-calc(1400px - (25px * 2));
+  max-width: calc(1400px - (25px * 2));
   margin-right: auto;
   margin-left: auto;
-  padding-right: 30px;
-  padding-left: 30px; }
+  padding-right: 25px;
+  padding-left: 25px; }
   @media screen and (max-width: 800px) {
     .wrapper {
-      max-width: -webkit-calc(1400px - (30px));
-      max-width: calc(1400px - (30px));
-      padding-right: 15px;
-      padding-left: 15px; } }
+      max-width: -webkit-calc(1400px - (25px));
+      max-width: calc(1400px - (25px));
+      padding-right: 12.5px;
+      padding-left: 12.5px; } }
 
 /**
  * Clearfix
@@ -165,7 +164,7 @@ pre {
     display: none; }
   .site-nav .page-link {
     color: black;
-    line-height: 2; }
+    line-height: 1.7; }
     .site-nav .page-link:not(:first-child) {
       margin-left: 20px; }
   @media screen and (max-width: 600px) {
@@ -205,11 +204,11 @@ pre {
  */
 .site-footer {
   border-top: 1px solid #e8e8e8;
-  padding: 30px 0; }
+  padding: 25px 0; }
 
 .footer-heading {
   font-size: 18px;
-  margin-bottom: 15px; }
+  margin-bottom: 12.5px; }
 
 .contact-list,
 .social-media-list {
@@ -219,44 +218,44 @@ pre {
 .footer-col-wrapper {
   font-size: 15px;
   color: #828282;
-  margin-left: -15px; }
+  margin-left: -12.5px; }
 
 .footer-col {
   float: left;
-  margin-bottom: 15px;
-  padding-left: 15px; }
+  margin-bottom: 12.5px;
+  padding-left: 12.5px; }
 
 .footer-col-1 {
-  width: -webkit-calc(35% - (30px / 2));
-  width: calc(35% - (30px / 2)); }
+  width: -webkit-calc(35% - (25px / 2));
+  width: calc(35% - (25px / 2)); }
 
 .footer-col-2 {
-  width: -webkit-calc(20% - (30px / 2));
-  width: calc(20% - (30px / 2)); }
+  width: -webkit-calc(20% - (25px / 2));
+  width: calc(20% - (25px / 2)); }
 
 .footer-col-3 {
-  width: -webkit-calc(45% - (30px / 2));
-  width: calc(45% - (30px / 2)); }
+  width: -webkit-calc(45% - (25px / 2));
+  width: calc(45% - (25px / 2)); }
 
 @media screen and (max-width: 800px) {
   .footer-col-1,
   .footer-col-2 {
-    width: -webkit-calc(50% - (30px / 2));
-    width: calc(50% - (30px / 2)); }
+    width: -webkit-calc(50% - (25px / 2));
+    width: calc(50% - (25px / 2)); }
 
   .footer-col-3 {
-    width: -webkit-calc(100% - (30px / 2));
-    width: calc(100% - (30px / 2)); } }
+    width: -webkit-calc(100% - (25px / 2));
+    width: calc(100% - (25px / 2)); } }
 @media screen and (max-width: 600px) {
   .footer-col {
     float: none;
-    width: -webkit-calc(100% - (30px / 2));
-    width: calc(100% - (30px / 2)); } }
+    width: -webkit-calc(100% - (25px / 2));
+    width: calc(100% - (25px / 2)); } }
 /**
  * Page content
  */
 .page-content {
-  padding: 30px 0; }
+  padding: 25px 0; }
 
 .page-heading {
   font-size: 20px; }
@@ -265,10 +264,10 @@ pre {
   margin-left: 0;
   list-style: none; }
   .post-list > li {
-    margin-bottom: 30px; }
+    margin-bottom: 25px; }
 
 .post-meta {
-  font-size: 14px;
+  font-size: 14.875px;
   color: #828282; }
 
 .post-link {
@@ -279,7 +278,7 @@ pre {
  * Posts
  */
 .post-header {
-  margin-bottom: 30px; }
+  margin-bottom: 25px; }
 
 .post-title {
   font-size: 42px;
@@ -290,8 +289,8 @@ pre {
       font-size: 36px; } }
 
 .post-content {
-  margin-bottom: 30px;
-  line-height: 2;
+  margin-bottom: 25px;
+  line-height: 1.7;
   font-family: "Avenir Next", Helvetica, Arial, sans-serif; }
   .post-content h2 {
     font-size: 32px; }
@@ -325,107 +324,275 @@ pre {
 .bgk-color {
   background-color: #E5E5E5; }
 
-.highlight code, .highlight pre {
-  color: #fdce93;
-  background-color: #3f3f3f; }
+.bottom-three {
+  margin-bottom: 15cm;
+  margin-top: 15cm; }
+
+.font-body1 {
+  font-size: 17px; }
+
+.catego-color {
+  background-color: #00A8E8;
+  color: white;
+  padding: 5px;
+  margin: 0;
+  border: 0;
+  width: 200px;
+  border: 2px solid #70C1B3; }
+
+.test {
+  background-color: #FCA311;
+  width: 150px; }
+
+.highlight pre {
+  background-color: #272822; }
 
 .highlight .hll {
-  background-color: #222; }
+  background-color: #272822; }
 
+.highlight .c {
+  color: #75715e; }
+
+/* Comment */
 .highlight .err {
-  color: #e37170;
-  background-color: #3d3535; }
+  color: #960050;
+  background-color: #1e0010; }
 
+/* Error */
 .highlight .k {
-  color: #f0dfaf; }
+  color: #66d9ef; }
 
+/* Keyword */
+.highlight .l {
+  color: #ae81ff; }
+
+/* Literal */
+.highlight .n {
+  color: #f8f8f2; }
+
+/* Name */
+.highlight .o {
+  color: #f92672; }
+
+/* Operator */
 .highlight .p {
-  color: #41706f; }
+  color: #f8f8f2; }
 
+/* Punctuation */
+.highlight .cm {
+  color: #75715e; }
+
+/* Comment.Multiline */
+.highlight .cp {
+  color: #75715e; }
+
+/* Comment.Preproc */
+.highlight .c1 {
+  color: #75715e; }
+
+/* Comment.Single */
 .highlight .cs {
-  color: #cd0000;
-  font-weight: 700; }
+  color: #75715e; }
 
-.highlight .gd {
-  color: #cd0000; }
-
+/* Comment.Special */
 .highlight .ge {
-  color: #ccc;
   font-style: italic; }
 
-.highlight .gr {
-  color: red; }
-
-.highlight .go {
-  color: gray; }
-
+/* Generic.Emph */
 .highlight .gs {
-  color: #ccc;
-  font-weight: 700; }
+  font-weight: bold; }
 
-.highlight .gu {
-  color: purple;
-  font-weight: 700; }
-
-.highlight .gt {
-  color: #0040D0; }
-
+/* Generic.Strong */
 .highlight .kc {
-  color: #dca3a3; }
+  color: #66d9ef; }
 
+/* Keyword.Constant */
 .highlight .kd {
-  color: #ffff86; }
+  color: #66d9ef; }
 
+/* Keyword.Declaration */
 .highlight .kn {
-  color: #dfaf8f;
-  font-weight: 700; }
+  color: #f92672; }
 
+/* Keyword.Namespace */
 .highlight .kp {
-  color: #cdcf99; }
+  color: #66d9ef; }
 
+/* Keyword.Pseudo */
 .highlight .kr {
-  color: #cdcd00; }
+  color: #66d9ef; }
 
+/* Keyword.Reserved */
+.highlight .kt {
+  color: #66d9ef; }
+
+/* Keyword.Type */
+.highlight .ld {
+  color: #e6db74; }
+
+/* Literal.Date */
+.highlight .m {
+  color: #ae81ff; }
+
+/* Literal.Number */
+.highlight .s {
+  color: #e6db74; }
+
+/* Literal.String */
+.highlight .na {
+  color: #a6e22e; }
+
+/* Name.Attribute */
+.highlight .nb {
+  color: #f8f8f2; }
+
+/* Name.Builtin */
+.highlight .nc {
+  color: #a6e22e; }
+
+/* Name.Class */
+.highlight .no {
+  color: #66d9ef; }
+
+/* Name.Constant */
+.highlight .nd {
+  color: #a6e22e; }
+
+/* Name.Decorator */
 .highlight .ni {
-  color: #c28182; }
+  color: #f8f8f2; }
 
+/* Name.Entity */
 .highlight .ne {
-  color: #c3bf9f;
-  font-weight: 700; }
+  color: #a6e22e; }
 
+/* Name.Exception */
+.highlight .nf {
+  color: #a6e22e; }
+
+/* Name.Function */
+.highlight .nl {
+  color: #f8f8f2; }
+
+/* Name.Label */
 .highlight .nn {
-  color: #8fbede; }
+  color: #f8f8f2; }
 
+/* Name.Namespace */
+.highlight .nx {
+  color: #a6e22e; }
+
+/* Name.Other */
+.highlight .py {
+  color: #f8f8f2; }
+
+/* Name.Property */
+.highlight .nt {
+  color: #f92672; }
+
+/* Name.Tag */
+.highlight .nv {
+  color: #f8f8f2; }
+
+/* Name.Variable */
+.highlight .ow {
+  color: #f92672; }
+
+/* Operator.Word */
+.highlight .w {
+  color: #f8f8f2; }
+
+/* Text.Whitespace */
+.highlight .mf {
+  color: #ae81ff; }
+
+/* Literal.Number.Float */
+.highlight .mh {
+  color: #ae81ff; }
+
+/* Literal.Number.Hex */
+.highlight .mi {
+  color: #ae81ff; }
+
+/* Literal.Number.Integer */
+.highlight .mo {
+  color: #ae81ff; }
+
+/* Literal.Number.Oct */
+.highlight .sb {
+  color: #e6db74; }
+
+/* Literal.String.Backtick */
+.highlight .sc {
+  color: #e6db74; }
+
+/* Literal.String.Char */
+.highlight .sd {
+  color: #e6db74; }
+
+/* Literal.String.Doc */
+.highlight .s2 {
+  color: #e6db74; }
+
+/* Literal.String.Double */
+.highlight .se {
+  color: #ae81ff; }
+
+/* Literal.String.Escape */
+.highlight .sh {
+  color: #e6db74; }
+
+/* Literal.String.Heredoc */
+.highlight .si {
+  color: #e6db74; }
+
+/* Literal.String.Interpol */
+.highlight .sx {
+  color: #e6db74; }
+
+/* Literal.String.Other */
+.highlight .sr {
+  color: #e6db74; }
+
+/* Literal.String.Regex */
+.highlight .s1 {
+  color: #e6db74; }
+
+/* Literal.String.Single */
+.highlight .ss {
+  color: #e6db74; }
+
+/* Literal.String.Symbol */
+.highlight .bp {
+  color: #f8f8f2; }
+
+/* Name.Builtin.Pseudo */
+.highlight .vc {
+  color: #f8f8f2; }
+
+/* Name.Variable.Class */
+.highlight .vg {
+  color: #f8f8f2; }
+
+/* Name.Variable.Global */
 .highlight .vi {
-  color: #ffffc7; }
+  color: #f8f8f2; }
 
-.highlight .c, .preview-zenburn .highlight .g, .preview-zenburn .highlight .cm, .preview-zenburn .highlight .cp, .preview-zenburn .highlight .c1 {
-  color: #7f9f7f; }
+/* Name.Variable.Instance */
+.highlight .il {
+  color: #ae81ff; }
 
-.highlight .l, .preview-zenburn .highlight .x, .preview-zenburn .highlight .no, .preview-zenburn .highlight .nd, .preview-zenburn .highlight .nl, .preview-zenburn .highlight .nx, .preview-zenburn .highlight .py, .preview-zenburn .highlight .w {
-  color: #ccc; }
+/* Literal.Number.Integer.Long */
+/* Generic Heading & Diff Header */
+.highlight .gu {
+  color: #75715e; }
 
-.highlight .n, .preview-zenburn .highlight .nv, .preview-zenburn .highlight .vg {
-  color: #dcdccc; }
+/* Generic.Subheading & Diff Unified/Comment? */
+.highlight .gd {
+  color: #f92672; }
 
-.highlight .o, .preview-zenburn .highlight .ow {
-  color: #f0efd0; }
+/* Generic.Deleted & Diff Deleted */
+.highlight .gi {
+  color: #a6e22e; }
 
-.highlight .gh, .preview-zenburn .highlight .gp {
-  color: #dcdccc;
-  font-weight: 700; }
-
-.highlight .gi, .preview-zenburn .highlight .kt {
-  color: #00cd00; }
-
-.highlight .ld, .preview-zenburn .highlight .s, .preview-zenburn .highlight .sb, .preview-zenburn .highlight .sc, .preview-zenburn .highlight .sd, .preview-zenburn .highlight .s2, .preview-zenburn .highlight .se, .preview-zenburn .highlight .sh, .preview-zenburn .highlight .si, .preview-zenburn .highlight .sx, .preview-zenburn .highlight .sr, .preview-zenburn .highlight .s1, .preview-zenburn .highlight .ss {
-  color: #cc9393; }
-
-.highlight .m, .preview-zenburn .highlight .mf, .preview-zenburn .highlight .mh, .preview-zenburn .highlight .mi, .preview-zenburn .highlight .mo, .preview-zenburn .highlight .il {
-  color: #8cd0d3; }
-
-.highlight .na, .preview-zenburn .highlight .nt {
-  color: #9ac39f; }
-
-.highlight .nb, .preview-zenburn .highlight .nc, .preview-zenburn .highlight .nf, .preview-zenburn .highlight .bp, .preview-zenburn .highlight .vc {
-  color: #efef8f; }
+/* Generic.Inserted & Diff Inserted */

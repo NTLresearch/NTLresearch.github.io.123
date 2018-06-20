@@ -2,7 +2,7 @@
 layout: article
 title:  "Welcome to Jekyll!"
 date:   2018-06-19 08:55:59
-categories: jekyll update
+categories: Toan Tai Chinh
 ---
 asdasd
 asdasd

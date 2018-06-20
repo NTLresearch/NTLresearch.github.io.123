@@ -6,6 +6,7 @@ categories: MF
 featured: true
 featured_image: "/images/MF/safe.jpeg"
 tag: MF
+author: thanh Nguyen
 ---
 
 Mục đích ban đầu của công cụ phái sinh là giúp nhà đầu tư giảm thiểu được rủi ro khi thị trường vận động không đúng theo kì vọng. Năm 2017, thị trường Việt Nam chứng kiến sự ra đời của công cụ phái sinh đầu tiên - hợp đồng tương lai. Series bài viết này phân tích ngắn gọn đặc điểm chung của hợp đồng tương lai, cũng như cách để hedge 1 danh mục bao gồm 1 cổ phiếu hoặc 1 danh mục đầu tư cổ phiếu, sử dụng hợp đồng tương lai với tài sản cơ sở là chỉ số VN30.

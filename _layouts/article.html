@@ -12,12 +12,13 @@
             <!-- {% if page.featured_image %}
             <img src="" height=600 align="middle" style="margin: 0 auto; display:block" alt="">
             {% endif %} -->
-            <img src="{{site.baseurl}}{{page.featured_image}}" height=500>
+
         </div>
         <br>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-3 text-center">
+                <div class="col-md-3 text-center bottom-three">
+
                     <div>
                         <img class="rounded-circle" src="/images/icon/bio-photo.jpg" width=100px style="padding: 5px; border: 1px solid #f2f3f3;" alt="">
                     </div>
@@ -25,23 +26,31 @@
                     <div class="container text-secondary">
                         <h4 class="display-5">
                             {% if page.author %}
-                            {{ page.author }}
+                            <h3 class="display-5">{{ page.author }}</h3>
+                            {% else %}
+                            <h3 class="display-5">Anonymous</h3>
                             {% endif %}
                         </h4>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-8">
                     <div class="container">
                         <header class="post-header">
                             <h1 class="post-title">{{ page.title }}</h1>
                             <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
                         </header>
-                        <article class="post-content">
+                        <div>
+                            <img class="center-image" src="{{site.baseurl}}{{page.featured_image}}" height=400px>
+                        </div>
+                        <br>
+                        <article class="post-content font-body1">
                             {{ content }}
                         </article>
                     </div>
                 </div>
             </div>
         </div>
+
+    {% include frontfooter.html %}
     </body>
-    </html>
+</html>

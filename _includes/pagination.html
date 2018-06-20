@@ -13,10 +13,10 @@
 </div> -->
 
 <div>
-    <h1 class="display-5 title-color"> Recent Posts </h1>
+    <h1 class="display-5 title-color"> Bài viết mới </h1>
     <br>
     <div class="row">
-        {% for post in paginator.posts reversed %}
+        {% for post in paginator.posts  %}
         <div class="col-md-4">
             <div class="card mb-4 box-shadow border-secondary" style="max-width:35rem;">
                 <!-- <img class="card-img-top" src="{{site.baseurl}}{{post.featured_image}}" alt="Thumbnail"> -->
@@ -26,12 +26,15 @@
                             {{post.title || truncate: 100}}
                         </a>
                     </h5>
-                    <h6>{{page.date | date: "%b %d, %Y"}}</h6>
+                    <h6 >{{ post.date | date: "%b %d, %Y" }}</h6>
                     <p class="card-text">
                         {{ post.content  | strip-html | strip-newlines | truncate: 300}}
                     </p>
                     <div class="d-flex justify-content-between align-items-center">
-                        <a class="btn btn-light btn-md border-secondary" href="{{post.url | prepend: site.baseurl}}">Đọc tiếp</a>
+                        <div class="btn-group">
+                            <a class="btn btn-light btn-md border-secondary" href="{{post.url | prepend: site.baseurl}}">Đọc tiếp</a>
+                            <a class="btn btn-light btn-md border-secondary" href="#">{{ post.categories | join: ' ' | capialize }}</a>
+                        </div>
                     </div>
                 </div>
             </div>

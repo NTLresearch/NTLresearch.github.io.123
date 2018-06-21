@@ -8,9 +8,7 @@ featured_image: "/images/MF/safe.jpeg"
 tag: MF
 author: thanh Nguyen
 ---
-
 Mục đích ban đầu của công cụ phái sinh là giúp nhà đầu tư giảm thiểu được rủi ro khi thị trường vận động không đúng theo kì vọng. Năm 2017, thị trường Việt Nam chứng kiến sự ra đời của công cụ phái sinh đầu tiên - hợp đồng tương lai. Series bài viết này phân tích ngắn gọn đặc điểm chung của hợp đồng tương lai, cũng như cách để hedge 1 danh mục bao gồm 1 cổ phiếu hoặc 1 danh mục đầu tư cổ phiếu, sử dụng hợp đồng tương lai với tài sản cơ sở là chỉ số VN30.
-
 
 # 1. Khái niệm Hedging.
 - Đầu tiên chúng ta đề cập tới khái niệm hedging (tiếng việt dịch ra là nghiệp vụ đảm bảo). Lấy ví dụ đơn giản thế này, tôi là chủ quán phở bò, **hôm qua tôi nghe phóng viên Sỹ Khỏe trên VTV1 chuyên mục "bạn nhà nông" nói, số lượng bò tiêu thụ tăng lên đột biến trong khi nguồn cung đang bị thiếu hụt ở nửa cuối năm 2018. Vậy chắc chắn giá thịt bò sẽ tăng lên tương ứng (giả sử có duy nhất 1 loại thịt bò trên thị trường và có hạn mức nhập khẩu bò từ nước ngoài).**

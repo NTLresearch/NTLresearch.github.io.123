@@ -5,11 +5,9 @@ date: 2016-04-28 12:00:00
 categories: Misc
 featured: true
 featured_image: "/images/Excel/excel1p.png"
-tag: Amibroker
+tags: Amibroker misc
 author: Thanh Nguyen M
 ---
-
-
 Cách tiếp cận truyền thống để tính toán hệ số Beta là dựa vào phương trình hồi quy cho lợi nhuận của chỉ số thị trường và lợi nhuận của cổ phiếu. Thông thường tỉ suất lợi nhuận được tính toán dựa trên số liệu về giá đã được điều chỉnh cho các khoản như chia tách hoặc chia cổ tức bằng cổ phiếu.
 
 Tỉ suất lợi nhuận nên được tính toán theo tháng hoặc theo tuần (theo Investment Valuation - Damodaran). Hệ số Beta về mặt lý thuyết được tính như sau:

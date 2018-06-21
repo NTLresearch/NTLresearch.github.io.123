@@ -5,11 +5,10 @@ date: 2016-10-14 12:00:00
 categories: Misc
 featured: true
 featured_image: "/images/PM/pmp1.jpg"
-tag: Amibroker
+tags: prg pm
 author: Duong Vu
 ---
 *Bài viết dựa trên lý thuyết Risk Parity.*
-
 Giả sử 1 danh mục đầu tư có 2 tài sản, 1 là cổ phiếu và 2 là trái phiếu. Thường thấy chúng ta sẽ đầu tư theo tỉ lệ vàng, phân bổ 60% nguồn vồn vào cổ phiếu và 40% nguồn vốn vào trái phiếu.
 
 Dữ liệu phân tích chỉ ra rằng, volatility của stock (cổ phiếu) tính bằng standard deviation (độ lệch chuẩn) là 15% và của bond (trái phiếu) là 5%. Correlation hay còn gọi là hệ số tương quan của cổ phiếu và trái phiếu là 0.2.

@@ -194,6 +194,179 @@
                 <!-- <div class="page-content">
 
 <h1>
+<a href="/designpatterns/theobserverpattern">Design Pattern 1: The observer pattern</a>
+</h1>
+<p class="author">
+<span class="date">2018-06-21 12:00:00 +0000</span>
+</p>
+<div class="content">
+<p>Ở series bài viết này, tôi sẽ code và phân tích các design pattern (hay còn gọi là mẫu thiết kế lập trình) được thiết kế và tối ưu hóa trong quá trình lập trình OOP (hướng đối tượng). Ngôn ngữ được sử dụng sẽ là Java và Python. Trong một số trường hợp tôi sẽ dùng C++. Thêm vào đó, tôi sẽ phân tích các design pattern được sử dụng trong các framework ứng dụng vào ngành tài chính.</p>
+
+<p>Bài viết này sẽ nghiên cứu ứng dụng của 1 design pattern rất phổ biến, đó là observer pattern.</p>
+
+<h3 id="observer-pattern-l-g">1. Observer Pattern là gì</h3>
+<p>Về mặt trừu tượng, observer pattern khá giống với việc subscription. Đơn giản thế này, tôi có thông tin liên lạc của 1 analyst, bản tin của anh này rất hữu ích cho tôi. Để nhận bản tin hằng ngày, anh ta cần đưa tôi vào danh sách gửi email 3 tiếng trước mỗi phiên giao dịch. Báo cáo của anh ta bao gồm 1 số thông tin như sau:</p>
+
+<ul>
+  <li>
+    <p>giá trị kì vọng trong phiên</p>
+  </li>
+  <li>
+    <p>khối lượng kì vọng trong phiên</p>
+  </li>
+  <li>
+    <p>khuyến nghị: mua hoặc bán</p>
+  </li>
+</ul>
+
+<p>Ở khía cạnh lập trình, có thể hiểu ở danh sách khách hàng của analyst  là 1 subject object (đối tượng chủ thể) và địa chỉ của khách hàng là 1 observer object (đối tượng quan sát). Analyst sẽ update bản tin hằng ngày, và thông tin được update sẽ chuyển tới danh sách khách hàng. Sau khi cập nhật, các khách hàng đã đăng kí sẽ nhận được bản tin.</p>
+
+<p>Giả sử có 3 trader đồng ý nhận bản tin và cung cấp . Cấu trúc của hệ thống tương tự như sơ đồ bên dưới:</p>
+
+<p><img src="/images/Prgm/dp1.png" alt="c1" /></p>
+
+<h3 id="observer-pattern-trong-java">2. Observer Pattern trong Java</h3>
+
+<p>Trong java, Observer Pattern sẽ được thực hiện bằng cách viết class sử dụng 2 interface Subject và Observers như đoạn code bên dưới:</p>
+
+<div class="highlight"><pre><code class="language-java" data-lang="java"><span class="c1">// Interface cho Subject</span>
+<span class="kd">public</span> <span class="kd">interface</span> <span class="nc">Subject</span><span class="o">{</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">registerObserver</span><span class="o">(</span><span class="n">Observer</span> <span class="n">o</span><span class="o">);</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">removeObserver</span><span class="o">(</span><span class="n">Observer</span> <span class="n">o</span><span class="o">);</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">notifyObservers</span><span class="o">();</span>
+<span class="o">}</span>
+
+<span class="c1">// Interface cho Observer, tham so co the thay doi</span>
+<span class="kd">public</span> <span class="kd">interface</span> <span class="nc">Observer</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">update</span><span class="o">(</span><span class="kt">float</span> <span class="n">index</span><span class="o">,</span> <span class="kt">int</span> <span class="n">volume</span><span class="o">,</span> <span class="kt">int</span> <span class="n">recommend</span><span class="o">);</span>
+<span class="o">}</span>
+
+<span class="kd">public</span> <span class="kd">interface</span> <span class="nc">DisplayElement</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">display</span><span class="o">();</span>
+<span class="o">}</span></code></pre></div>
+
+<p>Tôi viết interface DisplayElement nhằm mục đích print ngoài màn hình. Mỗi 1 class implements DisplayElement phải override phương thức display.</p>
+
+<h3 id="a-observer-pattern-cho-analyst-v-trader">a. Observer Pattern cho analyst và trader:</h3>
+
+<p>Ở phần này tôi sẽ viết 2 class Info (sử dụng Subject interface) và class receiveInfo (sử dụng Observer interface). 3 thông tin quan trọng mà analyst cần cập nhật cho trader lần lượt là:</p>
+
+<ul>
+  <li>
+    <p>Giá trị kì vọng trong phiên: thuộc tính index dạng float (ví dụ 1250.2)</p>
+  </li>
+  <li>
+    <p>Khối lượng kì vọng trong phiên: thuộc tính volume dạng int (ví dụ 1200)</p>
+  </li>
+  <li>
+    <p>Khuyến nghị: thuộc tính recommend dạng int (1 là mua 0 là bán)</p>
+  </li>
+</ul>
+
+<p>Class Info sẽ được viết như sau:</p>
+
+<div class="highlight"><pre><code class="language-java" data-lang="java"><span class="c1">// class Info (Subject)</span>
+<span class="kn">import</span> <span class="nn">java.util.ArrayList</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Info</span> <span class="kd">implements</span> <span class="n">Subject</span> <span class="o">{</span>
+    <span class="c1">// arrayList de giu cac observer object</span>
+    <span class="kd">private</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Observer</span><span class="o">&gt;</span> <span class="n">observers</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="kt">float</span> <span class="n">index</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="kt">int</span> <span class="n">volume</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="kt">int</span> <span class="n">recommend</span><span class="o">;</span>
+
+    <span class="kd">public</span> <span class="nf">Info</span><span class="o">(){</span>
+        <span class="n">observers</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Observer</span><span class="o">&gt;();</span>
+    <span class="o">}</span>
+
+    <span class="c1">// dang ky observer object vao arrayList</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">registerObserver</span><span class="o">(</span><span class="n">Observer</span> <span class="n">o</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">observers</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">o</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="c1">// huy dang ky observer object trong arrayList theo index</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">removeObserver</span><span class="o">(</span><span class="n">Observer</span> <span class="n">o</span><span class="o">){</span>
+        <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">observers</span><span class="o">.</span><span class="na">indexOf</span><span class="o">(</span><span class="n">o</span><span class="o">);</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">i</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="o">){</span>
+            <span class="n">observers</span><span class="o">.</span><span class="na">remove</span><span class="o">(</span><span class="n">i</span><span class="o">);</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+
+    <span class="c1">// update thong tin vao cac observer chua trong arrayList</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">notifyObservers</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">for</span> <span class="o">(</span><span class="n">Observer</span> <span class="nl">observer:</span> <span class="n">observers</span><span class="o">){</span>
+            <span class="c1">// method update duoc overide o class observer</span>
+            <span class="n">observer</span><span class="o">.</span><span class="na">update</span><span class="o">(</span><span class="n">index</span><span class="o">,</span> <span class="n">volume</span><span class="o">,</span> <span class="n">recommend</span><span class="o">);</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+
+    <span class="c1">//wrappers cho notifyObservers()</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">InfoChanged</span><span class="o">(){</span>
+        <span class="n">notifyObservers</span><span class="o">();</span>
+    <span class="o">}</span>
+
+    <span class="c1">// thay doi thong tin va cap nhat voi object</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setInfo</span><span class="o">(</span><span class="kt">float</span> <span class="n">index</span><span class="o">,</span> <span class="kt">int</span> <span class="n">volume</span><span class="o">,</span> <span class="kt">int</span> <span class="n">recommend</span><span class="o">){</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">index</span> <span class="o">=</span> <span class="n">index</span><span class="o">;</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">volume</span> <span class="o">=</span> <span class="n">volume</span><span class="o">;</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">recommend</span> <span class="o">=</span> <span class="n">recommend</span><span class="o">;</span>
+        <span class="n">InfoChanged</span><span class="o">();</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kt">float</span> <span class="nf">getIndex</span><span class="o">(){</span>
+        <span class="k">return</span> <span class="n">index</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kt">int</span> <span class="nf">getVolume</span><span class="o">(){</span>
+        <span class="k">return</span> <span class="n">volume</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kt">int</span> <span class="nf">getRecommend</span><span class="o">(){</span>
+        <span class="k">return</span> <span class="n">recommend</span><span class="o">;</span>
+    <span class="o">}</span>
+
+<span class="o">}</span></code></pre></div>
+
+<p>Phân tích đoạn code trên, có thể thấy mỗi khi khởi tạo 1 object Info, constructor của class sẽ khởi tạo 1 ArrayList (cấu trúc dữ liệu trong java) để lưu lại các observer. Sau đó mỗi lần cần update các thuộc tính (thông tin về index, volume và recommend) thông qua phương thức setInfo, các observer trong ArrayList sẽ được update thông tin tương ứng.</p>
+
+<p>Class ReceiveInfo được viết như sau:</p>
+
+<div class="highlight"><pre><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">ReceiveInfo</span> <span class="kd">implements</span> <span class="n">DisplayElement</span><span class="o">,</span> <span class="n">Observer</span> <span class="o">{</span>
+    <span class="kd">private</span> <span class="kt">float</span> <span class="n">index</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="kt">int</span> <span class="n">volume</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="kt">int</span> <span class="n">recommend</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="n">Subject</span> <span class="n">Info</span><span class="o">;</span>
+
+    <span class="kd">public</span> <span class="nf">ReceiveInfo</span><span class="o">(</span><span class="n">Subject</span> <span class="n">Info</span><span class="o">){</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">Info</span> <span class="o">=</span> <span class="n">Info</span><span class="o">;</span>
+        <span class="n">Info</span><span class="o">.</span><span class="na">registerObserver</span><span class="o">(</span><span class="k">this</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">update</span><span class="o">(</span><span class="kt">float</span> <span class="n">index</span><span class="o">,</span> <span class="kt">int</span> <span class="n">volume</span><span class="o">,</span> <span class="kt">int</span> <span class="n">recommend</span><span class="o">){</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">index</span> <span class="o">=</span> <span class="n">index</span><span class="o">;</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">volume</span> <span class="o">=</span> <span class="n">volume</span><span class="o">;</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">recommend</span> <span class="o">=</span> <span class="n">recommend</span><span class="o">;</span>
+        <span class="n">display</span><span class="o">();</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">display</span><span class="o">(){</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Expeted Index: "</span> <span class="o">+</span> <span class="n">index</span> <span class="o">+</span> <span class="s">" and Expected Volume: "</span> <span class="o">+</span> <span class="n">volume</span><span class="o">);</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">recommend</span><span class="o">==</span><span class="mi">1</span><span class="o">){</span>
+            <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Expected BUY"</span><span class="o">);</span>
+        <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+            <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Expected SELL"</span><span class="o">);</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+
+<span class="o">}</span></code></pre></div>
+
+<p>Ở đoạn code trên, có thể thấy khi khởi tạo 1 object thuộc class ReceiveInfo, cần phải truyền vào 1 tham số là 1 object thuộc class Subject. Mỗi khi khởi tạo, object thuộc class ReceiveInfo sẽ tự động được lưu vào arrayList của object class Subject. Tôi cung cấp thêm phương thức display để in ra màn hình thông tin cập nhật .</p>
+
+<p>Chương trình Main của Java sẽ được viết như sau</p>
+
+</div>
+
+<h1>
 <a href="/toan/tai/chinh/welcome-to-jekyll10">Welcome to Jekyll!</a>
 </h1>
 <p class="author">
@@ -480,9 +653,8 @@ plot(pressure)
 <span class="date">2016-10-14 12:00:00 +0000</span>
 </p>
 <div class="content">
-<p><em>Bài viết dựa trên lý thuyết Risk Parity.</em></p>
-
-<p>Giả sử 1 danh mục đầu tư có 2 tài sản, 1 là cổ phiếu và 2 là trái phiếu. Thường thấy chúng ta sẽ đầu tư theo tỉ lệ vàng, phân bổ 60% nguồn vồn vào cổ phiếu và 40% nguồn vốn vào trái phiếu.</p>
+<p><em>Bài viết dựa trên lý thuyết Risk Parity.</em>
+Giả sử 1 danh mục đầu tư có 2 tài sản, 1 là cổ phiếu và 2 là trái phiếu. Thường thấy chúng ta sẽ đầu tư theo tỉ lệ vàng, phân bổ 60% nguồn vồn vào cổ phiếu và 40% nguồn vốn vào trái phiếu.</p>
 
 <p>Dữ liệu phân tích chỉ ra rằng, volatility của stock (cổ phiếu) tính bằng standard deviation (độ lệch chuẩn) là 15% và của bond (trái phiếu) là 5%. Correlation hay còn gọi là hệ số tương quan của cổ phiếu và trái phiếu là 0.2.</p>
 
@@ -522,110 +694,6 @@ plot(pressure)
 
 <h1>
 <a href="/misc/AmibrokerTrendFollowing0">Amibroker: Trend Following System trong Amibroker (1)</a>
-</h1>
-<p class="author">
-<span class="date">2016-04-29 12:00:00 +0000</span>
-</p>
-<div class="content">
-<p><em>HỆ THỐNG GIAO DỊCH DỰA THEO XU HƯỚNG (TREND FOLLOWING SYSTEM) ĐƯỢC DỰA TRÊN GIẢ THIẾT RẰNG GIÁ THƯỜNG VẬN ĐỘNG THEO 1 XU HƯỚNG NHẤT ĐỊNH ĐỦ LÂU ĐỂ TRADER CÓ THỂ NHẬN RA KHI NÀO XU HƯỚNG BẮT ĐẦU, ĐẶT LỆNH VÀ KIẾM LỢI NHUẬN TỪ VIỆC ĐI THEO XU HƯỚNG. 2 CHIẾN LƯỢC CỔ ĐIỂN NỔI BẬT NHẤT TRONG HỆ THỐNG GIAO DỊCH THEO XU HƯỚNG LÀ MOVING AVERAGE CROSSOVER VÀ BREAKOUT.</em></p>
-
-<h1 id="moving-average-crossover-systems-macs">1. MOVING AVERAGE CROSSOVER SYSTEMS (MACS).</h1>
-<p>Hệ thống MACS đặt lệnh mua khi đường MA nhanh cắt đường MA chậm từ dưới lên trên. Giả sử khi đường MA(15) cắt lên trên đường MA(30), chúng ta có tín hiệu mua.</p>
-
-<p>Dưới đây là ví dụ cổ điển được trình bày trong cuốn “Quantitative Trading Systems” của tác giả Howard B.Bandy. Đoạn code được viết bằng ngôn ngữ AFL của Amibroker và được backtest, optimize bằng bộ công cụ automatic analysis.</p>
-
-<p>Tôi sẽ không đề cập cụ thể chức năng và cách sử dụng của các hàm (function) trong thư viện AFL vì lý do bản quyền.</p>
-
-<p>Bước đầu tiên, bạn vào Analysis -&gt; Formula Editor rồi gõ đoạn code sau:</p>
-
-<div class="highlight"><pre><code class="language-c" data-lang="c"><span class="n">Length1</span> <span class="o">=</span> <span class="n">Param</span><span class="p">(</span><span class="s">"Length1"</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">81</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
-<span class="n">Length2</span> <span class="o">=</span> <span class="n">Param</span><span class="p">(</span><span class="s">"Length2"</span><span class="p">,</span> <span class="mi">35</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
-<span class="n">MA1</span> <span class="o">=</span> <span class="n">MA</span><span class="p">(</span><span class="n">C</span><span class="p">,</span> <span class="n">Length1</span><span class="p">);</span>
-<span class="n">MA2</span> <span class="o">=</span> <span class="n">MA</span><span class="p">(</span><span class="n">C</span><span class="p">,</span> <span class="n">Length2</span><span class="p">);</span>
-<span class="n">Buy</span> <span class="o">=</span> <span class="n">Cross</span><span class="p">(</span><span class="n">MA1</span><span class="p">,</span> <span class="n">MA2</span><span class="p">);</span>
-<span class="n">Sell</span> <span class="o">=</span> <span class="n">Cross</span><span class="p">(</span><span class="n">MA2</span><span class="p">,</span> <span class="n">MA1</span><span class="p">);</span>
-
-<span class="n">e</span> <span class="o">=</span> <span class="n">Equity</span><span class="p">();</span>
-<span class="n">Maxe</span> <span class="o">=</span> <span class="n">LastValue</span><span class="p">(</span><span class="n">Highest</span><span class="p">(</span><span class="n">e</span><span class="p">));</span>
-<span class="n">Plot</span><span class="p">(</span><span class="n">Close</span><span class="p">,</span> <span class="s">"Price"</span><span class="p">,</span> <span class="n">colorBlack</span><span class="p">,</span> <span class="n">styleCandle</span><span class="p">);</span>
-
-<span class="n">Plot</span><span class="p">(</span><span class="n">MA1</span><span class="p">,</span> <span class="s">"MA1"</span><span class="p">,</span> <span class="n">colorGreen</span><span class="p">,</span> <span class="n">styleLine</span><span class="p">);</span>
-<span class="n">Plot</span><span class="p">(</span><span class="n">MA2</span><span class="p">,</span> <span class="s">"MA2"</span><span class="p">,</span> <span class="n">colorBlue</span><span class="p">,</span> <span class="n">styleLine</span><span class="p">);</span>
-
-<span class="n">shape</span> <span class="o">=</span> <span class="n">Buy</span><span class="o">*</span><span class="n">shapeUpArrow</span> <span class="o">+</span> <span class="n">Sell</span><span class="o">*</span><span class="n">shapeDownArrow</span><span class="p">;</span>
-<span class="n">PlotShapes</span><span class="p">(</span><span class="n">shape</span><span class="p">(</span><span class="n">IIf</span><span class="p">(</span><span class="n">Buy</span><span class="p">,</span> <span class="n">colorGreen</span><span class="p">,</span> <span class="n">colorRed</span><span class="p">),</span> <span class="mi">0</span> <span class="p">,</span> <span class="n">Iff</span><span class="p">(</span><span class="n">Buy</span><span class="p">,</span> <span class="n">Low</span><span class="p">,</span> <span class="n">High</span><span class="p">)));</span></code></pre></div>
-
-<p>Save đoạn code phía trên lại thành file MACrossSystem.afl vào trong 1 folder nào để sau đó có thể mở lại trong phần Automatic Analysis.</p>
-
-<p>Ở 2 dòng đầu tiên, tác giả dùng hàm Param để tạo ra tham số cho 2 đường MA, cụ thể là độ nhanh hay chậm. Length1 dùng làm tham số cho đường MA nhanh, với minimum =6, maximum = 81 với bước nhảy (step) = 1 và Length2 dùng làm tham số cho đường MA chậm với minimum = 35, bước nhảy (step) = 2 và maxium =200.
-2 dòng tiếp theo tạo ra 2 đường MA1 (Nhanh) và MA2 (chậm) dựa trên tham số của 2 dòng trước đó.
-Ở dòng 5 và 6, tác giả tạo ra tín hiệu mua hay bán bằng hàm cross.
-Các đoạn code tiếp theo dùng để hiển thị tín hiệu mua bán trên đồ thị giá khi thực hiện backtest.</p>
-
-<p>Sau khi thực hiện xong đoạn code, tác giả tạo ra một indicator trong menu chart ở bên tay trái. Cụ thể trong hình bên dưới, tôi đặt tên chỉ báo là MACrossSystem.</p>
-
-<p><img src="/images/Amibroker/ami1.png" alt="folder" class="center-image" /></p>
-
-<p>Sau đó tôi load dữ liệu 1 mã cổ phiếu bất kì trong hệ thống để Backtest P&amp;L. Mã ở đây tôi chọn là VIC (Vingroup). Tôi có đồ thị như phía dưới:</p>
-
-<p><img src="/images/Amibroker/ami2.png" alt="chart1" class="center-image" /></p>
-
-<p>Mũi tên xanh lá cây thể hiện tín hiệu mua và mũi tên đỏ thể hiện tín hiệu bán. bằng trực quan, có thể thấy nếu xu hướng giá rõ ràng, tín hiệu mua cho ra kết quả tốt, tuy nhiên tín hiệu bán với đường MA(35)  không hề tốt, luôn cho ra tín hiệu bán khi giá đã điều chỉnh tương đối sâu. Khi viết đoạn code trên, tác giả đã sử dụng hàm Param để điều chỉnh độ nhanh chậm của đường MA trực tiếp trên chart. Vì vậy, bạn chỉ cần right-click vào chart, chọn parameters, rồi điều chỉnh lại đường MA theo ý muốn. Giả sử tôi chọn MA nhanh là 6 và MA chậm là 12, tôi có kết quả như sau:</p>
-
-<p><img src="/images/Amibroker/ami3.png" alt="chart2" class="center-image" /></p>
-
-<p>Rõ ràng khi điều chỉnh độ lớn của MA chậm bằng 12, tín hiệu bán trở nên rõ nét hơn, bắt kịp với xu hướng điều chỉnh của đường cong giá. Tuy nhiên khi để MA12, tín hiệu nhiễu trở nên nhiều hơn, đặc biệt khi giá giao động trong biên độ nhỏ, xu hướng không rõ ràng, tín hiệu mua bán cho ra liên tục tăng phí giao dịch và turnover của tài khoản. Hơn thế nữa, lệnh mua và bán thường rơi vào cùng 1 vùng giá, không hề tạo ra lợi nhuận, đặc biệt là các tín hiệu mua bán đưa ra với chu kì nắm giữ ngắn hạn, thường khoảng 5-7 ngày</p>
-
-<p>Để máy tính tự tối ưu hóa độ nhanh chậm của đường MA, ta có thể thay hàm Param thành hàm Optimize trong đoạn code viết ở trên.</p>
-
-<div class="highlight"><pre><code class="language-c" data-lang="c"><span class="n">Length1</span> <span class="o">=</span> <span class="n">Optimize</span><span class="p">(</span><span class="s">"Length1"</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">81</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
-<span class="n">Length2</span> <span class="o">=</span> <span class="n">Optimize</span><span class="p">(</span><span class="s">"Length2"</span><span class="p">,</span> <span class="mi">35</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span></code></pre></div>
-
-<p>Save vào 1 file riêng trong folder, đặt tên là MACrossSystem2.afl. Sau đó mở Analysis trên Menu, chọn Automatic Analysis, bấm pick rồi chọn file MACrossSystem2.afl đã save trước đó trong mục code editor.</p>
-
-<p><img src="/images/Amibroker/ami4.png" alt="chart3" class="center-image" /></p>
-
-<p>Trong menu Automatic Analysis, trong mục Settings chọn Report rồi chọn summary để kết quả sau khi tối ưu hóa hoặc backtest cho ra 1 report tổng hợp</p>
-
-<p>Sau đó ở menu automatic analysis, chọn current symbol (tức là VIC) đã chọn ở phần trên, chọn from 2014 tới ngày hiện tại, sau đó bấm Optimize để tối ưu hóa lựa chọn về độ nhanh chậm của đường MA. Amibroker sẽ mô phỏng từ 4100 mẫu test để cho ra kết quả với lợi nhuận cao nhất được test với tín hiệu Cross MA.</p>
-
-<p><img src="/images/Amibroker/ami5.png" alt="chart3" class="center-image" /></p>
-
-<p>Kết quả được thể hiện như hình bên dưới, lợi nhuận cao nhất là 70% khi kết hợp 2 đường MA nhanh là 65 và chậm là 24. Kì cục ở chỗ là tín hiệu cho ra khi thực hiện optimize lại cho thấy rằng đường MA chậm cắt lên trên đường MA nhanh thì tín hiệu mua cho ra lợi nhuận cao nhất. Cụ thể ở đây Length1 có giá trị 65 và Length2 có giá trị 24. Tôi tạo 1 đoạn code khác và apply vào chart VIC như sau:</p>
-
-<div class="highlight"><pre><code class="language-c" data-lang="c"><span class="n">Length1</span> <span class="o">=</span> <span class="mi">65</span><span class="p">;</span>
-<span class="n">Length2</span> <span class="o">=</span> <span class="mi">24</span><span class="p">;</span>
-<span class="n">MA1</span> <span class="o">=</span> <span class="n">MA</span><span class="p">(</span><span class="n">C</span><span class="p">,</span> <span class="n">Length1</span><span class="p">);</span>
-<span class="n">MA2</span> <span class="o">=</span> <span class="n">MA</span><span class="p">(</span><span class="n">C</span><span class="p">,</span> <span class="n">Length2</span><span class="p">);</span>
-<span class="n">Buy</span> <span class="o">=</span> <span class="n">Cross</span><span class="p">(</span><span class="n">MA1</span><span class="p">,</span> <span class="n">MA2</span><span class="p">);</span>
-<span class="n">Sell</span> <span class="o">=</span> <span class="n">Cross</span><span class="p">(</span><span class="n">MA2</span><span class="p">,</span> <span class="n">MA1</span><span class="p">);</span>
-
-<span class="n">e</span> <span class="o">=</span> <span class="n">Equity</span><span class="p">();</span>
-<span class="n">Maxe</span> <span class="o">=</span> <span class="n">LastValue</span><span class="p">(</span><span class="n">Highest</span><span class="p">(</span><span class="n">e</span><span class="p">));</span>
-<span class="n">Plot</span><span class="p">(</span><span class="n">Close</span><span class="p">,</span> <span class="s">"Price"</span><span class="p">,</span> <span class="n">colorBlack</span><span class="p">,</span> <span class="n">styleCandle</span><span class="p">);</span>
-
-<span class="n">Plot</span><span class="p">(</span><span class="n">MA1</span><span class="p">,</span> <span class="s">"MA1"</span><span class="p">,</span> <span class="n">colorGreen</span><span class="p">,</span> <span class="n">styleLine</span><span class="p">);</span>
-<span class="n">Plot</span><span class="p">(</span><span class="n">MA2</span><span class="p">,</span> <span class="s">"MA2"</span><span class="p">,</span> <span class="n">colorBlue</span><span class="p">,</span> <span class="n">styleLine</span><span class="p">);</span>
-
-<span class="n">shape</span> <span class="o">=</span> <span class="n">Buy</span><span class="o">*</span><span class="n">shapeUpArrow</span> <span class="o">+</span> <span class="n">Sell</span><span class="o">*</span><span class="n">shapeDownArrow</span><span class="p">;</span>
-<span class="n">PlotShapes</span><span class="p">(</span><span class="n">shape</span><span class="p">(</span><span class="n">IIf</span><span class="p">(</span><span class="n">Buy</span><span class="p">,</span> <span class="n">colorGreen</span><span class="p">,</span> <span class="n">colorRed</span><span class="p">),</span> <span class="mi">0</span> <span class="p">,</span> <span class="n">Iff</span><span class="p">(</span><span class="n">Buy</span><span class="p">,</span> <span class="n">Low</span><span class="p">,</span> <span class="n">High</span><span class="p">)));</span></code></pre></div>
-
-<p>Hệ thống cho ra tín hiệu như sau:</p>
-
-<p><img src="/images/Amibroker/ami6.png" alt="chart4" class="center-image" /></p>
-
-<p>Cụ thể hơn, khi đường MA(65) cắt lên trên đường MA(24) tín hiệu cho lợi nhuận cao hơn nhiều, đối nghịch hoàn toàn với lý thuyết thường thấy. Khi áp dụng kết quả của quá trình tối ưu hóa, cổ phiếu cho ra lợi nhuận 77%. Giả sử tôi có 100 triệu vào ngày 1/1/2014, nếu theo hệ thống giao dịch này, tới 29/4/2016, tôi đã có 177 triệu VND trong tài khoản theo như kết quả backtest, đánh bại hoàn toàn hệ thống giao dịch sử dụng tín hiệu MA nhanh cắt lên trên MA chậm cổ điển. Tuy nhiên tối ưu hóa hệ thống giao dịch không đảm bảo trong tương lai bạn sẽ có lợi nhuận y hệt.</p>
-
-<p>1 Điều cần lưu ý là nếu áp dụng MACS thì chu kì nắm giữ sẽ dài hơn, theo kết quả backtest, chu kì nắm giữ trung bình vào khoảng 44 ngày giao dịch, tức khoảng hơn 2 tháng. Các tay trader ngắn hạn theo xu hướng vài tuần tới 1 tháng hay những tay giao dịch T+3 sẽ không thích hệ thống này.</p>
-
-<p><img src="/images/Amibroker/ami7.png" alt="chart5" class="center-image" /></p>
-
-<p>Bạn có thể backtest và optimize nhiều mã dựa vào chiến lược giao dịch như trên. Có thể thấy từ ví dụ này, các chỉ báo phân tích kĩ thuật cần được điều chỉnh và tối ưu hóa để cho ra tín hiệu tốt nhất. Một hệ thống giao dịch chỉ đúng khi được backtest hiệu quả và cho ra kết quả Out-of-sample tích cực.</p>
-
-</div>
-
-<h1>
-<a href="/misc/AmibrokerTrendFollowing">Amibroker: Trend Following System trong Amibroker (1)</a>
 </h1>
 <p class="author">
 <span class="date">2016-04-29 12:00:00 +0000</span>
@@ -809,6 +877,45 @@ Hệ số beta được giải thích như sau:</p>
         
         <div class="col-md-4">
             <div class="card mb-4 box-shadow border-secondary">
+                <!-- <ul class="icon-head">
+                    
+                    <li>
+                        <img src="/images/icon/icon-Programming.png" alt="">
+                    </li>
+                    
+                    <li>
+                        <img src="/images/icon/icon-DesignPatterns.png" alt="">
+                    </li>
+                    
+                </ul> -->
+
+                <!-- <img class="card-img-top" src="/images/Prgm/prg1.jpg" alt="Thumbnail"> -->
+                <div class="card-body" >
+                    <h5 class="card-title">
+                        <a class="title-color" href="/designpatterns/theobserverpattern">
+                            Design Pattern 1: The observer pattern
+                        </a>
+                    </h5>
+                    <h6 >Jun 21, 2018</h6>
+                    <!-- <p class="card-text">
+                        <p>Ở series bài viết này, tôi sẽ code và phân tích các design pattern (hay còn gọi là mẫu thiết kế lập trình) được thiết kế và tối ưu hóa trong quá trình lập trình OOP (hướng đối tượng). Ngôn ngữ được sử dụng sẽ là Java và Python. Trong một số trường hợp tôi sẽ dùng C++. Thêm vào đó, tôi sẽ phân ...
+                    </p> -->
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <a class="btn btn-light btn-md border-secondary" href="/designpatterns/theobserverpattern">Đọc tiếp</a>
+                            <a class="btn btn-light btn-md border-secondary" href="#">designpatterns</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="card mb-4 box-shadow border-secondary">
+                <!-- <ul class="icon-head">
+                    
+                </ul> -->
+
                 <!-- <img class="card-img-top" src="" alt="Thumbnail"> -->
                 <div class="card-body" >
                     <h5 class="card-title">
@@ -817,12 +924,12 @@ Hệ số beta được giải thích như sau:</p>
                         </a>
                     </h5>
                     <h6 >Jun 19, 2018</h6>
-                    <p class="card-text">
+                    <!-- <p class="card-text">
                         <p>asdasd
 asdasd
 asdasd
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit i...
-                    </p>
+                    </p> -->
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
                             <a class="btn btn-light btn-md border-secondary" href="/toan/tai/chinh/welcome-to-jekyll10">Đọc tiếp</a>
@@ -835,6 +942,14 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
         
         <div class="col-md-4">
             <div class="card mb-4 box-shadow border-secondary">
+                <!-- <ul class="icon-head">
+                    
+                    <li>
+                        <img src="/images/icon/icon-MF.png" alt="">
+                    </li>
+                    
+                </ul> -->
+
                 <!-- <img class="card-img-top" src="/images/MF/safe.jpeg" alt="Thumbnail"> -->
                 <div class="card-body" >
                     <h5 class="card-title">
@@ -843,13 +958,13 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
                         </a>
                     </h5>
                     <h6 >Jun 07, 2018</h6>
-                    <p class="card-text">
+                    <!-- <p class="card-text">
                         <p>Chiến lược Value Investing</p>
 
 <p>This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <a href="http://rmarkdown.rstudio.com">http://rmarkdown.rstudio.com</a>.</p>
 
 <p>When you click the...
-                    </p>
+                    </p> -->
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
                             <a class="btn btn-light btn-md border-secondary" href="/mf/thanh">Đọc tiếp</a>
@@ -862,6 +977,14 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
         
         <div class="col-md-4">
             <div class="card mb-4 box-shadow border-secondary">
+                <!-- <ul class="icon-head">
+                    
+                    <li>
+                        <img src="/images/icon/icon-MF.png" alt="">
+                    </li>
+                    
+                </ul> -->
+
                 <!-- <img class="card-img-top" src="/images/MF/safe.jpeg" alt="Thumbnail"> -->
                 <div class="card-body" >
                     <h5 class="card-title">
@@ -870,9 +993,9 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
                         </a>
                     </h5>
                     <h6 >Jun 06, 2018</h6>
-                    <p class="card-text">
+                    <!-- <p class="card-text">
                         <p>Mục đích ban đầu của công cụ phái sinh là giúp nhà đầu tư giảm thiểu được rủi ro khi thị trường vận động không đúng theo kì vọng. Năm 2017, thị trường Việt Nam chứng kiến sự ra đời của công cụ phái sinh đầu tiên - hợp đồng tương lai. Series bài viết này phân tích ngắn gọn đặc điểm chung của hợ...
-                    </p>
+                    </p> -->
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
                             <a class="btn btn-light btn-md border-secondary" href="/mf/HedgingFutures1">Đọc tiếp</a>
@@ -885,6 +1008,18 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
         
         <div class="col-md-4">
             <div class="card mb-4 box-shadow border-secondary">
+                <!-- <ul class="icon-head">
+                    
+                    <li>
+                        <img src="/images/icon/icon-prg.png" alt="">
+                    </li>
+                    
+                    <li>
+                        <img src="/images/icon/icon-pm.png" alt="">
+                    </li>
+                    
+                </ul> -->
+
                 <!-- <img class="card-img-top" src="/images/PM/pmp1.jpg" alt="Thumbnail"> -->
                 <div class="card-body" >
                     <h5 class="card-title">
@@ -893,13 +1028,12 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
                         </a>
                     </h5>
                     <h6 >Oct 14, 2016</h6>
-                    <p class="card-text">
-                        <p><em>Bài viết dựa trên lý thuyết Risk Parity.</em></p>
+                    <!-- <p class="card-text">
+                        <p><em>Bài viết dựa trên lý thuyết Risk Parity.</em>
+Giả sử 1 danh mục đầu tư có 2 tài sản, 1 là cổ phiếu và 2 là trái phiếu. Thường thấy chúng ta sẽ đầu tư theo tỉ lệ vàng, phân bổ 60% nguồn vồn vào cổ phiếu và 40% nguồn vốn vào trái phiếu.</p>
 
-<p>Giả sử 1 danh mục đầu tư có 2 tài sản, 1 là cổ phiếu và 2 là trái phiếu. Thường thấy chúng ta sẽ đầu tư theo tỉ lệ vàng, phân bổ 60% nguồn vồn vào cổ phiếu và 40% nguồn vốn vào trái phiếu.</p>
-
-<p>Dữ liệu phân tích chỉ ra rằng, volatili...
-                    </p>
+<p>Dữ liệu phân tích chỉ ra rằng, volatility của s...
+                    </p> -->
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
                             <a class="btn btn-light btn-md border-secondary" href="/misc/RiskContributionAndPortfolio">Đọc tiếp</a>
@@ -912,6 +1046,18 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
         
         <div class="col-md-4">
             <div class="card mb-4 box-shadow border-secondary">
+                <!-- <ul class="icon-head">
+                    
+                    <li>
+                        <img src="/images/icon/icon-prg.png" alt="">
+                    </li>
+                    
+                    <li>
+                        <img src="/images/icon/icon-vi.png" alt="">
+                    </li>
+                    
+                </ul> -->
+
                 <!-- <img class="card-img-top" src="/images/Amibroker/amp1.jpg" alt="Thumbnail"> -->
                 <div class="card-body" >
                     <h5 class="card-title">
@@ -920,9 +1066,9 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
                         </a>
                     </h5>
                     <h6 >Apr 29, 2016</h6>
-                    <p class="card-text">
+                    <!-- <p class="card-text">
                         <p><em>HỆ THỐNG GIAO DỊCH DỰA THEO XU HƯỚNG (TREND FOLLOWING SYSTEM) ĐƯỢC DỰA TRÊN GIẢ THIẾT RẰNG GIÁ THƯỜNG VẬN ĐỘNG THEO 1 XU HƯỚNG NHẤT ĐỊNH ĐỦ LÂU ĐỂ TRADER CÓ THỂ NHẬN RA KHI NÀO XU HƯỚNG BẮT ĐẦU, ĐẶT LỆNH VÀ KIẾM LỢI NHUẬN TỪ VIỆC ĐI THEO XU HƯỚNG. 2 CHIẾN LƯỢC CỔ ĐIỂN NỔI BẬT NHẤT TRONG HỆ...
-                    </p>
+                    </p> -->
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
                             <a class="btn btn-light btn-md border-secondary" href="/misc/AmibrokerTrendFollowing0">Đọc tiếp</a>
@@ -935,29 +1081,18 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
         
         <div class="col-md-4">
             <div class="card mb-4 box-shadow border-secondary">
-                <!-- <img class="card-img-top" src="/images/Amibroker/amp1.jpg" alt="Thumbnail"> -->
-                <div class="card-body" >
-                    <h5 class="card-title">
-                        <a class="title-color" href="/misc/AmibrokerTrendFollowing">
-                            Amibroker: Trend Following System trong Amibroker (1)
-                        </a>
-                    </h5>
-                    <h6 >Apr 29, 2016</h6>
-                    <p class="card-text">
-                        <p><em>HỆ THỐNG GIAO DỊCH DỰA THEO XU HƯỚNG (TREND FOLLOWING SYSTEM) ĐƯỢC DỰA TRÊN GIẢ THIẾT RẰNG GIÁ THƯỜNG VẬN ĐỘNG THEO 1 XU HƯỚNG NHẤT ĐỊNH ĐỦ LÂU ĐỂ TRADER CÓ THỂ NHẬN RA KHI NÀO XU HƯỚNG BẮT ĐẦU, ĐẶT LỆNH VÀ KIẾM LỢI NHUẬN TỪ VIỆC ĐI THEO XU HƯỚNG. 2 CHIẾN LƯỢC CỔ ĐIỂN NỔI BẬT NHẤT TRONG HỆ...
-                    </p>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                            <a class="btn btn-light btn-md border-secondary" href="/misc/AmibrokerTrendFollowing">Đọc tiếp</a>
-                            <a class="btn btn-light btn-md border-secondary" href="#">misc</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="col-md-4">
-            <div class="card mb-4 box-shadow border-secondary">
+                <!-- <ul class="icon-head">
+                    
+                    <li>
+                        <img src="/images/icon/icon-Amibroker.png" alt="">
+                    </li>
+                    
+                    <li>
+                        <img src="/images/icon/icon-misc.png" alt="">
+                    </li>
+                    
+                </ul> -->
+
                 <!-- <img class="card-img-top" src="/images/Excel/excel1p.png" alt="Thumbnail"> -->
                 <div class="card-body" >
                     <h5 class="card-title">
@@ -966,9 +1101,9 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
                         </a>
                     </h5>
                     <h6 >Apr 28, 2016</h6>
-                    <p class="card-text">
+                    <!-- <p class="card-text">
                         <p>Cách tiếp cận truyền thống để tính toán hệ số Beta là dựa vào phương trình hồi quy cho lợi nhuận của chỉ số thị trường và lợi nhuận của cổ phiếu. Thông thường tỉ suất lợi nhuận được tính toán dựa trên số liệu về giá đã được điều chỉnh cho các khoản như chia tách hoặc chia cổ tức bằng cổ phiếu....
-                    </p>
+                    </p> -->
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
                             <a class="btn btn-light btn-md border-secondary" href="/misc/tinhbetaexcle">Đọc tiếp</a>

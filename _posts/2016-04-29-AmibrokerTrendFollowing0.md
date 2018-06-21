@@ -5,10 +5,9 @@ date: 2016-04-29 12:00:00
 categories: Misc
 featured: true
 featured_image: "/images/Amibroker/amp1.jpg"
-tag: Amibroker
+tags: prg vi
 author: Thanh Nguyen M
 ---
-
 *HỆ THỐNG GIAO DỊCH DỰA THEO XU HƯỚNG (TREND FOLLOWING SYSTEM) ĐƯỢC DỰA TRÊN GIẢ THIẾT RẰNG GIÁ THƯỜNG VẬN ĐỘNG THEO 1 XU HƯỚNG NHẤT ĐỊNH ĐỦ LÂU ĐỂ TRADER CÓ THỂ NHẬN RA KHI NÀO XU HƯỚNG BẮT ĐẦU, ĐẶT LỆNH VÀ KIẾM LỢI NHUẬN TỪ VIỆC ĐI THEO XU HƯỚNG. 2 CHIẾN LƯỢC CỔ ĐIỂN NỔI BẬT NHẤT TRONG HỆ THỐNG GIAO DỊCH THEO XU HƯỚNG LÀ MOVING AVERAGE CROSSOVER VÀ BREAKOUT.*
 
 # 1. MOVING AVERAGE CROSSOVER SYSTEMS (MACS).

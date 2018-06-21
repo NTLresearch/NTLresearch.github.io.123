@@ -88,12 +88,12 @@ blockquote {
  */
 pre,
 code {
-  font-size: 14px;
   border: 1px solid #e8e8e8;
   border-radius: 2px; }
 
 code {
-  padding: 1px 5px; }
+  padding: 1px 5px;
+  font-size: 12px; }
 
 pre {
   padding: 8px 12px;
@@ -351,7 +351,8 @@ pre {
     max-height: 20px; }
 
 .highlight pre {
-  background-color: #272822; }
+  background-color: #272822;
+  font-size: 14px; }
 
 .highlight .hll {
   background-color: #272822; }

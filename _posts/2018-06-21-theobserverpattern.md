@@ -58,7 +58,7 @@ Tôi viết interface DisplayElement nhằm mục đích print ngoài màn hình
 
 Ở phần này tôi sẽ viết 2 class Info (sử dụng Subject interface) và class receiveInfo (sử dụng Observer interface). 3 thông tin quan trọng mà analyst cần cập nhật cho trader lần lượt là:
 
-- Giá trị kì vọng trong phiên: thuộc tính index dạng float (ví dụ 1250.2)
+- Giá trị kì vọng trong phiên: thuộc tính index dạng float (ví dụ 1250)
 
 - Khối lượng kì vọng trong phiên: thuộc tính volume dạng int (ví dụ 1200)
 
@@ -168,4 +168,33 @@ public class ReceiveInfo implements DisplayElement, Observer {
 
 Ở đoạn code trên, có thể thấy khi khởi tạo 1 object thuộc class ReceiveInfo, cần phải truyền vào 1 tham số là 1 object thuộc class Subject. Mỗi khi khởi tạo, object thuộc class ReceiveInfo sẽ tự động được lưu vào arrayList của object class Subject. Tôi cung cấp thêm phương thức display để in ra màn hình thông tin cập nhật .
 
-Chương trình Main của Java sẽ được viết như sau
+Chương trình Main của Java sẽ được viết như sau:
+
+{% highlight java %}
+public class TradingDesk {
+    public static void main(String[] args) {
+        Info Info = new Info();
+        ReceiveInfo ReceiveInfo = new ReceiveInfo(Info);
+
+        Info.setInfo(1000, 1200, 1);
+        Info.setInfo(1100, 2000, 0);
+        Info.setInfo(1200, 20000, 1);
+
+
+    }
+}
+{% endhighlight %}
+
+Sau khi chạy chương trình tôi được output như sau
+
+{% highlight Java %}
+run:
+Expeted Index: 1000.0 and Expected Volume: 1200
+Expected BUY
+Expeted Index: 1100.0 and Expected Volume: 2000
+Expected SELL
+Expeted Index: 1200.0 and Expected Volume: 20000
+Expected BUY
+BUILD SUCCESSFUL (total time: 0 seconds)
+
+{% endhighlight %}

@@ -193,7 +193,7 @@
 
 <ul>
   <li>
-    <p>Giá trị kì vọng trong phiên: thuộc tính index dạng float (ví dụ 1250.2)</p>
+    <p>Giá trị kì vọng trong phiên: thuộc tính index dạng float (ví dụ 1250)</p>
   </li>
   <li>
     <p>Khối lượng kì vọng trong phiên: thuộc tính volume dạng int (ví dụ 1200)</p>
@@ -302,7 +302,32 @@
 
 <p>Ở đoạn code trên, có thể thấy khi khởi tạo 1 object thuộc class ReceiveInfo, cần phải truyền vào 1 tham số là 1 object thuộc class Subject. Mỗi khi khởi tạo, object thuộc class ReceiveInfo sẽ tự động được lưu vào arrayList của object class Subject. Tôi cung cấp thêm phương thức display để in ra màn hình thông tin cập nhật .</p>
 
-<p>Chương trình Main của Java sẽ được viết như sau</p>
+<p>Chương trình Main của Java sẽ được viết như sau:</p>
+
+<div class="highlight"><pre><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">TradingDesk</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">Info</span> <span class="n">Info</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Info</span><span class="o">();</span>
+        <span class="n">ReceiveInfo</span> <span class="n">ReceiveInfo</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ReceiveInfo</span><span class="o">(</span><span class="n">Info</span><span class="o">);</span>
+
+        <span class="n">Info</span><span class="o">.</span><span class="na">setInfo</span><span class="o">(</span><span class="mi">1000</span><span class="o">,</span> <span class="mi">1200</span><span class="o">,</span> <span class="mi">1</span><span class="o">);</span>
+        <span class="n">Info</span><span class="o">.</span><span class="na">setInfo</span><span class="o">(</span><span class="mi">1100</span><span class="o">,</span> <span class="mi">2000</span><span class="o">,</span> <span class="mi">0</span><span class="o">);</span>
+        <span class="n">Info</span><span class="o">.</span><span class="na">setInfo</span><span class="o">(</span><span class="mi">1200</span><span class="o">,</span> <span class="mi">20000</span><span class="o">,</span> <span class="mi">1</span><span class="o">);</span>
+
+
+    <span class="o">}</span>
+<span class="o">}</span></code></pre></div>
+
+<p>Sau khi chạy chương trình tôi được output như sau</p>
+
+<div class="highlight"><pre><code class="language-java" data-lang="java"><span class="nl">run:</span>
+<span class="n">Expeted</span> <span class="nl">Index:</span> <span class="mf">1000.0</span> <span class="n">and</span> <span class="n">Expected</span> <span class="nl">Volume:</span> <span class="mi">1200</span>
+<span class="n">Expected</span> <span class="n">BUY</span>
+<span class="n">Expeted</span> <span class="nl">Index:</span> <span class="mf">1100.0</span> <span class="n">and</span> <span class="n">Expected</span> <span class="nl">Volume:</span> <span class="mi">2000</span>
+<span class="n">Expected</span> <span class="n">SELL</span>
+<span class="n">Expeted</span> <span class="nl">Index:</span> <span class="mf">1200.0</span> <span class="n">and</span> <span class="n">Expected</span> <span class="nl">Volume:</span> <span class="mi">20000</span>
+<span class="n">Expected</span> <span class="n">BUY</span>
+<span class="n">BUILD</span> <span class="nf">SUCCESSFUL</span> <span class="o">(</span><span class="n">total</span> <span class="nl">time:</span> <span class="mi">0</span> <span class="n">seconds</span><span class="o">)</span></code></pre></div>
+
 
                         </article>
                     </div>

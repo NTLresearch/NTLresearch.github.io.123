@@ -6,8 +6,8 @@
 </description>
     <link>http://NTLresearch.github.io/</link>
     <atom:link href="http://NTLresearch.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 21 Jun 2018 16:54:25 +0300</pubDate>
-    <lastBuildDate>Thu, 21 Jun 2018 16:54:25 +0300</lastBuildDate>
+    <pubDate>Thu, 21 Jun 2018 18:26:09 +0300</pubDate>
+    <lastBuildDate>Thu, 21 Jun 2018 18:26:09 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -65,7 +65,7 @@
 
 &lt;ul&gt;
   &lt;li&gt;
-    &lt;p&gt;Giá trị kì vọng trong phiên: thuộc tính index dạng float (ví dụ 1250.2)&lt;/p&gt;
+    &lt;p&gt;Giá trị kì vọng trong phiên: thuộc tính index dạng float (ví dụ 1250)&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Khối lượng kì vọng trong phiên: thuộc tính volume dạng int (ví dụ 1200)&lt;/p&gt;
@@ -174,7 +174,32 @@
 
 &lt;p&gt;Ở đoạn code trên, có thể thấy khi khởi tạo 1 object thuộc class ReceiveInfo, cần phải truyền vào 1 tham số là 1 object thuộc class Subject. Mỗi khi khởi tạo, object thuộc class ReceiveInfo sẽ tự động được lưu vào arrayList của object class Subject. Tôi cung cấp thêm phương thức display để in ra màn hình thông tin cập nhật .&lt;/p&gt;
 
-&lt;p&gt;Chương trình Main của Java sẽ được viết như sau&lt;/p&gt;
+&lt;p&gt;Chương trình Main của Java sẽ được viết như sau:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;TradingDesk&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;Info&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Info&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Info&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;ReceiveInfo&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ReceiveInfo&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ReceiveInfo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Info&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+
+        &lt;span class=&quot;n&quot;&gt;Info&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setInfo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1000&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1200&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;Info&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setInfo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1100&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2000&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;Info&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setInfo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1200&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;20000&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+
+
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Sau khi chạy chương trình tôi được output như sau&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;nl&quot;&gt;run:&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Expeted&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;Index:&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;1000.0&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Expected&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;Volume:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1200&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Expected&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;BUY&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Expeted&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;Index:&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;1100.0&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Expected&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;Volume:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2000&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Expected&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;SELL&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Expeted&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;Index:&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;1200.0&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Expected&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;Volume:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;20000&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Expected&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;BUY&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;BUILD&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;SUCCESSFUL&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;total&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;time:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;seconds&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
 </description>
         <pubDate>Thu, 21 Jun 2018 12:00:00 +0000</pubDate>
         <link>http://NTLresearch.github.io/designpatterns/theobserverpattern</link>

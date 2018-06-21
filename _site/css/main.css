@@ -2,6 +2,7 @@
  * Reset some basic elements
  */
 @import url("https://fonts.googleapis.com/css?family=Ubuntu");
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
 body, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
@@ -12,7 +13,7 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-  font-family: "Avenir Next", Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
   font-size: 17px;
   line-height: 2.0;
   font-weight: 300;
@@ -291,7 +292,7 @@ pre {
 .post-content {
   margin-bottom: 25px;
   line-height: 1.7;
-  font-family: "Avenir Next", Helvetica, Arial, sans-serif; }
+  font-family: "Montserrat", Helvetica, Arial, sans-serif; }
   .post-content h2 {
     font-size: 32px; }
     @media screen and (max-width: 800px) {
@@ -309,7 +310,7 @@ pre {
         font-size: 18px; } }
 
 .font-header {
-  font-family: "Avenir Next", Helvetica, Arial, sans-serif; }
+  font-family: "Montserrat", Helvetica, Arial, sans-serif; }
 
 .center-image {
   margin: 0 auto;

@@ -6,7 +6,9 @@
 
 
 // Our variables
-$base-font-family: "Avenir Next", Helvetica, Arial, sans-serif;
+// "Avenir Next"
+// "Montserrat"
+$base-font-family: "Montserrat", Helvetica, Arial, sans-serif;
 $base-font-size:   17px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.7;
@@ -61,3 +63,4 @@ $on-laptop:        800px;
         "syntax-highlighting"
 ;
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');

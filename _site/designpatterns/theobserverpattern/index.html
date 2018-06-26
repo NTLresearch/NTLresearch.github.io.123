@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Design Pattern 1: The observer pattern</title>
+    <title>Design Pattern 1: The observer pattern (phần 1)</title>
     <meta name="description" content="Ở series bài viết này, tôi sẽ code và phân tích các design pattern (hay còn gọi là mẫu thiết kế lập trình) được thiết kế và tối ưu hóa trong quá trình lập tr...">
 
     <link rel="stylesheet" href="/css/main.css">
@@ -129,10 +129,10 @@
                         </h4>
                     </div>
                 </div>
-                <div class="col-md-8">
+                <div class="col-md-7">
                     <div class="container">
                         <header class="post-header">
-                            <h1 class="post-title">Design Pattern 1: The observer pattern</h1>
+                            <h1 class="post-title">Design Pattern 1: The observer pattern (phần 1)</h1>
                             <p class="post-meta">Jun 21, 2018</p>
                         </header>
                         <div>
@@ -328,6 +328,17 @@
 <span class="n">Expected</span> <span class="n">BUY</span>
 <span class="n">BUILD</span> <span class="nf">SUCCESSFUL</span> <span class="o">(</span><span class="n">total</span> <span class="nl">time:</span> <span class="mi">0</span> <span class="n">seconds</span><span class="o">)</span></code></pre></div>
 
+<h3 id="nhng-iu-cn-lu--v-observer-pattern"><strong>3. Những điều cần lưu ý về Observer pattern</strong></h3>
+
+<ul>
+  <li>Đầu tiền là sử dụng interface cho Subject và Observer với các phương thức cần được override</li>
+  <li>Thứ 2, nếu để ý kỹ, khi khởi tạo object của class ReceiveInfo, cần truyền vào 1 tham số là object của class Subject. Tức là mỗi khi 1 class implement interface Subject sẽ luôn có thể truyền vào hàm constructor (Đây là đặc tính rõ nhất về tính đa hình - polymorphism trong java). Trong chương trình main, tôi truyền vào object của class Info (class implement interface Subject)</li>
+  <li>Thứ 3, arrayList sử dụng reference, tức là các object Observer sẽ update ở môi trường global environment hơn là local (check pass by reference và pass by copy of value trong java).</li>
+</ul>
+
+<h3 id="ng-dng-ca-observer-pattern"><strong>4. Ứng dụng của Observer pattern</strong></h3>
+
+<p>Có lẽ Observer pattern là một trong những Design pattern phổ biến nhất trong giới lập trình. Ví dụ điển hình nhất notification của post trên Facebook. Mỗi khi người dùng comment vào 1 post, người dùng mặc định đăng kí nhận thông báo mỗi khi có ai phản hồi hoặc comment trong post đó. Ở đây post là subject, hộp notification của người dùng là observer.</p>
 
                         </article>
                     </div>

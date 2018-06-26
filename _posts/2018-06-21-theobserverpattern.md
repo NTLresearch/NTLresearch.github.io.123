@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "Design Pattern 1: The observer pattern"
+title: "Design Pattern 1: The observer pattern (phần 1)"
 date: 2018-06-21 12:00:00
 categories: DesignPatterns
 featured: true
@@ -168,6 +168,7 @@ public class ReceiveInfo implements DisplayElement, Observer {
 
 Ở đoạn code trên, có thể thấy khi khởi tạo 1 object thuộc class ReceiveInfo, cần phải truyền vào 1 tham số là 1 object thuộc class Subject. Mỗi khi khởi tạo, object thuộc class ReceiveInfo sẽ tự động được lưu vào arrayList của object class Subject. Tôi cung cấp thêm phương thức display để in ra màn hình thông tin cập nhật .
 
+
 Chương trình Main của Java sẽ được viết như sau:
 
 {% highlight java %}
@@ -198,3 +199,14 @@ Expected BUY
 BUILD SUCCESSFUL (total time: 0 seconds)
 
 {% endhighlight %}
+
+
+### **3. Những điều cần lưu ý về Observer pattern**
+
+* Đầu tiền là sử dụng interface cho Subject và Observer với các phương thức cần được override
+* Thứ 2, nếu để ý kỹ, khi khởi tạo object của class ReceiveInfo, cần truyền vào 1 tham số là object của class Subject. Tức là mỗi khi 1 class implement interface Subject sẽ luôn có thể truyền vào hàm constructor (Đây là đặc tính rõ nhất về tính đa hình - polymorphism trong java). Trong chương trình main, tôi truyền vào object của class Info (class implement interface Subject)
+* Thứ 3, arrayList sử dụng reference, tức là các object Observer sẽ update ở môi trường global environment hơn là local (check pass by reference và pass by copy of value trong java).
+
+### **4. Ứng dụng của Observer pattern**
+
+Có lẽ Observer pattern là một trong những Design pattern phổ biến nhất trong giới lập trình. Ví dụ điển hình nhất notification của post trên Facebook. Mỗi khi người dùng comment vào 1 post, người dùng mặc định đăng kí nhận thông báo mỗi khi có ai phản hồi hoặc comment trong post đó. Ở đây post là subject, hộp notification của người dùng là observer.

@@ -38,3 +38,4 @@ links:
 # Build settings
 markdown: kramdown
 highlighter: rouge
+google_analytics: UA-121799914-1

@@ -4,8 +4,8 @@ title: "Risk contribution và danh mục đầu tư"
 date: 2016-10-14 12:00:00
 categories: Misc
 featured: true
-featured_image: "/images/PM/pmp1.jpg"
-tags: prg pm
+featured_image: "/images/PM/PMP1.jpg"
+tags: portfolio
 author: Duong Vu
 ---
 *Bài viết dựa trên lý thuyết Risk Parity.*

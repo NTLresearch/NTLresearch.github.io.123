@@ -6,15 +6,18 @@
 </description>
     <link>http://NTLresearch.github.io/</link>
     <atom:link href="http://NTLresearch.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 05 Jul 2018 01:17:25 +0300</pubDate>
-    <lastBuildDate>Thu, 05 Jul 2018 01:17:25 +0300</lastBuildDate>
+    <pubDate>Thu, 05 Jul 2018 01:25:16 +0300</pubDate>
+    <lastBuildDate>Thu, 05 Jul 2018 01:25:16 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
-        <title>Amibroker blog: RSI2-Smile (phần 1)</title>
-        <description>
+        <title>Vector Autoregressive Model cho Vnindex và Dow Jones Industrial Average</title>
+        <description>&lt;p&gt;Trong năm 2017 và đầu năm 2018, có 1 hiện tượng khá thường xuyên xảy ra, đó là mỗi khi thị trường chứng khoán Mỹ mất điểm vào ngày hôm trước thì ngay hôm sau thị trường Việt Nam cũng đỏ lửa. Hiện tượng này khá phổ biến trên thế giới và được nghiên cứu kĩ trong các bài báo khoa học. Ở bài viết này tôi sẽ ước lượng mô hình VAR để xem xét hiện tượng này với chỉ số Vnindex và  Dow Jones Industrial Average (viết tắt là DJI).&lt;/p&gt;
+
+&lt;h1 id=&quot;data&quot;&gt;Data&lt;/h1&gt;
+&lt;p&gt;Đầu tiên tôi thu thập 2 chuỗi thời gian là giá đóng cửa của VNINDEX và DJI trên yahoo finance. Tiếp đến tôi đưa vào python, xử lý mảng&lt;/p&gt;
 </description>
-        <pubDate>Mon, 02 Jul 2018 12:00:00 +0000</pubDate>
+        <pubDate>Thu, 05 Jul 2018 12:00:00 +0000</pubDate>
         <link>http://NTLresearch.github.io/statistics/VARUSVN</link>
         <guid isPermaLink="true">http://NTLresearch.github.io/statistics/VARUSVN</guid>
         

@@ -6,9 +6,37 @@
 </description>
     <link>http://NTLresearch.github.io/</link>
     <atom:link href="http://NTLresearch.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 05 Jul 2018 03:30:03 +0300</pubDate>
-    <lastBuildDate>Thu, 05 Jul 2018 03:30:03 +0300</lastBuildDate>
+    <pubDate>Thu, 05 Jul 2018 21:33:32 +0300</pubDate>
+    <lastBuildDate>Thu, 05 Jul 2018 21:33:32 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Nhức nhối mô hình định giá</title>
+        <description>&lt;p&gt;Hôm nay ngồi làm case study cho 1 công ty,  Tôi và ông bạn học cùng đại học lại ngồi thảo luận về mô hình định giá. Có quá nhiều thứ để nói về các mô hình định giá cổ phiếu từ cả góc nhìn thực tế và toán học.&lt;/p&gt;
+
+&lt;h3 id=&quot;cng-thc-c-bn-ca-nh-gi&quot;&gt;&lt;em&gt;Công thức cơ bản của định giá&lt;/em&gt;&lt;/h3&gt;
+&lt;p&gt;Giá trị của một doanh nghiệp là gì? Với các mô hình định giá, giá trị của 1 doanh nghiệp đơn giản chỉ là, tìm xem trong tương lai, công ty sẽ kiếm được thêm bao nhiêu tiền, tăng trưởng bao nhiêu, nếu dùng từ ngữ chuyên môn gọi là forecast, sau đó tìm một tỉ lệ chiết khấu hợp lý để tính giá trị hiện tại của doanh nghiệp.&lt;/p&gt;
+
+&lt;p&gt;Hiểu đơn giản, có 2 yếu tố mang tính chủ quan trong mô hình. Thứ nhất, nhà đầu tư cần đưa ra dự báo về tương lai, tính toán các yếu tố kì vọng. Thứ hai, nhà đầu tư cần ước lượng tỉ lệ chiết khấu sao cho phù hợp. Câu trả lời đặt ra là, dự đoán như thế nào là đúng, và chiết khấu bao nhiêu là đủ.&lt;/p&gt;
+
+&lt;p&gt;Đầu tiên là về dự báo, nếu không có thông tin nội bộ và là tay trong của công ty, sẽ rất khó để biết được chính xác đâu là con số cho năm tới, 2 năm tới, 5 năm tới hay 10 năm tới. Một nhà phân tích độc lập hay thuộc tổ chức đơn giản sẽ liên hệ với công ty, và công ty sẽ cho ra con số. Cách làm này tỉ lệ chiến thắng vẫn là 50-50 bởi có ai dám chắc con số công ty bạn cover đưa cho bạn là chính xác?&lt;/p&gt;
+
+&lt;p&gt;Thứ hai là về lãi suất chiết khấu. Thông thường phương pháp phổ biến là sử dụng CAPM. Như đã biết thì CAPM không đúng, và cái phần risk premium trong CAPM thì cũng rất là chủ quan. Với thị trường Việt Nam, lúc thì người ta bảo là 9%, mấy hôm sau lại bảo 10%. Việc lựa chọn con số cho từng thời điểm nhất định lại càng khó hơn bởi đơn giản risk premium và cả CAPM đều có tính dynamic và phụ thuộc vào thời gian.&lt;/p&gt;
+
+&lt;h4 id=&quot;gordon-growth-model&quot;&gt;Gordon Growth Model&lt;/h4&gt;
+</description>
+        <pubDate>Fri, 06 Jul 2018 12:00:00 +0000</pubDate>
+        <link>http://NTLresearch.github.io/statistics/testgooglesheet</link>
+        <guid isPermaLink="true">http://NTLresearch.github.io/statistics/testgooglesheet</guid>
+        
+        <category>Statistics</category>
+        
+        <category>Econometrics</category>
+        
+        
+        <category>statistics</category>
+        
+      </item>
     
       <item>
         <title>Vector Autoregressive Model cho Vnindex và Dow Jones Industrial Average</title>
@@ -1128,116 +1156,6 @@ Giả sử 1 danh mục đầu tư có 2 tài sản, 1 là cổ phiếu và 2 l�
         <guid isPermaLink="true">http://NTLresearch.github.io/misc/RiskContributionAndPortfolio</guid>
         
         <category>portfolio</category>
-        
-        
-        <category>misc</category>
-        
-      </item>
-    
-      <item>
-        <title>Amibroker: Trend Following System trong Amibroker (1)</title>
-        <description>&lt;p&gt;&lt;em&gt;HỆ THỐNG GIAO DỊCH DỰA THEO XU HƯỚNG (TREND FOLLOWING SYSTEM) ĐƯỢC DỰA TRÊN GIẢ THIẾT RẰNG GIÁ THƯỜNG VẬN ĐỘNG THEO 1 XU HƯỚNG NHẤT ĐỊNH ĐỦ LÂU ĐỂ TRADER CÓ THỂ NHẬN RA KHI NÀO XU HƯỚNG BẮT ĐẦU, ĐẶT LỆNH VÀ KIẾM LỢI NHUẬN TỪ VIỆC ĐI THEO XU HƯỚNG. 2 CHIẾN LƯỢC CỔ ĐIỂN NỔI BẬT NHẤT TRONG HỆ THỐNG GIAO DỊCH THEO XU HƯỚNG LÀ MOVING AVERAGE CROSSOVER VÀ BREAKOUT.&lt;/em&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;moving-average-crossover-systems-macs&quot;&gt;1. MOVING AVERAGE CROSSOVER SYSTEMS (MACS).&lt;/h1&gt;
-&lt;p&gt;Hệ thống MACS đặt lệnh mua khi đường MA nhanh cắt đường MA chậm từ dưới lên trên. Giả sử khi đường MA(15) cắt lên trên đường MA(30), chúng ta có tín hiệu mua.&lt;/p&gt;
-
-&lt;p&gt;Dưới đây là ví dụ cổ điển được trình bày trong cuốn “Quantitative Trading Systems” của tác giả Howard B.Bandy. Đoạn code được viết bằng ngôn ngữ AFL của Amibroker và được backtest, optimize bằng bộ công cụ automatic analysis.&lt;/p&gt;
-
-&lt;p&gt;Tôi sẽ không đề cập cụ thể chức năng và cách sử dụng của các hàm (function) trong thư viện AFL vì lý do bản quyền.&lt;/p&gt;
-
-&lt;p&gt;Bước đầu tiên, bạn vào Analysis -&amp;gt; Formula Editor rồi gõ đoạn code sau:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;span class=&quot;n&quot;&gt;Length1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Param&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Length1&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;81&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;Length2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Param&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Length2&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;35&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;200&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;MA1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MA&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;C&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Length1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;MA2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MA&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;C&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Length2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;Buy&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Cross&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;MA1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MA2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;Sell&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Cross&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;MA2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MA1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;e&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Equity&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;Maxe&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;LastValue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Highest&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;Plot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Close&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Price&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;colorBlack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;styleCandle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;Plot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;MA1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;MA1&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;colorGreen&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;styleLine&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;Plot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;MA2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;MA2&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;colorBlue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;styleLine&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;shape&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Buy&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shapeUpArrow&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Sell&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shapeDownArrow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;PlotShapes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shape&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;IIf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Buy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;colorGreen&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;colorRed&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Iff&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Buy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Low&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;High&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)));&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Save đoạn code phía trên lại thành file MACrossSystem.afl vào trong 1 folder nào để sau đó có thể mở lại trong phần Automatic Analysis.&lt;/p&gt;
-
-&lt;p&gt;Ở 2 dòng đầu tiên, tác giả dùng hàm Param để tạo ra tham số cho 2 đường MA, cụ thể là độ nhanh hay chậm. Length1 dùng làm tham số cho đường MA nhanh, với minimum =6, maximum = 81 với bước nhảy (step) = 1 và Length2 dùng làm tham số cho đường MA chậm với minimum = 35, bước nhảy (step) = 2 và maxium =200.
-2 dòng tiếp theo tạo ra 2 đường MA1 (Nhanh) và MA2 (chậm) dựa trên tham số của 2 dòng trước đó.
-Ở dòng 5 và 6, tác giả tạo ra tín hiệu mua hay bán bằng hàm cross.
-Các đoạn code tiếp theo dùng để hiển thị tín hiệu mua bán trên đồ thị giá khi thực hiện backtest.&lt;/p&gt;
-
-&lt;p&gt;Sau khi thực hiện xong đoạn code, tác giả tạo ra một indicator trong menu chart ở bên tay trái. Cụ thể trong hình bên dưới, tôi đặt tên chỉ báo là MACrossSystem.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/Amibroker/ami1.png&quot; alt=&quot;folder&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Sau đó tôi load dữ liệu 1 mã cổ phiếu bất kì trong hệ thống để Backtest P&amp;amp;L. Mã ở đây tôi chọn là VIC (Vingroup). Tôi có đồ thị như phía dưới:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/Amibroker/ami2.png&quot; alt=&quot;chart1&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Mũi tên xanh lá cây thể hiện tín hiệu mua và mũi tên đỏ thể hiện tín hiệu bán. bằng trực quan, có thể thấy nếu xu hướng giá rõ ràng, tín hiệu mua cho ra kết quả tốt, tuy nhiên tín hiệu bán với đường MA(35)  không hề tốt, luôn cho ra tín hiệu bán khi giá đã điều chỉnh tương đối sâu. Khi viết đoạn code trên, tác giả đã sử dụng hàm Param để điều chỉnh độ nhanh chậm của đường MA trực tiếp trên chart. Vì vậy, bạn chỉ cần right-click vào chart, chọn parameters, rồi điều chỉnh lại đường MA theo ý muốn. Giả sử tôi chọn MA nhanh là 6 và MA chậm là 12, tôi có kết quả như sau:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/Amibroker/ami3.png&quot; alt=&quot;chart2&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Rõ ràng khi điều chỉnh độ lớn của MA chậm bằng 12, tín hiệu bán trở nên rõ nét hơn, bắt kịp với xu hướng điều chỉnh của đường cong giá. Tuy nhiên khi để MA12, tín hiệu nhiễu trở nên nhiều hơn, đặc biệt khi giá giao động trong biên độ nhỏ, xu hướng không rõ ràng, tín hiệu mua bán cho ra liên tục tăng phí giao dịch và turnover của tài khoản. Hơn thế nữa, lệnh mua và bán thường rơi vào cùng 1 vùng giá, không hề tạo ra lợi nhuận, đặc biệt là các tín hiệu mua bán đưa ra với chu kì nắm giữ ngắn hạn, thường khoảng 5-7 ngày&lt;/p&gt;
-
-&lt;p&gt;Để máy tính tự tối ưu hóa độ nhanh chậm của đường MA, ta có thể thay hàm Param thành hàm Optimize trong đoạn code viết ở trên.&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;span class=&quot;n&quot;&gt;Length1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Optimize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Length1&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;81&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;Length2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Optimize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Length2&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;35&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;200&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Save vào 1 file riêng trong folder, đặt tên là MACrossSystem2.afl. Sau đó mở Analysis trên Menu, chọn Automatic Analysis, bấm pick rồi chọn file MACrossSystem2.afl đã save trước đó trong mục code editor.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/Amibroker/ami4.png&quot; alt=&quot;chart3&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Trong menu Automatic Analysis, trong mục Settings chọn Report rồi chọn summary để kết quả sau khi tối ưu hóa hoặc backtest cho ra 1 report tổng hợp&lt;/p&gt;
-
-&lt;p&gt;Sau đó ở menu automatic analysis, chọn current symbol (tức là VIC) đã chọn ở phần trên, chọn from 2014 tới ngày hiện tại, sau đó bấm Optimize để tối ưu hóa lựa chọn về độ nhanh chậm của đường MA. Amibroker sẽ mô phỏng từ 4100 mẫu test để cho ra kết quả với lợi nhuận cao nhất được test với tín hiệu Cross MA.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/Amibroker/ami5.png&quot; alt=&quot;chart3&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Kết quả được thể hiện như hình bên dưới, lợi nhuận cao nhất là 70% khi kết hợp 2 đường MA nhanh là 65 và chậm là 24. Kì cục ở chỗ là tín hiệu cho ra khi thực hiện optimize lại cho thấy rằng đường MA chậm cắt lên trên đường MA nhanh thì tín hiệu mua cho ra lợi nhuận cao nhất. Cụ thể ở đây Length1 có giá trị 65 và Length2 có giá trị 24. Tôi tạo 1 đoạn code khác và apply vào chart VIC như sau:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;span class=&quot;n&quot;&gt;Length1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;65&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;Length2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;24&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;MA1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MA&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;C&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Length1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;MA2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MA&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;C&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Length2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;Buy&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Cross&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;MA1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MA2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;Sell&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Cross&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;MA2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MA1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;e&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Equity&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;Maxe&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;LastValue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Highest&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;Plot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Close&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Price&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;colorBlack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;styleCandle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;Plot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;MA1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;MA1&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;colorGreen&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;styleLine&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;Plot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;MA2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;MA2&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;colorBlue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;styleLine&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;shape&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Buy&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shapeUpArrow&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Sell&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shapeDownArrow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;PlotShapes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shape&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;IIf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Buy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;colorGreen&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;colorRed&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Iff&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Buy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Low&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;High&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)));&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Hệ thống cho ra tín hiệu như sau:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/Amibroker/ami6.png&quot; alt=&quot;chart4&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Cụ thể hơn, khi đường MA(65) cắt lên trên đường MA(24) tín hiệu cho lợi nhuận cao hơn nhiều, đối nghịch hoàn toàn với lý thuyết thường thấy. Khi áp dụng kết quả của quá trình tối ưu hóa, cổ phiếu cho ra lợi nhuận 77%. Giả sử tôi có 100 triệu vào ngày 1/1/2014, nếu theo hệ thống giao dịch này, tới 29/4/2016, tôi đã có 177 triệu VND trong tài khoản theo như kết quả backtest, đánh bại hoàn toàn hệ thống giao dịch sử dụng tín hiệu MA nhanh cắt lên trên MA chậm cổ điển. Tuy nhiên tối ưu hóa hệ thống giao dịch không đảm bảo trong tương lai bạn sẽ có lợi nhuận y hệt.&lt;/p&gt;
-
-&lt;p&gt;1 Điều cần lưu ý là nếu áp dụng MACS thì chu kì nắm giữ sẽ dài hơn, theo kết quả backtest, chu kì nắm giữ trung bình vào khoảng 44 ngày giao dịch, tức khoảng hơn 2 tháng. Các tay trader ngắn hạn theo xu hướng vài tuần tới 1 tháng hay những tay giao dịch T+3 sẽ không thích hệ thống này.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/Amibroker/ami7.png&quot; alt=&quot;chart5&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Bạn có thể backtest và optimize nhiều mã dựa vào chiến lược giao dịch như trên. Có thể thấy từ ví dụ này, các chỉ báo phân tích kĩ thuật cần được điều chỉnh và tối ưu hóa để cho ra tín hiệu tốt nhất. Một hệ thống giao dịch chỉ đúng khi được backtest hiệu quả và cho ra kết quả Out-of-sample tích cực.&lt;/p&gt;
-</description>
-        <pubDate>Fri, 29 Apr 2016 12:00:00 +0000</pubDate>
-        <link>http://NTLresearch.github.io/misc/AmibrokerTrendFollowing0</link>
-        <guid isPermaLink="true">http://NTLresearch.github.io/misc/AmibrokerTrendFollowing0</guid>
-        
-        <category>prg</category>
-        
-        <category>vi</category>
         
         
         <category>misc</category>

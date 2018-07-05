@@ -6,35 +6,120 @@
 </description>
     <link>http://NTLresearch.github.io/</link>
     <atom:link href="http://NTLresearch.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 05 Jul 2018 21:33:32 +0300</pubDate>
-    <lastBuildDate>Thu, 05 Jul 2018 21:33:32 +0300</lastBuildDate>
+    <pubDate>Fri, 06 Jul 2018 00:36:21 +0300</pubDate>
+    <lastBuildDate>Fri, 06 Jul 2018 00:36:21 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
-        <title>Nhức nhối mô hình định giá</title>
-        <description>&lt;p&gt;Hôm nay ngồi làm case study cho 1 công ty,  Tôi và ông bạn học cùng đại học lại ngồi thảo luận về mô hình định giá. Có quá nhiều thứ để nói về các mô hình định giá cổ phiếu từ cả góc nhìn thực tế và toán học.&lt;/p&gt;
+        <title>Mô hình định giá và sự khó hiểu của nó</title>
+        <description>&lt;p&gt;&lt;em&gt;Hôm nay ngồi làm case study cho 1 công ty, tôi và ông bạn học cùng đại học lại ngồi thảo luận về mô hình định giá. Có quá nhiều thứ để nói về các mô hình định giá cổ phiếu từ cả góc nhìn thực tế và toán học. 2 năm đầu sau khi tốt nghiệp đại học tôi vật lộn thực hành, kiểm tra các mô hình định giá, cố gắng áp dụng mô hình định giá vào trong các trường hợp cụ thể, công ty cụ thể, và mọi thứ đều không work out như tôi mong đợi bởi một lý do. Đó là bản chất mô hình định giá sử dụng các input một cách chủ quan và ko có tính hệ thống.&lt;/em&gt;&lt;/p&gt;
 
-&lt;h3 id=&quot;cng-thc-c-bn-ca-nh-gi&quot;&gt;&lt;em&gt;Công thức cơ bản của định giá&lt;/em&gt;&lt;/h3&gt;
-&lt;p&gt;Giá trị của một doanh nghiệp là gì? Với các mô hình định giá, giá trị của 1 doanh nghiệp đơn giản chỉ là, tìm xem trong tương lai, công ty sẽ kiếm được thêm bao nhiêu tiền, tăng trưởng bao nhiêu, nếu dùng từ ngữ chuyên môn gọi là forecast, sau đó tìm một tỉ lệ chiết khấu hợp lý để tính giá trị hiện tại của doanh nghiệp.&lt;/p&gt;
+&lt;h2 id=&quot;cng-thc-c-bn-ca-nh-gi&quot;&gt;&lt;em&gt;Công thức cơ bản của định giá&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;Giá trị của một doanh nghiệp là gì? Với các mô hình định giá, giá trị của 1 doanh nghiệp đơn giản chỉ là, tìm xem trong tương lai, công ty sẽ kiếm được thêm bao nhiêu tiền, tăng trưởng bao nhiêu, nếu dùng từ ngữ chuyên môn gọi là forecast, sau đó tìm một tỉ lệ chiết khấu hợp lý để chuyển đổi những giá trị forecast thành các giá trị hiện tại (tính present value).&lt;/p&gt;
 
-&lt;p&gt;Hiểu đơn giản, có 2 yếu tố mang tính chủ quan trong mô hình. Thứ nhất, nhà đầu tư cần đưa ra dự báo về tương lai, tính toán các yếu tố kì vọng. Thứ hai, nhà đầu tư cần ước lượng tỉ lệ chiết khấu sao cho phù hợp. Câu trả lời đặt ra là, dự đoán như thế nào là đúng, và chiết khấu bao nhiêu là đủ.&lt;/p&gt;
+&lt;p&gt;Hiểu đơn giản, có 2 yếu tố mang tính chủ quan trong mô hình. Thứ nhất, nhà đầu tư cần đưa ra dự báo về tương lai, tính toán các yếu tố kì vọng. Thứ hai, nhà đầu tư cần ước lượng tỉ lệ chiết khấu sao cho phù hợp để chiết khấu đống dự báo kia về giá hiện tại. Như Warren Câu trả lời đặt ra là, dự đoán như thế nào là đúng, và chiết khấu bao nhiêu là đủ.&lt;/p&gt;
 
-&lt;p&gt;Đầu tiên là về dự báo, nếu không có thông tin nội bộ và là tay trong của công ty, sẽ rất khó để biết được chính xác đâu là con số cho năm tới, 2 năm tới, 5 năm tới hay 10 năm tới. Một nhà phân tích độc lập hay thuộc tổ chức đơn giản sẽ liên hệ với công ty, và công ty sẽ cho ra con số. Cách làm này tỉ lệ chiến thắng vẫn là 50-50 bởi có ai dám chắc con số công ty bạn cover đưa cho bạn là chính xác?&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/VI/Valuation/VAL_5.jpg&quot; alt=&quot;VAL_1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Đầu tiên là về dự báo, nếu không có thông tin nội bộ và là tay trong của công ty, sẽ rất khó để biết được chính xác đâu là con số cho năm tới, 2 năm tới, 5 năm tới hay 10 năm tới. Một nhà phân tích độc lập hay thuộc tổ chức đơn giản sẽ liên hệ với công ty, và công ty sẽ cho ra con số. Cách làm này tỉ lệ chiến thắng vẫn là 50-50 bởi có ai dám chắc con số công ty bạn cover đưa cho bạn là chính xác? Và liệu công ty có tính toán được trong 5 năm tới, liệu vị thế trên thị trường của họ có thể thay đổi hay giữ nguyên?&lt;/p&gt;
 
 &lt;p&gt;Thứ hai là về lãi suất chiết khấu. Thông thường phương pháp phổ biến là sử dụng CAPM. Như đã biết thì CAPM không đúng, và cái phần risk premium trong CAPM thì cũng rất là chủ quan. Với thị trường Việt Nam, lúc thì người ta bảo là 9%, mấy hôm sau lại bảo 10%. Việc lựa chọn con số cho từng thời điểm nhất định lại càng khó hơn bởi đơn giản risk premium và cả CAPM đều có tính dynamic và phụ thuộc vào thời gian.&lt;/p&gt;
 
-&lt;h4 id=&quot;gordon-growth-model&quot;&gt;Gordon Growth Model&lt;/h4&gt;
+&lt;h2 id=&quot;gordon-growth-model&quot;&gt;&lt;em&gt;Gordon Growth Model&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;Mô hình cơ bản dễ hiểu nhất khi định giá cổ phiếu là Gordon Growth Model (GGM). Công thức đơn giản như thế này:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;V_0 = \frac{d_1}{1+r} + \frac{d_1}{(1+r)^2} + ... + \frac{1}{(1+r)^{T-1}} \frac{d_T}{r-g}&lt;/script&gt;
+
+&lt;p&gt;GGM buộc chúng ta phải đưa ra dự báo cho tăng trưởng của cổ tức trong 1,2… 5 năm và cả tỉ lệ tăng trưởng trong vô hạn. Việc dự báo trong vô hạn gần như là bất khả thi. Quan trọng hơn, g trong vô hạn bao nhiêu là đủ và bao nhiêu là hợp lý? 3%? 4%? 5%? Tất cả con số trên đều có thể được lựa chọn bởi những lý do vô cùng hợp lý và thuyết phục. Với junior analyst, họ sẽ nói, ok sếp em bảo 3% là hợp lý ở thị trường này! Với senior analyst thì bảo 3% là ngưỡng mà thế giới áp dụng, xem báo cáo của JPM hay GS kìa! Một ông economist cũng có thể nói rằng, vì tỉ lệ GDP growth rate toàn cầu trong nhiều thâp kỉ qua trung bình là 2-4% nên tôi nghĩ 3% là hợp lý!… Các lý do trên đều có 1 sự hợp lý nhất định, và khi nghe xong tôi cũng thấy, uh hợp lý đấy, nhưng mỗi tội thị giá ngoài thị trường nó vận động không như thế.&lt;/p&gt;
+
+&lt;h2 id=&quot;free-cash-flow-model&quot;&gt;&lt;em&gt;Free Cash Flow Model&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;Với dân kế toán, mô hình Discounted Cash Flow có thể hợp lý hơn (DCF) một chút:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;V_0 = \frac{FCF_1}{1+r} + \frac{FCF_2}{(1+r)^2} + ... + \frac{1}{(1+r)^{T-1}} \frac{FCF_T}{r-g} - Net Debt&lt;/script&gt;
+
+&lt;p&gt;Tương tự như GGM, FCF model bao gồm 2 thành tố chủ quan là dự báo trong ngắn hạn và tỉ lệ tăng trưởng trong vô hạn. Terminal value được tính toán từ tỉ lệ tăng trưởng vô hạn kia đóng vai trò quan trọng trong tính toán giá trị hiện tại của cổ phiếu. Giả sử tôi ước lượng được giá trị FCF của cổ phiếu trong 5 năm tới là 500 VND 1 cổ phiếu, tăng trưởng 0% và doanh nghiệp không có nợ. Thêm vào đó, tôi ước lượng tăng trưởng vô hạn ở mức 3%, lãi suất chiết khấu ở mức 7%. Thông tin chi tiết như ở sheet bên dưới&lt;/p&gt;
+
+&lt;iframe src=&quot;https://docs.google.com/spreadsheets/d/e/2PACX-1vRPlKcNkTVZdedyQ0Iys9-DRCckf20lcN6b8By_Jvwf7114QQu8dG1MJNUrFLoB53lnQcZxE7TnDZfx/pubhtml?gid=0&amp;amp;single=true&amp;amp;widget=true&amp;amp;headers=false&quot; width=&quot;700&quot; height=&quot;400&quot;&gt;
+&lt;/iframe&gt;
+
+&lt;p&gt;Khi tính toán ra giá cổ phiếu, tôi nhận thấy giá trị ước lượng của mình phụ thuộc tới hơn 70% vào giá trị terminal value của mô hình. Có nghĩa là, rất nhiều yếu tố của doanh nghiệp vô hình chung được gói gọn vào tham số g trong mô hình định giá. Điều này hẳn rất vô lý và phi logic.&lt;/p&gt;
+
+&lt;p&gt;Đặc tính chủ quan này của mô hình định giá được chỉ ra bởi Benjamin Graham, tác giả của cuốn sách huyền thoại Security Analysis. Và theo như John Maynard Keynes, cha đẻ của lý thuyết kinh tế Keynes nói rằng:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/VI/Valuation/VAL_1.jpg&quot; alt=&quot;VAL_1&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Thật là ngờ ngệch trong việc đưa ra những kì vọng, để rồi đặt lòng tin vào những thứ rất không chắc chắn (nguyên văn: It would be foolish, in forming our expectations, to attach great weight to matters which are very uncertain)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Có thể hiểu ở đây, chúng ta đưa ra những kì vọng về tỉ lệ tăng trưởng, về dòng tiền trong 5-10 năm hay 20 năm nữa, nhưng quên mất rằng chúng ta đang đặt lòng tin vào những thứ vô cùng không chắc chắn. Khó ai có thể dự đoán chuẩn xác tỉ lệ tăng trưởng dòng tiền (rất nhiều điều chỉnh cho accural items, 1 ước lượng đúng cho capex …) Rất nhiều lần tôi và thằng bạn làm cùng cãi nhau về ước lượng tỉ lệ tăng trưởng của cash flow cũng như growth rate. Có những trường hợp nó đúng và có những trường hợp tôi đúng, nhưng cuối cùng odd ratio của tôi và nó cũng chỉ là 1-1, tức là tôi chỉ đúng 50% và nó cũng thế. Việc đưa ra 1 con số như 4% cho năm tới, 3% cho năm thứ hai hay đại loại những thứ như vậy gần như là vô nghĩa. Nếu dành đủ thời gian ra backtest toàn bộ báo cáo equity research của những công ty chứng khoán lớn, gần như tất cả các trường hợp đều có sai lệch giữa thị giá và giá khuyến nghị.&lt;/p&gt;
+
+&lt;h2 id=&quot;vy-ti-sao-ai-cng-s-dng-nhng-m-hnh-rt-ch-quan-v-tnh-chnh-xc-rt-thp&quot;&gt;&lt;em&gt;Vậy tại sao ai cũng sử dụng những mô hình rất chủ quan và tính chính xác rất thấp?&lt;/em&gt;&lt;/h2&gt;
+
+&lt;p&gt;Chúng ta cần vạch ra 1 ranh giới rất rõ, giữa việc đầu tư (investment) và việc tư vấn tài chính (advisory). Với tư vấn tài chính, chẳng hạn như M&amp;amp;A hay IPO, analyst được tiếp cận với thông tin tài chính, các thông tin liên quan đến kế hoạch, dự định của công ty một cách chính xác và trực tiếp. Vì thế rủi ro ước lượng các input như FCF hay terminal growth rate cũng giảm xuống ở mức thấp hơn. Tuy nhiên điều đó không có nghĩa là rủi ro không còn. Kết quả nghiên cứu trong lĩnh vực finance gần đây chỉ ra rằng, hơn 70% các phi vụ m&amp;amp;a thì những công ty bị mua thường bị overpriced. Ngay cả khi tiếp cận được thông tin rủi ro từ việc định giá vẫn còn rất lớn. Hơn nữa, hoạt động tư vấn tài chính thường không gắn liền với performance của cổ phiếu mà gắn với một mức phí cố định (hoặc bán cố định trong nhiều trường hợp). Sẽ rất khó để nhà phân tích đưa ra mức giá chuẩn khi lợi ích của anh ta chỉ gắn liền với một mức phí đã được thỏa thuận trước, dù đúng hay không đúng, không có gì ngăn cản anh ta nhận được phần thù lao sau khi thương vụ hoàn thành. Trong trường hợp có conflict of interest, nhiều trường hợp giá có thể đẩy lên cao hơn (IPO) hoặc đẩy xuống thấp hơn (Takeover), đơn giản bằng cách điều chỉnh tham số của mô hình.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/VI/Valuation/VAL_6.jpg&quot; alt=&quot;VAL_1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ngược lại , trong trường hợp 1 quỹ đầu tư hay 1 người có vốn muốn đầu tư vào một công ty (không tính đến activist investor), lợi ích của anh ta gắn chặt với performance của cổ phiếu, vì vậy anh ta có động lực lớn hơn để tìm ra giá trị thực của cổ phiếu. Vậy đâu là cách để tìm ra giá trị thật của công ty thay vì sử dụng mô hình định giá phổ thông? Có vô số cách được sử dụng trong cuộc sống, tuy nhiên value investing - hay đầu tư giá trị có lẽ phần nào bù đắp được những khiếm khuyết của mô hình định giá cơ bản đề cập phía trên bởi cách tiếp cận logic hơn của nó.&lt;/p&gt;
 </description>
         <pubDate>Fri, 06 Jul 2018 12:00:00 +0000</pubDate>
-        <link>http://NTLresearch.github.io/statistics/testgooglesheet</link>
-        <guid isPermaLink="true">http://NTLresearch.github.io/statistics/testgooglesheet</guid>
+        <link>http://NTLresearch.github.io/value/investing/testgooglesheet</link>
+        <guid isPermaLink="true">http://NTLresearch.github.io/value/investing/testgooglesheet</guid>
         
-        <category>Statistics</category>
+        <category>Value</category>
         
-        <category>Econometrics</category>
+        <category>Investing</category>
         
         
-        <category>statistics</category>
+        <category>value</category>
+        
+        <category>investing</category>
+        
+      </item>
+    
+      <item>
+        <title>Value investing là gì</title>
+        <description>&lt;h4 id=&quot;vy-value-investing-l-g&quot;&gt;&lt;em&gt;Vậy Value investing là gì?&lt;/em&gt;&lt;/h4&gt;
+
+&lt;p&gt;Có rất nhiều cách để giải thích value investing, nhưng tôi sẽ dùng cách trực quan để giải thích cách thức value investing vận động.&lt;/p&gt;
+
+&lt;p&gt;Giờ tôi sẽ tưởng tượng rằng, doanh nghiệp là một mô hình lego, được lắp ráp từ các mảnh khác nhau, mỗi mảnh có 1 nhiệm vụ riêng biệt, ví dụ 1 item trong balance sheet (như cash), 1 factor trong business strategy (supply chain management) hay 1 con người trong bộ máy nhân sự.
+&lt;img src=&quot;/images/VI/Valuation/VAL_2.jpg&quot; alt=&quot;VAL_2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Mỗi doanh nghiệp sẽ có hình thù khác nhau, cấu trúc khác nhau, được xây dựng theo 1 triết lý khác nhau. Giá trị của một mô hình lego hoàn thiện, so với 1 tập hợp các mảnh chưa lắp ráp lại đó là trí tưởng tượng, công thức và công sức bỏ ra của người lắp ráp.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/VI/Valuation/VAL_3.jpg&quot; alt=&quot;VAL_3&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Vậy lego thì liên quan gì đến doanh nghiệp? Đơn giản thế này, 1 chiếc ô tô chở hàng, 1 nhà máy, 1 chiếc cần cẩu không thể hoạt động độc . Tuy nhiên khi có bàn tay của các doanh nhân, chúng được thiết kế, đưa vào một hệ thống và sản sinh ra việc làm, doanh thu, lợi nhuận và phúc lợi cho xã hội. Nó giống như những mảnh lego vứt vương vãi khi qua bàn tay nhào nặn của người lắp ráp sẽ trở thành 1 sản phẩm đẹp mắt, bày biện được trên giá sách và tạo ra giá trị thẩm mỹ. Vậy có thể hiểu, mỗi mô hình lego hoàn thiện tạo ra giá trị tương đương với giá trị của từng mảnh ghép cộng với giá trị về mặt thẩm mỹ đem lại bởi trí tưởng tượng và sự khéo léo của người lắp ráp.&lt;/p&gt;
+
+&lt;p&gt;Liên hệ với định giá, đơn giản mỗi item trong bảng cân đối kế toán mang một giá trị nhất định, sau khi chúng được nhét vào 1 thực thể là 1 công ty, giá trị của chúng tăng lên, tuy nhiên suy cho cùng thì nó vẫn chỉ là 1 item, có giá trị tuyệt đối. 1 chiếc ô tô thì đương nhiên vẫn có thể đem bán ngòai chợ xe, 1 chiếc máy tính cũng vậy. Vậy giả trị công ty ở mức thấp nhất có lẽ là giá trị tổng của từng mảnh ghép nhỏ khi đứng 1 mình, hay đúng hơn là giá trị thanh lý khi công ty phá sản và bị giải chấp. Khi không còn tồn tại ở một thực thể, đương nhiên giá trị mỗi item sẽ thấp hơn giá trị khi đứng trên bảng cân đối. Câu hỏi đặt ra là, chiết khấu cho 1 item bao nhiêu là đủ?&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/VI/Valuation/VAL_4.jpg&quot; alt=&quot;VAL_4&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Nhìn vào mô hình phức tạp trên, nếu muốn tháo ra bán, thì tháo kiểu gì? đương nhiên là tháo từ ngoài vào trong rồi. Đúng, cũng như doanh nghiệp, khi giải chấp, phải xử lý đống tiền mặt trước, sau đó đến xe cộ, nhà máy, đất dai, từ thanh khoản đến không thanh khoản và cuối cùng là mấy thứ vô dụng không bán hay xử lý được. Lúc này, giá trị doanh nghiệp ở mức tuyệt vọng nhất sẽ tương đương mức giá trị khi nó phải giải chấp, đấy là giới hạn dưới của công ty. Vốn không phải dân học tài chính kế , tôi nhận ra khái niệm này khi thằng bạn ngồi bàn bên cạnh hỏi:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“Ê mày, làm sao tao biết cổ phiếu này rơi xuống đáy, đâu là đáy?”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Vậy khi thanh lý hết tài sản, trả hết nợ, phần còn lại nếu dương sẽ là giá trị thấp nhất của công ty, đương nhiên có thể nó sẽ bằng 0, hoặc cũng có thể lớn hơn rất nhiều (ví dụ có lô đất bị định giá thấp…).&lt;/p&gt;
+
+&lt;p&gt;Thay vì bắt đầu định giá công ty bằng một công thức định giá cụ thể, tôi nghĩ tôi sẽ luôn luôn bắt đầu bằng việc ước lượng xem giá trị của công ty khi phá sản và phải giải chấp là bao nhiêu. Trong trường hợp xấu nhất, khi việc đầu tư thua lỗ, tôi biết tôi sẽ lỗ ở mức bao nhiêu, và thu lại được gì.&lt;/p&gt;
+
+&lt;p&gt;Bài viết này tới đây đã là khá dài, tôi sẽ để dành và viết tiếp trong phần 2.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 06 Jul 2018 12:00:00 +0000</pubDate>
+        <link>http://NTLresearch.github.io/value/investing/VILAGI</link>
+        <guid isPermaLink="true">http://NTLresearch.github.io/value/investing/VILAGI</guid>
+        
+        <category>Value</category>
+        
+        <category>Investing</category>
+        
+        
+        <category>value</category>
+        
+        <category>investing</category>
         
       </item>
     
@@ -1109,56 +1194,6 @@ plot(pressure)
         
         
         <category>mf</category>
-        
-      </item>
-    
-      <item>
-        <title>Risk contribution và danh mục đầu tư</title>
-        <description>&lt;p&gt;&lt;em&gt;Bài viết dựa trên lý thuyết Risk Parity.&lt;/em&gt;
-Giả sử 1 danh mục đầu tư có 2 tài sản, 1 là cổ phiếu và 2 là trái phiếu. Thường thấy chúng ta sẽ đầu tư theo tỉ lệ vàng, phân bổ 60% nguồn vồn vào cổ phiếu và 40% nguồn vốn vào trái phiếu.&lt;/p&gt;
-
-&lt;p&gt;Dữ liệu phân tích chỉ ra rằng, volatility của stock (cổ phiếu) tính bằng standard deviation (độ lệch chuẩn) là 15% và của bond (trái phiếu) là 5%. Correlation hay còn gọi là hệ số tương quan của cổ phiếu và trái phiếu là 0.2.&lt;/p&gt;
-
-&lt;p&gt;Theo công thức tính volatility của cả portfolio, chúng ta có:&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\sigma_p = \displaystyle\sqrt{(\sigma_s^2 w_s^2 + \sigma_b^2 w_b^2 + 2 w_b w_s \sigma_s \sigma_b \rho_{sb}})&lt;/script&gt;
-
-&lt;p&gt;Áp dụng công thức trên vào số liệu chúng ta ước lượng, volatility của portfolio tương đương 9.6% dựa vào standard deviation. Cần nhớ chúng ta có công thức liên hệ giữa standard deviation và variance (độ lệch chuẩn và phương sai) như sau:&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;var(p) = \sigma_p^2&lt;/script&gt;
-
-&lt;p&gt;Thay vì dùng volatility dựa trên standard deviation thuần túy, chúng ta có thể xác định mức độ đóng góp rủi ro của mỗi tài sản vào danh mục chung bằng variance. Cụ thể ở đây, có thể xác định được variance của stock tương đương:&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\sigma_s^2 w_s^2 + \rho_{sb} w_s w_b \sigma_s \sigma_b&lt;/script&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;0.6^2\times0.15^2 + 0.2 \times0.6\times0.4\times0.15\times0.05 = 0.00846&lt;/script&gt;
-
-&lt;p&gt;và variance của bond tương đương:&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\sigma_b^2 w_b^2 + \rho_{sb} w_s w_b \sigma_s \sigma_b&lt;/script&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;0.4^2\times0.05^2 + 0.2\times0.6\times0.4\times0.15\times0.05 = 0.00076&lt;/script&gt;
-
-&lt;p&gt;Chúng ta có variance của portfolio tương đương 0.009216. Vậy mức độ rủi ro đóng góp vào danh mục chung của stock và bond lần lượt là :&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{0.00846}{0.009216} = 0.92 = 92 \%&lt;/script&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{0.00076}{0.009216} = 0.08 = 8 \%&lt;/script&gt;
-
-&lt;p&gt;Vậy với 1 danh mục đầu tư thuần túy với 60% cổ phiếu và 40% trái phiếu, rủi ro của danh mục chủ yếu đến từ rủi ro của cổ phiếu hơn là trái phiếu.&lt;/p&gt;
-
-&lt;p&gt;Việc sử dụng thuật ngữ “balanced-portfolio” với 60% cổ phiếu và 40% trái phiếu không thực sự phản ánh thực tế rằng, 60% phân bổ cổ phiếu đóng góp tới 92% rủi ro.&lt;/p&gt;
-
-&lt;p&gt;Điều nhiều nhà đầu tư vẫn tin đó là 1 danh mục 60% cổ phiếu và 40% trái  sẽ có 60% rủi ro đóng góp bởi cổ phiếu và 40% đóng góp bởi trái phiếu. Vậy hiệu quả và rủi ro của danh mục đầu tư cần được đánh giá kĩ càng hơn.&lt;/p&gt;
-</description>
-        <pubDate>Fri, 14 Oct 2016 12:00:00 +0000</pubDate>
-        <link>http://NTLresearch.github.io/misc/RiskContributionAndPortfolio</link>
-        <guid isPermaLink="true">http://NTLresearch.github.io/misc/RiskContributionAndPortfolio</guid>
-        
-        <category>portfolio</category>
-        
-        
-        <category>misc</category>
         
       </item>
     

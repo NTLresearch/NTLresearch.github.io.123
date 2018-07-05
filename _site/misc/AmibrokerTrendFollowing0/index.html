@@ -17,9 +17,17 @@
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
     <link rel="canonical" href="http://NTLresearch.github.io/misc/AmibrokerTrendFollowing0">
     <link rel="alternate" type="application/rss+xml" title="NTL RESEARCH" href="http://NTLresearch.github.io/feed.xml" />
-    <script type="text/javascript"
-    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-    </script>
+
+    <script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
+       <script type="text/x-mathjax-config">
+         MathJax.Hub.Config({
+           tex2jax: {
+             inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+             processEscapes: true
+           }
+         });
+       </script>
+       <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
 </head>
 
@@ -250,6 +258,7 @@ Các đoạn code tiếp theo dùng để hiển thị tín hiệu mua bán trê
 
 <p>Bạn có thể backtest và optimize nhiều mã dựa vào chiến lược giao dịch như trên. Có thể thấy từ ví dụ này, các chỉ báo phân tích kĩ thuật cần được điều chỉnh và tối ưu hóa để cho ra tín hiệu tốt nhất. Một hệ thống giao dịch chỉ đúng khi được backtest hiệu quả và cho ra kết quả Out-of-sample tích cực.</p>
 
+                            <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
                         </article>
                     </div>
                 </div>
@@ -327,6 +336,6 @@ Các đoạn code tiếp theo dùng để hiển thị tín hiệu mua bán trê
     src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
 
-    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
     </body>
 </html>

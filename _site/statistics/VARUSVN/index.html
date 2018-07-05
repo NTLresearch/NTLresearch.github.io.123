@@ -17,9 +17,17 @@
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
     <link rel="canonical" href="http://NTLresearch.github.io/statistics/VARUSVN">
     <link rel="alternate" type="application/rss+xml" title="NTL RESEARCH" href="http://NTLresearch.github.io/feed.xml" />
-    <script type="text/javascript"
-    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-    </script>
+
+    <script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
+       <script type="text/x-mathjax-config">
+         MathJax.Hub.Config({
+           tex2jax: {
+             inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+             processEscapes: true
+           }
+         });
+       </script>
+       <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
 </head>
 
@@ -151,15 +159,175 @@
                             <p class="post-meta">Jul 5, 2018</p>
                         </header>
                         <div>
-                            <img class="center-image" src="/images/Amibroker/RSI2/featured_image.jpg" height=400px>
+                            <img class="center-image" src="/images/Stats/VARUSVN/feature_image.jpg" height=400px>
                         </div>
                         <br>
                         <article class="post-content font-body1">
-                            <p>Trong năm 2017 và đầu năm 2018, có 1 hiện tượng khá thường xuyên xảy ra, đó là mỗi khi thị trường chứng khoán Mỹ mất điểm vào ngày hôm trước thì ngay hôm sau thị trường Việt Nam cũng đỏ lửa. Hiện tượng này khá phổ biến trên thế giới và được nghiên cứu kĩ trong các bài báo khoa học. Ở bài viết này tôi sẽ ước lượng mô hình VAR để xem xét hiện tượng này với chỉ số Vnindex và  Dow Jones Industrial Average (viết tắt là DJI).</p>
+                            <p><em>Trong năm 2017 và đầu năm 2018, có 1 hiện tượng khá thường xuyên xảy ra, đó là mỗi khi thị trường chứng khoán Mỹ mất điểm vào ngày hôm trước thì ngay hôm sau thị trường Việt Nam cũng đỏ lửa. Ngược lại khi thị trường Mỹ tăng thì thị trường Việt Nam cũng tăng ngay trong ngày hôm sau. Hiện tượng này khá phổ biến trên thế giới và được nghiên cứu kĩ trong các bài báo khoa học về chuỗi thời gian. Ở bài viết này tôi sẽ ước lượng mô hình Vector Autoregressive Model (VAR) để xem xét hiện tượng này với chỉ số Vnindex và  Dow Jones Industrial Average (viết tắt là DJI).</em></p>
 
-<h1 id="data">Data</h1>
-<p>Đầu tiên tôi thu thập 2 chuỗi thời gian là giá đóng cửa của VNINDEX và DJI trên yahoo finance. Tiếp đến tôi đưa vào python, xử lý mảng</p>
+<h2 id="clean-data">1. Clean Data</h2>
+<p>Đầu tiên tôi thu thập 2 chuỗi thời gian là giá đóng cửa của VNINDEX và DJI trên yahoo finance. Tiếp đến tôi đưa vào python, xử lý mảng, tôi có 2 biến lưu 2 pandas series cho  như sau:</p>
 
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="c"># output VNINDEX</span>
+<span class="n">Date</span><span class="o">/</span><span class="n">Time</span>   <span class="n">CLOSE</span>
+<span class="n">Date</span><span class="o">/</span><span class="n">Time</span>                    
+<span class="mi">2013</span><span class="o">-</span><span class="mo">07</span><span class="o">-</span><span class="mo">03</span> <span class="mi">2013</span><span class="o">-</span><span class="mo">07</span><span class="o">-</span><span class="mo">03</span>  <span class="mf">487.35</span>
+<span class="mi">2013</span><span class="o">-</span><span class="mo">07</span><span class="o">-</span><span class="mo">04</span> <span class="mi">2013</span><span class="o">-</span><span class="mo">07</span><span class="o">-</span><span class="mo">04</span>  <span class="mf">487.22</span>
+
+ <span class="c"># output DJI</span>
+ <span class="n">Date</span>          <span class="n">Open</span>          <span class="n">High</span>           <span class="n">Low</span>         <span class="n">Close</span>  \
+ <span class="n">Date</span>                                                                            
+ <span class="mi">2013</span><span class="o">-</span><span class="mo">07</span><span class="o">-</span><span class="mo">03</span> <span class="mi">2013</span><span class="o">-</span><span class="mo">07</span><span class="o">-</span><span class="mo">03</span>  <span class="mf">14923.730469</span>  <span class="mf">15025.900391</span>  <span class="mf">14858.929688</span>  <span class="mf">14988.370117</span>   
+ <span class="mi">2013</span><span class="o">-</span><span class="mo">07</span><span class="o">-</span><span class="mo">05</span> <span class="mi">2013</span><span class="o">-</span><span class="mo">07</span><span class="o">-</span><span class="mo">05</span>  <span class="mf">14995.459961</span>  <span class="mf">15137.509766</span>  <span class="mf">14971.200195</span>  <span class="mf">15135.839844</span>   
+
+               <span class="n">Adj</span> <span class="n">Close</span>    <span class="n">Volume</span>  
+ <span class="n">Date</span>                                
+ <span class="mi">2013</span><span class="o">-</span><span class="mo">07</span><span class="o">-</span><span class="mo">03</span>  <span class="mf">14988.370117</span>  <span class="mi">61000000</span>  
+ <span class="mi">2013</span><span class="o">-</span><span class="mo">07</span><span class="o">-</span><span class="mo">05</span>  <span class="mf">15135.839844</span>  <span class="mi">94560000</span></code></pre></div>
+
+<p>Tôi sẽ lọc cột CLOSE của VNINDEX và cột Adj Close của DJI vào 1 pandas dataframe khác, sau đó xử lý missing data bằng phương pháp “forward fill” trong pandas. Sở dĩ có missing data/NA bởi ngày nghỉ của Việt Nam khác với ngày nghỉ của Mỹ (chẳng hạn 2/9 quốc khánh Việt Nam nghỉ những thị trường Mỹ vẫn giao dịch bình thường …). Tôi sẽ chỉ sử dụng data từ 1/1/2017 tới 29/6/2018. Sau cùng tôi được dataframe như sau:</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">Close</span>     <span class="n">Adj</span> <span class="n">Close</span>
+ <span class="n">Date</span><span class="o">/</span><span class="n">Time</span>                       
+ <span class="mi">2017</span><span class="o">-</span><span class="mo">01</span><span class="o">-</span><span class="mo">03</span>  <span class="mf">672.01</span>  <span class="mf">19881.759766</span>
+ <span class="mi">2017</span><span class="o">-</span><span class="mo">01</span><span class="o">-</span><span class="mo">04</span>  <span class="mf">674.70</span>  <span class="mf">19942.160156</span></code></pre></div>
+
+<p>Bước cuối cùng là tính toán daily return, đổi tên cột như sau:</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">VNINDEX</span>     <span class="n">DJI</span>
+ <span class="n">Date</span><span class="o">/</span><span class="n">Time</span>                       
+ <span class="mi">2017</span><span class="o">-</span><span class="mo">01</span><span class="o">-</span><span class="mo">03</span>  <span class="mf">672.01</span>  <span class="mf">19881.759766</span>
+ <span class="mi">2017</span><span class="o">-</span><span class="mo">01</span><span class="o">-</span><span class="mo">04</span>  <span class="mf">674.70</span>  <span class="mf">19942.160156</span></code></pre></div>
+
+<p>Sau đó tôi xuất pandas dataframe ra file csv và sử dụng R để ước lượng mô hình VAR. Sở dĩ tôi không dùng python vì các package econometrics time series của python không ngon bằng R (package python statmodels vẫn đang hoàn thiện, không ok lắm).</p>
+
+<h2 id="estimation">2. Estimation</h2>
+<p>Trong R tôi sử dụng package “vars” để ước lượng mô hình VAR.</p>
+
+<p>Đầu tiên là xem auto correlation function (hàm tự tương quan) trả về giá trị thế nào với dataframe vừa được clean qua hình dưới đây:</p>
+
+<p><img src="/images/Stats/VARUSVN/VARUSVN_1.jpeg" alt="VAR_1" /></p>
+
+<p>Aucorrelation của VNINDEX và DJI với lag của chính nó khá nhỏ. Tuy nhiên điều thú vị nằm ở đồ thị góc bên phải - VNINDEX &amp; DJI. Khi tính correlation giữa VNINDEX và DJI daily return với DJI được lag 1 ngày thì hệ số khá significant. Vậy thì có khả năng cao rằng chuỗi DJI return lag 1 ngày sẽ cung cấp manh mối cho chúng ta về return của VNINDEX ngày hôm nay.</p>
+
+<p>Trước khi ước lượng thì tôi sẽ xem xét phân phối của 2 chuỗi VNINDEX và DJI return qua đồ thị bên dưới:</p>
+
+<p><img src="/images/Stats/VARUSVN/VARUSVN_2.jpeg" alt="VAR_2" /></p>
+
+<p><img src="/images/Stats/VARUSVN/VARUSVN_3.jpeg" alt="VAR_3" /></p>
+
+<p>Thông thường dữ liệu daily return sẽ bị skewed và fat tail, trong trường hợp này cũng không ngoại lệ.</p>
+
+<p>Bước tiếp theo sẽ là ước lượng. Công thức toán học cơ bản của VAR ở dạng sau:</p>
+
+<script type="math/tex; mode=display">y_t = A_1 y_{t-1} + ... + A_p y_{t-p} + u_t</script>
+
+<p>Tôi sẽ không đi cụ thể vào công thức toán học cũng như chi tiết các ma trận của coefficients và residuals. Thông tin có thể tham khảo thêm tại <a href="https://cran.r-project.org/web/packages/vars/vignettes/vars.pdf">vars package</a></p>
+
+<p>Trong bài viết này, tôi sẽ dùng mô hình VAR tôi sẽ để lag 1 ngày và thêm intercept/constant vào phương trình hồi quy dựa vào đầu mối thu được từ đồ thị acf phía trên.</p>
+
+<p>Kết quả ước lượng được như sau:</p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># first equation</span><span class="w">
+</span><span class="n">Estimation</span><span class="w"> </span><span class="n">results</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">equation</span><span class="w"> </span><span class="n">VNINDEX</span><span class="o">:</span><span class="w">
+</span><span class="o">========================================</span><span class="w">
+</span><span class="n">VNINDEX</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">VNINDEX.l1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">DJI.l1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">const</span><span class="w">
+
+             </span><span class="n">Estimate</span><span class="w"> </span><span class="n">Std.</span><span class="w"> </span><span class="n">Error</span><span class="w"> </span><span class="n">t</span><span class="w"> </span><span class="n">value</span><span class="w"> </span><span class="n">Pr</span><span class="p">(</span><span class="o">&gt;|</span><span class="n">t</span><span class="o">|</span><span class="p">)</span><span class="w">    
+</span><span class="n">VNINDEX.l1</span><span class="w"> </span><span class="m">-0.0428724</span><span class="w">  </span><span class="m">0.0511163</span><span class="w">  </span><span class="m">-0.839</span><span class="w">    </span><span class="m">0.402</span><span class="w">    
+</span><span class="n">DJI.l1</span><span class="w">      </span><span class="m">0.3979298</span><span class="w">  </span><span class="m">0.0741806</span><span class="w">   </span><span class="m">5.364</span><span class="w"> </span><span class="m">1.45e-07</span><span class="w"> </span><span class="o">***</span><span class="w">
+</span><span class="n">const</span><span class="w">       </span><span class="m">0.0008407</span><span class="w">  </span><span class="m">0.0005459</span><span class="w">   </span><span class="m">1.540</span><span class="w">    </span><span class="m">0.124</span><span class="w">    
+
+</span><span class="n">Estimation</span><span class="w"> </span><span class="n">results</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">equation</span><span class="w"> </span><span class="n">DJI</span><span class="o">:</span><span class="w">
+</span><span class="o">====================================</span><span class="w">
+</span><span class="n">DJI</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">VNINDEX.l1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">DJI.l1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">const</span><span class="w">
+
+             </span><span class="n">Estimate</span><span class="w"> </span><span class="n">Std.</span><span class="w"> </span><span class="n">Error</span><span class="w"> </span><span class="n">t</span><span class="w"> </span><span class="n">value</span><span class="w"> </span><span class="n">Pr</span><span class="p">(</span><span class="o">&gt;|</span><span class="n">t</span><span class="o">|</span><span class="p">)</span><span class="w">
+</span><span class="n">VNINDEX.l1</span><span class="w">  </span><span class="m">0.0021079</span><span class="w">  </span><span class="m">0.0365503</span><span class="w">   </span><span class="m">0.058</span><span class="w">    </span><span class="m">0.954</span><span class="w">
+</span><span class="n">DJI.l1</span><span class="w">     </span><span class="m">-0.0452486</span><span class="w">  </span><span class="m">0.0530422</span><span class="w">  </span><span class="m">-0.853</span><span class="w">    </span><span class="m">0.394</span><span class="w">
+</span><span class="n">const</span><span class="w">       </span><span class="m">0.0005865</span><span class="w">  </span><span class="m">0.0003903</span><span class="w">   </span><span class="m">1.503</span><span class="w">    </span><span class="m">0.134</span><span class="w">
+</span><span class="c1"># second equation</span></code></pre></div>
+
+<p>Có thể thấy tất cả các hệ số của phương trình 2 đều không significant, tức là giá trị ngày hôm trước của DJI return và VNINDEX return không có tác dụng gì trong việc dự đoán hay giải thích cho DJI return tại thời điểm hiện tại</p>
+
+<p>Tuy nhiên, ở phương trình 1, hệ số của DJI.l1 là 0.3979 và có significant tại signficance level là 95%. Vậy có nghĩa là return ngày hôm trước của DJI phân nào có thể giải thích và dự báo cho return ngày hôm nay của VNINDEX.</p>
+
+<p>Giả sử hệ số kia là đúng, vậy có thể hiểu, nếu DJI ngày 5/7/2018 tăng 5% ở mức giá đóng cửa, vậy có khả năng thị trường Việt nam cũng sẽ tăng tương đương:</p>
+
+<script type="math/tex; mode=display">5 \% \times 0.3979 + a_t = 1.9875 \% + a_t</script>
+
+<p>Ở đây $ a_t $ có thể được hiểu là một tham số ngẫu nhiên cho thị trường Việt Nam. Nhiều lúc ngay cả khi DJI bên Mỹ có tăng 5-6% nhưng chúng ta không dám chắc thị trường Việt Nam sẽ tăng với tỉ lệ tương ứng bởi có những factor khác ảnh hưởng đến thị trường (chẳng hạn cú shock liên quan đến Biển Đông, chính trị căng thẳng với Trung Quốc … ).</p>
+
+<p>Việc cần làm tiếp theo cần làm là thực hiện các test để kiểm định mô hình, hay còn gọi là robustness tests/checks.</p>
+
+<p>Đẩu tiên tôi kiểm tra multivariate serial correlation cho residual bằng Portmanteau Test (asymptotic):</p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">Portmanteau</span><span class="w"> </span><span class="n">Test</span><span class="w"> </span><span class="p">(</span><span class="n">asymptotic</span><span class="p">)</span><span class="w">
+
+</span><span class="n">data</span><span class="o">:</span><span class="w">  </span><span class="n">Residuals</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="n">VAR</span><span class="w"> </span><span class="n">object</span><span class="w"> </span><span class="n">model</span><span class="w">
+</span><span class="n">Chi</span><span class="o">-</span><span class="n">squared</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">113.13</span><span class="p">,</span><span class="w"> </span><span class="n">df</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">60</span><span class="p">,</span><span class="w"> </span><span class="n">p</span><span class="o">-</span><span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">4.067e-05</span></code></pre></div>
+
+<p>Tiếp đến tôi kiểm tra multivariate normality, skewness và kurtosis cho residual bằng Jarque-Bera Test:</p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">JB</span><span class="o">-</span><span class="n">Test</span><span class="w"> </span><span class="p">(</span><span class="n">multivariate</span><span class="p">)</span><span class="w">
+
+</span><span class="n">data</span><span class="o">:</span><span class="w">  </span><span class="n">Residuals</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="n">VAR</span><span class="w"> </span><span class="n">object</span><span class="w"> </span><span class="n">model</span><span class="w">
+</span><span class="n">Chi</span><span class="o">-</span><span class="n">squared</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">974.06</span><span class="p">,</span><span class="w"> </span><span class="n">df</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">4</span><span class="p">,</span><span class="w"> </span><span class="n">p</span><span class="o">-</span><span class="n">value</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="m">2.2e-16</span><span class="w">
+
+</span><span class="o">$</span><span class="n">Skewness</span><span class="w">
+
+</span><span class="n">Skewness</span><span class="w"> </span><span class="n">only</span><span class="w"> </span><span class="p">(</span><span class="n">multivariate</span><span class="p">)</span><span class="w">
+
+</span><span class="n">data</span><span class="o">:</span><span class="w">  </span><span class="n">Residuals</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="n">VAR</span><span class="w"> </span><span class="n">object</span><span class="w"> </span><span class="n">model</span><span class="w">
+</span><span class="n">Chi</span><span class="o">-</span><span class="n">squared</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">127.96</span><span class="p">,</span><span class="w"> </span><span class="n">df</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="n">p</span><span class="o">-</span><span class="n">value</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="m">2.2e-16</span><span class="w">
+
+</span><span class="o">$</span><span class="n">Kurtosis</span><span class="w">
+
+</span><span class="n">Kurtosis</span><span class="w"> </span><span class="n">only</span><span class="w"> </span><span class="p">(</span><span class="n">multivariate</span><span class="p">)</span><span class="w">
+
+</span><span class="n">data</span><span class="o">:</span><span class="w">  </span><span class="n">Residuals</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="n">VAR</span><span class="w"> </span><span class="n">object</span><span class="w"> </span><span class="n">model</span><span class="w">
+</span><span class="n">Chi</span><span class="o">-</span><span class="n">squared</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">846.1</span><span class="p">,</span><span class="w"> </span><span class="n">df</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="n">p</span><span class="o">-</span><span class="n">value</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="m">2.2e-16</span></code></pre></div>
+
+<p>Cuối cùng tôi kiểm tra multivariate ARCH-LM test (heteroskedasticity của residual)</p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">ARCH</span><span class="w"> </span><span class="p">(</span><span class="n">multivariate</span><span class="p">)</span><span class="w">
+
+</span><span class="n">data</span><span class="o">:</span><span class="w">  </span><span class="n">Residuals</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="n">VAR</span><span class="w"> </span><span class="n">object</span><span class="w"> </span><span class="n">model</span><span class="w">
+</span><span class="n">Chi</span><span class="o">-</span><span class="n">squared</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">226.39</span><span class="p">,</span><span class="w"> </span><span class="n">df</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">45</span><span class="p">,</span><span class="w"> </span><span class="n">p</span><span class="o">-</span><span class="n">value</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="m">2.2e-16</span></code></pre></div>
+
+<p>Tất cả đều khá ổn, ở mức tương đối, ko có autocorrelation, không có heteroskedasticity và phân phối của residual cũng khá ok.</p>
+
+<p><img src="/images/Stats/VARUSVN/VARUSVN_4.jpeg" alt="VAR_4" /></p>
+
+<h2 id="forecasting">3. Forecasting</h2>
+
+<p>Phần cuối cùng, khi chạy xong mô hình, tôi sẽ forecast return dựa vào các tham số của mô hình. Ngày giao dịch cuối cùng trong sample là 29/6/2018. Tôi sẽ thực hiện liên tiếp 5 ngày forecast từ 2/7/2018 tới 6/7/2018. Khoảng tin cậy của dự đoán là 95%. Ở phân này tôi sử dụng hàm predict trong r, nghĩa là kết quả dự đoán sẽ có tính đệ quy - recursive (nôm na là dùng kết quả forecast để forecast tiếp). Kết quả được như sau:</p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="o">$</span><span class="n">`VNINDEX`</span><span class="w">
+              </span><span class="n">fcst</span><span class="w">       </span><span class="n">lower</span><span class="w">      </span><span class="n">upper</span><span class="w">         </span><span class="n">CI</span><span class="w">
+ </span><span class="p">[</span><span class="m">1</span><span class="p">,]</span><span class="w"> </span><span class="m">0.0015967737</span><span class="w"> </span><span class="m">-0.01876951</span><span class="w"> </span><span class="m">0.02196306</span><span class="w"> </span><span class="m">0.02036628</span><span class="w">
+ </span><span class="p">[</span><span class="m">2</span><span class="p">,]</span><span class="w"> </span><span class="m">0.0009674546</span><span class="w"> </span><span class="m">-0.02018243</span><span class="w"> </span><span class="m">0.02211734</span><span class="w"> </span><span class="m">0.02114988</span><span class="w">
+ </span><span class="p">[</span><span class="m">3</span><span class="p">,]</span><span class="w"> </span><span class="m">0.0010250977</span><span class="w"> </span><span class="m">-0.02013078</span><span class="w"> </span><span class="m">0.02218098</span><span class="w"> </span><span class="m">0.02115588</span><span class="w">
+ </span><span class="p">[</span><span class="m">4</span><span class="p">,]</span><span class="w"> </span><span class="m">0.0010207111</span><span class="w"> </span><span class="m">-0.02013520</span><span class="w"> </span><span class="m">0.02217662</span><span class="w"> </span><span class="m">0.02115591</span><span class="w">
+ </span><span class="p">[</span><span class="m">5</span><span class="p">,]</span><span class="w"> </span><span class="m">0.0010210342</span><span class="w"> </span><span class="m">-0.02013488</span><span class="w"> </span><span class="m">0.02217695</span><span class="w"> </span><span class="m">0.02115591</span></code></pre></div>
+
+<p>fcst là giá trị dự báo, lower là ngưỡng dưới và upper là ngưỡng trên. Ở đây giá trị forecast là return, vậy chúng ta có return trung bình từng ngày lần lượt là 0.15%, 0.096%, 0.1%, 0.1% và 0.1%, vậy đến cuối tuần VNINDEX sẽ tăng nhẹ từ 960.78 điểm lên 974.38 điểm.</p>
+
+<p>Ở kịch bản xấu nhất, VNINDEX sẽ giảm xuống 870 điểm. Tương tự ở kịch bản lạc quan nhất, VNINDEX sẽ tăng lên 1064 điểm.</p>
+
+<p>Nếu để ý kĩ hơn, mô hình dùng để forecast có công thức như sau:</p>
+
+<script type="math/tex; mode=display">y_{T+1|T} = A_1 Y_T + ... + A_p Y_{T+1-p} + CD_{T+1}</script>
+
+<p>DJI return ở phương trình VAR số 2 sẽ được sử dụng để tính toán mặc dù hệ số không hề significant, vậy giá trị forecast ở đây có thể không đáng tin cậy.</p>
+
+<p>Cách đúng đắn hơn để forecast là sử dụng 1 mô hình riêng cho DJI, sau đó chỉ input giá trị của DJI vào phương trình VAR số 1 để tính toán VNINDEX. Hoặc cách đơn giản nhất là quan sát return của DJI ngày hôm trước, rồi nhập giá trị vào phương trình thứ 1 rồi tính toán giá trị kì vọng của .</p>
+
+<p>Điều quan trọng nhất khi nhìn vào mô hình VAR đấy là return của VNINDEX sẽ bị tác động mạnh mẽ bởi thị trường Mỹ. Nếu thị trường Mỹ không , thì thị trường Việt Nam ngày hôm sau sẽ phản ứng ngay lập tức, tuy nhiên mức độ phản ứng sẽ nhỏ hơn bởi các yếu tố nội tại khác. Hơn nữa, giả sử có sự thay đổi về mặt cấu trúc, hay gọi là structural change, hệ số trong phương trình VAR sẽ thay đổi, việc dự báo VNINDEX bằng mô hình VAR có thể không đúng trong tương lai.</p>
+
+<p>Ở bài viết sau tôi sẽ cố gắng thêm các thị trường khác vào mô hình, cũng như các chỉ sổ khác, chẳng hạn SP500 thay vì DJI. Có thể check thêm những mô hình khác như cointegration hay unit root.</p>
+
+                            <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
                         </article>
                     </div>
                 </div>
@@ -237,6 +405,6 @@
     src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
 
-    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
     </body>
 </html>

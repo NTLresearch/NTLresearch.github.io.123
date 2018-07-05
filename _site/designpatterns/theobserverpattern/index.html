@@ -17,9 +17,17 @@
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
     <link rel="canonical" href="http://NTLresearch.github.io/designpatterns/theobserverpattern">
     <link rel="alternate" type="application/rss+xml" title="NTL RESEARCH" href="http://NTLresearch.github.io/feed.xml" />
-    <script type="text/javascript"
-    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-    </script>
+
+    <script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
+       <script type="text/x-mathjax-config">
+         MathJax.Hub.Config({
+           tex2jax: {
+             inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+             processEscapes: true
+           }
+         });
+       </script>
+       <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
 </head>
 
@@ -355,6 +363,7 @@
 
 <p>Có lẽ Observer pattern là một trong những Design pattern phổ biến nhất trong giới lập trình. Ví dụ điển hình nhất notification của post trên Facebook. Mỗi khi người dùng comment vào 1 post, người dùng mặc định đăng kí nhận thông báo mỗi khi có ai phản hồi hoặc comment trong post đó. Ở đây post là subject, hộp notification của người dùng là observer.</p>
 
+                            <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
                         </article>
                     </div>
                 </div>
@@ -432,6 +441,6 @@
     src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
 
-    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
     </body>
 </html>
